@@ -1,11 +1,15 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 username: admin
-email: lucas.fayolle@orange.fr
+email: lfayolle1@gmail.com
 password: >
-  $2a$10$nFLNGY3T7nOENDnRjmOCCeiM/MSrzaifC4iu.bh2uy11yg90hJJwO
+  $2a$10$wMvS5lxS9lI6zPAibVS5ZeAea9IJdlSIf1Dll2K7YNMGdjiYUpTpm
 language: en
 role: admin
 history:
+  - error
+  - projects
   - about
   - home
+firstname: Lucas
+lastname: Fayolle

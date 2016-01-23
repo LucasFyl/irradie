@@ -2,4 +2,4 @@ Title: Error
 
 ----
 
-Text: The page has not been found.
+Text: Sorry, an error has occurred; The page could not been found.
