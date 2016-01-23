@@ -1,12 +1,5 @@
-<?php foreach($page->children()->visible() as $subpage): ?>
+<?php foreach(page('work')->children()->visible() as $project): ?>
+  <h2><?php echo $project->title() ?></h2>
 
-<!-- <section class="toSubpage">
-  <div class="container">
-    <div class="vertical-center">
-      <h2><?php echo $subpage->title() ?></h2>
-      <a href="<?php echo $subpage->url() ?>">Launch gallery</a>
-    </div>
-  </div>
-</section> -->
 
 <?php endforeach; ?>

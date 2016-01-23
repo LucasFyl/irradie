@@ -13,8 +13,10 @@
 <div id="menu">
   <div class="half">
     <a href="<?php echo $pages->find('work')->url() ?>">Work</a>
+    <img src="./assets/images/background-menu-work.gif" alt="#" draggable="false" />
   </div>
   <div class="half">
     <a href="<?php echo $pages->find('about')->url() ?>">About</a>
+    <img src="./assets/images/background-menu-about.gif" alt="#" draggable="false" />
   </div>
 </div>
