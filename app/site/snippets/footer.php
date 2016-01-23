@@ -1,4 +1,18 @@
 
+      <footer>
+        <div>
+          <a href="mailto:info@irradie.com">info(at)irradie.com</a>
+        </div>
+        <ul>
+          <li><a href="#" target="_blank">Newsletter</a></li>
+          <li><a href="#" target="_blank">Facebook</a></li>
+          <li><a href="#" target="_blank">Tumblr</a></li>
+          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><p>© Irradié 2016</p></li>
+        </ul>
+      </footer>
+
+
       <?= js('./bower_components/jquery/dist/jquery.js') ?>
       <?= js('assets/scripts/main.js') ?>
 

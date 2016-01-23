@@ -1,21 +1,20 @@
 <header class="<?php echo $page->id() ?>">
-  <div class="container">
-    <?php if($page->id() !== 'home'): ?>
-    <h2><a href="<?php echo $site->url() ?>">Quentin Vasseur</a></h2>
-    <?php endif; ?>
-    <h1><?php echo $page->title() ?></h1> <!-- Quentin Vasseur, Collections, Illus etc.. -->
-    <?php echo $page->text()->kirbytext() ?>
-
-    <?php if($page->id() !== 'about'): ?>
-    <div class="about-wrap">
-      <a href="<?php echo $pages->find('about')->url() ?>">About</a>
+    <div class="menu">
+      <a href="#">Menu</a>
     </div>
-    <?php else: ?>
-    <div class="about-wrap">
-      <a href="<?php echo $pages->find('home')->url() ?>">Home</a>
+    <div>
+      <h1 class="logo">Irradié</h1>
     </div>
-    <?php endif; ?>
-
-
-  </div>
+    <div class="shop">
+      <a href="#" target="_blank">Shop</a>
+    </div>
 </header>
+
+<div id="menu">
+  <div class="half">
+    <a href="<?php echo $pages->find('work')->url() ?>">Work</a>
+  </div>
+  <div class="half">
+    <a href="<?php echo $pages->find('about')->url() ?>">About</a>
+  </div>
+</div>

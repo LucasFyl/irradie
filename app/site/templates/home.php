@@ -1,21 +1,33 @@
 <?php snippet('head') ?>
 
-<?php snippet('header') ?>
+
+  <div class="landing">
+    <div class="top left">
+      <p>Art</p>
+    </div>
+    <div class="top right">
+      <p>Direction</p>
+    </div>
+    <div class="bottom left">
+      <p>Graphic</p>
+    </div>
+    <div class="bottom right">
+      <p>Design</p>
+    </div>
+
+    <h1 class="logo">Irradié</h1>
+
+    <div class="cover">
+      <img src="assets/images/overlay-landing-home.svg" alt="#" draggable="false" />
+      <img src="<?php echo $page->image('background.gif') ?>" alt="#" class="background" />
+    </div>
+  </div>
+
 
   <main role="main" class="main <?php echo $page->id() ?>">
+    <?php snippet('header') ?>
 
-    <?php foreach($site->children()->not('about')->visible() as $subpage): ?>
-    <section class="toSubpage">
-      <div class="container">
-        <div class="vertical-center">
-          <h2><?php echo $subpage->title() ?></h2>
-          <a href="<?php echo $subpage->url() ?>">Discover ></a>
-        </div>
-      </div>
-    </section>
-    <?php endforeach; ?>
-
-
+    <?php snippet('projects'); ?>
   </main>
 
 <?php snippet('footer') ?>
