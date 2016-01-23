@@ -6,8 +6,17 @@ files:
   sortable: true
 fields:
   title:
-    label: Title
+    label: Titre
     type:  text
+  date:
+    label: Année
+    type: text
+  client:
+      label: Client
+      type: text
   text:
-    label: Text
+    label: Text 1 (entre photos 2 et 3)
     type:  textarea
+  text2:
+      label: Text 2 (entre photos 7 et 8)
+      type: textarea

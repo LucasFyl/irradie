@@ -7,10 +7,10 @@ password: >
 language: en
 role: admin
 history:
+  - work/incendiaire
   - work/le-couture
   - work/l-inconnu
   - work/georges-hobeika
   - work/fete-de-la-musique
-  - work/r-mag
 firstname: Lucas
 lastname: Fayolle
