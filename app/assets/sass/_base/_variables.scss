@@ -1,0 +1,38 @@
+/**
+ * Base styles 		~	 	Grid options
+ */
+$gutter: 0.3em;
+$border-box-sizing: true;
+$grid-columns: 12 !default;
+// $max-width: 77.2%;
+$max-width: 90%;
+$visual-grid: true;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+
+/**
+ * Base styles 		~	 	Media Query options
+ */
+$isMobile: new-breakpoint(max-width 1000px);
+$mobile: new-breakpoint(max-width 480px);
+$desktop: new-breakpoint(min-width 480px);
+$medium: new-breakpoint(min-width 480px max-width 1200px);
+$large: new-breakpoint(min-width 1200px);
+
+/**
+ * Base styles 		~	 	Colours
+ */
+$link-color: darken(#fff, 2%);
+$hover-color: lighten($link-color, 2%);
+$heading-color: #fff;
+$grey: #cacaca;
+$hr-color: #fff;
+$background: #000;
+
+/**
+ * Base styles 		~	 	Type
+ */
+$base-font: 'GothamBold', helvetica, sans-serif;
+$title-font: 'GothamBold', helvetica, sans-serif;
+$book: 'GothamBook', helvetica, sans-serif;

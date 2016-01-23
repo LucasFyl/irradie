@@ -1,0 +1,26 @@
+ @charset "utf-8";
+
+ // bower:scss
+ @import "../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+ @import "../../bower_components/neat/app/assets/stylesheets/_neat.scss";
+ // endbower
+
+
+ // @import "./bower_components/bourbon/app/assets/stylesheets/bourbon";
+ // @import ".bower_components/neat";
+
+ @import "_addons/rem";
+ @import "_addons/slick";
+
+ @import "_base/variables";
+ @import "_base/base";
+ @import "_base/normalize";
+ @import "_base/grid";
+ @import "_base/font-face";
+ @import "_base/type";
+
+ @import "_modules/general";
+ @import "_modules/header-footer";
+
+ @import "_pages/home";
+ @import "_pages/about";
