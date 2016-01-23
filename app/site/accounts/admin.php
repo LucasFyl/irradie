@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - error
   - projects
+  - error
   - about
   - home
 firstname: Lucas
