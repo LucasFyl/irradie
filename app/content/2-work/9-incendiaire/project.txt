@@ -15,3 +15,7 @@ Client: Self Initiated
 ----
 
 Text2: Chaque image représente une plante imaginaire construite à partir d'éléments photographiques et modélisations 3D.
+
+----
+
+Projecttype: Editorial

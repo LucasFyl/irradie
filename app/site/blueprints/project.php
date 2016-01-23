@@ -14,6 +14,10 @@ fields:
   client:
       label: Client
       type: text
+  projectType:
+      label: Type de projet
+      type: text
+      default: Editorial
   text:
     label: Text 1 (entre photos 2 et 3)
     type:  textarea
