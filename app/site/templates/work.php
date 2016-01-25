@@ -1,10 +1,10 @@
 <?php snippet('head') ?>
 
-  <main class="main" role="main">
+  <div class="main" role="main">
       <?php snippet('header') ?>
 
       <?php snippet('projects'); ?>
 
-  </main>
+  </div>
 
 <?php snippet('footer') ?>

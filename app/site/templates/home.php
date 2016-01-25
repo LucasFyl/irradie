@@ -24,10 +24,10 @@
   </div>
 
 
-  <main role="main" class="main <?php echo $page->id() ?>">
+  <div role="main" class="main <?php echo $page->id() ?>">
     <?php snippet('header') ?>
 
     <?php snippet('projects'); ?>
-  </main>
+  </div>
 
 <?php snippet('footer') ?>
