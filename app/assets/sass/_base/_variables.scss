@@ -23,12 +23,12 @@ $large: new-breakpoint(min-width 1200px);
 /**
  * Base styles 		~	 	Colours
  */
-$link-color: darken(#fff, 2%);
+$link-color: blue;
 $hover-color: lighten($link-color, 2%);
-$heading-color: #fff;
-$grey: #cacaca;
-$hr-color: #fff;
-$background: #000;
+$heading-color: #000;
+$grey: #3e3e3e;
+$hr-color: #eee;
+$background: #fff;
 
 /**
  * Base styles 		~	 	Type
