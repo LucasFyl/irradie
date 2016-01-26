@@ -43,5 +43,51 @@ header {
   }
 }
 footer {
+  @include size(100%);
 
+
+  padding-top: 8rem;
+
+  > div {
+    width: 100%;
+    a {
+      display: block;
+      @include size(100%);
+
+      text-align: center;
+      font-family: $atlasMed;
+      color: black;
+      text-decoration: none;
+      font-size: 4.5rem;
+      letter-spacing: .1rem;
+      &:hover {
+        color: black;
+      }
+    }
+  }
+  > ul {
+    margin: 0;
+    padding: 7rem 0 0 0;
+    list-style: none;
+    width: 100%;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    li {
+      padding-bottom: 4rem;
+      a, p {
+        margin: 0;
+        display: block;
+        @include size(100%);
+
+        text-align: center;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: $atlasReg;
+        color: #4d4d4d;
+        text-decoration: none;
+      }
+    }
+  }
 }
