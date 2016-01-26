@@ -3,3 +3,19 @@ Title: Le Couture
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Poster
+
+----
+
+Text2: 

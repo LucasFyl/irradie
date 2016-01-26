@@ -3,3 +3,19 @@ Title: L\inconnu
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Artwork
+
+----
+
+Text2: 

@@ -3,3 +3,19 @@ Title: Airposter
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Poster
+
+----
+
+Text2: 

@@ -3,3 +3,19 @@ Title: Home
 ----
 
 Text: 
+
+----
+
+Topleft: Art
+
+----
+
+Topright: Direction
+
+----
+
+Bottomleft: Graphic
+
+----
+
+Bottomright: Design

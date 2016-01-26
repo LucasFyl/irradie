@@ -3,3 +3,19 @@ Title: Pattern Soup
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Artwork
+
+----
+
+Text2: 

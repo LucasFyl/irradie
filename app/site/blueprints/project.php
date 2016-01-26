@@ -11,16 +11,19 @@ fields:
   date:
     label: Année
     type: text
+    width: 1/3
   client:
-      label: Client
-      type: text
+    label: Client
+    type: text
+    width: 1/3
   projectType:
-      label: Type de projet
-      type: text
-      default: Editorial
+    label: Type de projet
+    type: text
+    default: Editorial
+    width: 1/3
   text:
-    label: Text 1 (entre photos 2 et 3)
+    label: Texte 1 (entre photos 2 et 3)
     type:  textarea
   text2:
-      label: Text 2 (entre photos 7 et 8)
+      label: Texte 2 (entre photos 7 et 8)
       type: textarea

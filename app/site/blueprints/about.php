@@ -18,23 +18,31 @@ fields:
   services:
     label: Services
     type:  textarea
-    width: 1/4
-    help:  sauter une ligne pour un retour à la ligne sur le site
+    width: 1/2
+    buttons:
+      - link
+      - email
   clients:
     label: Clients
     type:  textarea
-    width: 1/4
-    help:  sauter une ligne pour un retour à la ligne sur le site
+    width: 1/2
+    buttons:
+      - link
+      - email
   press:
     label: Selected online press
     type:  textarea
-    width: 1/4
-    help:  sauter une ligne pour un retour à la ligne sur le site
+    width: 1/2
+    buttons:
+      - link
+      - email
   award:
     label: Award
     type:  textarea
-    width: 1/4
-    help:  sauter une ligne pour un retour à la ligne sur le site
+    width: 1/2
+    buttons:
+      - link
+      - email
   secondText:
     label: Second text
     type:  textarea

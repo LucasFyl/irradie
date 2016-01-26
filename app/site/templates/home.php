@@ -3,16 +3,16 @@
 
   <div class="landing">
     <div class="top left">
-      <p>Art</p>
+      <p><?php echo $page->topleft()->html() ?></p> 
     </div>
     <div class="top right">
-      <p>Direction</p>
+      <p><?php echo $page->topright()->html() ?></p> 
     </div>
     <div class="bottom left">
-      <p>Graphic</p>
+      <p><?php echo $page->bottomleft()->html() ?></p> 
     </div>
     <div class="bottom right">
-      <p>Design</p>
+      <p><?php echo $page->bottomright()->html() ?></p> 
     </div>
 
     <h1 class="logo">Irradié</h1>

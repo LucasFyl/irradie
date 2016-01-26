@@ -3,3 +3,19 @@ Title: Libération
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Artwork
+
+----
+
+Text2: 

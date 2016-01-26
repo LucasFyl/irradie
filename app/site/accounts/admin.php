@@ -8,9 +8,9 @@ language: en
 role: admin
 history:
   - about
-  - work/incendiaire
+  - home
+  - work/notebook
   - work/le-couture
   - work/l-inconnu
-  - work/georges-hobeika
 firstname: Lucas
 lastname: Fayolle

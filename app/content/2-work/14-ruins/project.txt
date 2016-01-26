@@ -3,3 +3,19 @@ Title: Ruins
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Diploma
+
+----
+
+Text2: 

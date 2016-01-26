@@ -124,7 +124,7 @@ We are not looking for interns at the moment but you can send us an application 
 
 ----
 
-Contactextras: 
+Contactextras: We are not looking for interns at the moment but you can send us an application here:
 
 ----
 
@@ -136,3 +136,7 @@ Socialmedia:
 (link: http://tumblr.com text: Tumblr)
 (link: http://pinterest.com text: Pinterest)
 (link: http://behance.com text: Behance)
+
+----
+
+Newsletter: Subscribe to our newsletter

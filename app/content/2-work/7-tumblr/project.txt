@@ -3,3 +3,19 @@ Title: Tumblr
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Artwork
+
+----
+
+Text2: 

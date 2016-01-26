@@ -3,3 +3,19 @@ Title: Fête de la Musique
 ----
 
 Text: 
+
+----
+
+Date: 
+
+----
+
+Client: 
+
+----
+
+Projecttype: Poster
+
+----
+
+Text2: 
