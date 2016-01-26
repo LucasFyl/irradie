@@ -907,6 +907,7 @@ header .logo-wrap {
 header .logo-wrap .logo {
   text-align: center;
   font-size: 2.4rem;
+  line-height: 6rem;
   width: 100%;
   margin: 0;
 }
@@ -931,6 +932,7 @@ header .menu a, header .shop a {
 }
 
 footer {
+  background: white;
   height: 100%;
   width: 100%;
   padding-top: 8rem;
@@ -954,7 +956,7 @@ footer > div a:hover {
 }
 footer > ul {
   margin: 0;
-  padding: 7rem 0 0 0;
+  padding: 6rem 0 0 0;
   list-style: none;
   width: 100%;
   display: flex;
@@ -975,4 +977,27 @@ footer > ul li a, footer > ul li p {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
   color: #4d4d4d;
   text-decoration: none;
+}
+
+#main.home {
+  background-color: #f1f1f1;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+#main.home #menu {
+  display: none;
+}
+#main.home figure {
+  margin: 0 4rem 8rem 4rem;
+  flex-basis: content;
+}
+#main.home figure figcaption p {
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+}
+#main.home figure figcaption p span {
+  color: #999999;
 }
