@@ -5,15 +5,15 @@ header {
   display: flex;
   flex-flow: row wrap;
 
-  .menu {
+  div.menu {
     float: left;
     border-right: 1px solid #d0d0d0;
   }
-  .logo-wrap {
+  div.logo-wrap {
     flex-grow: 1;
     height: 6rem;
 
-    .logo {
+    h1.logo {
       text-align: center;
       font-size: 2.4rem;
       line-height: 6rem;
@@ -21,7 +21,7 @@ header {
       margin: 0;
     }
   }
-  .shop {
+  div.shop {
     float: right;
     border-left: 1px solid #d0d0d0;
   }
@@ -45,6 +45,7 @@ header {
 }
 footer {
   background: white;
+  position: relative;
   @include size(100%);
   padding-top: 8rem;
 

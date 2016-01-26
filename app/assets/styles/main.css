@@ -889,6 +889,28 @@ body {
   z-index: 9;
 }
 
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+.projects figure {
+  margin: 0 5rem 5rem 0;
+}
+.projects figure figcaption p {
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+}
+.projects figure figcaption p span {
+  color: #999999;
+}
+.projects figure:first-child, .projects figure:nth-child(3), .projects figure:nth-child(4) {
+  padding-left: 0;
+}
+
 header {
   height: 6rem;
   width: 100%;
@@ -896,22 +918,22 @@ header {
   display: flex;
   flex-flow: row wrap;
 }
-header .menu {
+header div.menu {
   float: left;
   border-right: 1px solid #d0d0d0;
 }
-header .logo-wrap {
+header div.logo-wrap {
   flex-grow: 1;
   height: 6rem;
 }
-header .logo-wrap .logo {
+header div.logo-wrap h1.logo {
   text-align: center;
   font-size: 2.4rem;
   line-height: 6rem;
   width: 100%;
   margin: 0;
 }
-header .shop {
+header div.shop {
   float: right;
   border-left: 1px solid #d0d0d0;
 }
@@ -933,6 +955,7 @@ header .menu a, header .shop a {
 
 footer {
   background: white;
+  position: relative;
   height: 100%;
   width: 100%;
   padding-top: 8rem;
@@ -979,25 +1002,34 @@ footer > ul li a, footer > ul li p {
   text-decoration: none;
 }
 
+.landing {
+  background: white;
+  height: 100%;
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+.landing .top, .landing .right, .landing .bottom, .landing .left {
+  position: fixed;
+}
+.landing .top {
+  top: 5rem;
+}
+.landing .bottom {
+  bottom: 5rem;
+}
+.landing .left {
+  left: 5rem;
+}
+.landing .right {
+  right: 5rem;
+}
+
 #main.home {
   background-color: #f1f1f1;
   padding: 2rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
 }
 #main.home #menu {
   display: none;
-}
-#main.home figure {
-  margin: 0 4rem 8rem 4rem;
-  flex-basis: content;
-}
-#main.home figure figcaption p {
-  text-align: center;
-  font-size: 1.3rem;
-  letter-spacing: .1rem;
-}
-#main.home figure figcaption p span {
-  color: #999999;
 }

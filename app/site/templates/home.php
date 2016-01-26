@@ -15,7 +15,7 @@
       <p><?php echo $page->bottomright()->html() ?></p>
     </div>
 
-    <h1 class="logo">Irradié</h1>
+    <div class="logo-wrap"><h1 class="logo">Irradié</h1></div>
 
     <div class="cover">
       <img src="assets/images/overlay-landing-home.svg" alt="#" draggable="false" />

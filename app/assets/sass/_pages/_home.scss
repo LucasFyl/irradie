@@ -1,27 +1,29 @@
+.landing {
+	background:white;
+	@include size(100%);
+	min-width: 100vw;
+	min-height: 100vh;
+	position: relative;
+
+	.top, .right,.bottom, .left {
+		position: fixed;
+	}
+  .top     {top:    5rem;}
+  .bottom  {bottom: 5rem;}
+  .left    {left:   5rem;}
+	.right   {right:  5rem;}
+
+  .logo-wrap {
+    h1.logo {
+
+    }
+  }
+}
+
 #main.home {
   #menu {
     display: none;
   }
   background-color: #f1f1f1;
   padding: 2rem;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-
-  figure {
-    margin: 0 4rem 8rem 4rem;
-flex-basis:content;
-    figcaption {
-      p {
-        text-align: center;
-        font-size: 1.3rem;
-        letter-spacing: .1rem;
-
-        span {
-          color: #999999;
-        }
-      }
-    }
-  }
 }
