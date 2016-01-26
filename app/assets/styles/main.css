@@ -108,7 +108,7 @@ html {
  * Base styles
  */
 html {
-  font-family: "GothamBold", helvetica, sans-serif;
+  font-family: "AtlasGrotesk-Light-Web", helvetica, sans-serif;
   font-size: 62.5%;
 }
 @media screen and (max-width: 1000px) {
@@ -732,14 +732,34 @@ th {
 }
 
 @font-face {
-  font-family: 'GothamBold';
-  src: url("fonts/GothamBold.eot");
-  src: url("fonts/GothamBold.eot") format("embedded-opentype"), url("fonts/GothamBold.woff2") format("woff2"), url("fonts/GothamBold.woff") format("woff"), url("fonts/GothamBold.ttf") format("truetype"), url("fonts/GothamBold.svg#GothamBold") format("svg");
+  font-family: 'arn-webfont';
+  src: url("../fonts/arn-webfont.eot");
+  src: url("../fonts/arn-webfont.eot") format("embedded-opentype"), url("../fonts/arn-webfont.woff2") format("woff2"), url("../fonts/arn-webfont.woff") format("woff"), url("../fonts/arn-webfont.ttf") format("truetype"), url("../fonts/arn-webfont.svg#arn-webfont") format("svg");
 }
 @font-face {
-  font-family: 'GothamBook';
-  src: url("../assets/fonts/GothamBook.eot");
-  src: url("../assets/fonts/GothamBook.eot") format("embedded-opentype"), url("../assets/fonts/GothamBook.woff2") format("woff2"), url("../assets/fonts/GothamBook.woff") format("woff"), url("../assets/fonts/GothamBook.ttf") format("truetype"), url("../assets/fonts/GothamBook.svg#GothamBook") format("svg");
+  font-family: 'AtlasGrotesk-Light-Web';
+  src: url("../fonts/AtlasGrotesk-Light-Web.eot");
+  src: url("../fonts/AtlasGrotesk-Light-Web.eot") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Light-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-Light-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Light-Web.svg#AtlasGrotesk-Light-Web") format("svg");
+}
+@font-face {
+  font-family: 'AtlasGrotesk-LightItalic-Web';
+  src: url("../fonts/AtlasGrotesk-LightItalic-Web.eot");
+  src: url("../fonts/AtlasGrotesk-LightItalic-Web.eot") format("embedded-opentype"), url("../fonts/AtlasGrotesk-LightItalic-Web.woff2") format("woff2"), url("../fonts/AtlasGrotesk-LightItalic-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-LightItalic-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-LightItalic-Web.svg#AtlasGrotesk-LightItalic-Web") format("svg");
+}
+@font-face {
+  font-family: 'AtlasGrotesk-Medium-Web';
+  src: url("../fonts/AtlasGrotesk-Medium-Web.eot");
+  src: url("../fonts/AtlasGrotesk-Medium-Web.eot") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Medium-Web.woff2") format("woff2"), url("../fonts/AtlasGrotesk-Medium-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-Medium-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Medium-Web.svg#AtlasGrotesk-Medium-Web") format("svg");
+}
+@font-face {
+  font-family: 'AtlasGrotesk-Regular-Web';
+  src: url("../fonts/AtlasGrotesk-Regular-Web.eot");
+  src: url("../fonts/AtlasGrotesk-Regular-Web.eot") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2"), url("../fonts/AtlasGrotesk-Regular-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-Regular-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Regular-Web.svg#AtlasGrotesk-Regular-Web") format("svg");
+}
+@font-face {
+  font-family: 'AtlasGrotesk-RegularItalic-Web';
+  src: url("../fonts/AtlasGrotesk-RegularItalic-Web.eot");
+  src: url("../fonts/AtlasGrotesk-RegularItalic-Web.eot") format("embedded-opentype"), url("../fonts/AtlasGrotesk-RegularItalic-Web.woff2") format("woff2"), url("../fonts/AtlasGrotesk-RegularItalic-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-RegularItalic-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-RegularItalic-Web.svg#AtlasGrotesk-RegularItalic-Web") format("svg");
 }
 /**
  * Base styles ~ Type
@@ -749,7 +769,7 @@ body {
 }
 
 a {
-  font-family: "GothamBold", helvetica, sans-serif;
+  font-family: "AtlasGrotesk-Light-Web", helvetica, sans-serif;
   color: blue;
 }
 a:hover {
@@ -763,7 +783,7 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin: 14px 0;
-  font-family: "GothamBold", helvetica, sans-serif;
+  font-family: "AtlasGrotesk-Medium-Web", helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #000;
@@ -819,7 +839,7 @@ h6,
 }
 
 p {
-  font-family: "GothamBold", helvetica, sans-serif;
+  font-family: "AtlasGrotesk-Light-Web", helvetica, sans-serif;
   font-size: 16px;
   line-height: 25px;
   font-size: 1.6rem;

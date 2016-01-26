@@ -33,6 +33,12 @@ $background: #fff;
 /**
  * Base styles 		~	 	Type
  */
-$base-font: 'GothamBold', helvetica, sans-serif;
-$title-font: 'GothamBold', helvetica, sans-serif;
-$book: 'GothamBook', helvetica, sans-serif;
+$arn: 'arn-webfont', trebuchet, sans-serif;
+$atlasLight: 'AtlasGrotesk-Light-Web', helvetica, sans-serif;
+$atlasLightIt: 'AtlasGrotesk-LightItalic-Web', helvetica, sans-serif;
+$atlasMed: 'AtlasGrotesk-Medium-Web', helvetica, sans-serif;
+$atlasReg: 'AtlasGrotesk-Regular-Web', helvetica, sans-serif;
+$atlasRegIt: 'AtlasGrotesk-RegularItalic-Web', helvetica, sans-serif;
+
+$base-font: $atlasLight;
+$title-font: $atlasMed;
