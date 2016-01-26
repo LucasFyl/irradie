@@ -1,0 +1,47 @@
+header {
+  @include size(100% 6rem);
+  border-bottom: 1px solid #d0d0d0;
+
+  display: flex;
+  flex-flow: row wrap;
+
+  .menu {
+    float: left;
+    border-right: 1px solid #d0d0d0;
+  }
+  .logo-wrap {
+    flex-grow: 1;
+    height: 6rem;
+
+    .logo {
+      text-align: center;
+      font-size: 2.4rem;
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .shop {
+    float: right;
+    border-left: 1px solid #d0d0d0;
+  }
+
+  .menu, .shop {
+    width: 37rem;
+    height: 6rem;
+    a {
+      @include size(100%);
+      display: block;
+
+      line-height: 6rem;
+      text-align: center;
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #4d4d4d;
+
+      font-size: 1.6rem;
+    }
+  }
+}
+footer {
+
+}

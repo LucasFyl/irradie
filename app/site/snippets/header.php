@@ -2,7 +2,7 @@
     <div class="menu">
       <a href="#">Menu</a>
     </div>
-    <div>
+    <div class="logo-wrap">
       <h1 class="logo">Irradié</h1>
     </div>
     <div class="shop">

@@ -765,7 +765,7 @@ th {
  * Base styles ~ Type
  */
 body {
-  color: #3e3e3e;
+  color: #4d4d4d;
 }
 
 a {
@@ -887,4 +887,45 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 9;
+}
+
+header {
+  height: 6rem;
+  width: 100%;
+  border-bottom: 1px solid #d0d0d0;
+  display: flex;
+  flex-flow: row wrap;
+}
+header .menu {
+  float: left;
+  border-right: 1px solid #d0d0d0;
+}
+header .logo-wrap {
+  flex-grow: 1;
+  height: 6rem;
+}
+header .logo-wrap .logo {
+  text-align: center;
+  font-size: 2.4rem;
+  width: 100%;
+  margin: 0;
+}
+header .shop {
+  float: right;
+  border-left: 1px solid #d0d0d0;
+}
+header .menu, header .shop {
+  width: 37rem;
+  height: 6rem;
+}
+header .menu a, header .shop a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  line-height: 6rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 1.6rem;
 }
