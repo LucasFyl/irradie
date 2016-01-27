@@ -1,12 +1,12 @@
 <?php snippet('head') ?>
 
-  <div role="main" class="main <?php echo $page->id() ?>">
+  <div id="main" class="main <?php echo $page->id() ?>">
 
     <?php snippet('header') ?>
 
-    <h2><?php echo $page->introText() ?></h2>
+    <div class="intro">
+      <h2><?php echo $page->introText() ?></h2>
 
-    <div>
       <div class="image"></div>
       <div class="text">
         <?php echo $page->firstText()->kirbytext() ?>
@@ -33,10 +33,19 @@
     </section>
 
     <div class="gallery gallery-1">
-      <!-- TODO: Gallery -->
+      <div class="wrap">
+        <?php foreach ($pages->find('about/gallery-1')->images() as $image): ?>
+  				<figure>
+            <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
+  				  <figcaption>
+  				    <p>Still TODO <span>dynamic Image Caption</span></p>
+  				  </figcaption>
+  				</figure>
+  			<?php endforeach; ?>
+      </div>
     </div>
 
-    <div class="">
+    <div class="separation">
       <div class="image"></div>
       <div class="text">
         <?php echo $page->secondText()->kirbytext() ?>
@@ -44,24 +53,34 @@
     </div>
 
     <div class="gallery gallery-2">
-      <!-- TODO: Gallery -->
+      <div class="wrap">
+        <?php foreach ($pages->find('about/gallery-2')->images() as $image): ?>
+  				<figure>
+            <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
+  				  <figcaption>
+  				    <p>Still TODO <span>Image Caption</span></p>
+  				  </figcaption>
+  				</figure>
+  			<?php endforeach; ?>
+      </div>
     </div>
 
-    <section>
-      <div class="">
+    <section class="footer">
+      <div class="contact">
         <h3>Contact us</h3>
         <?php echo $page->contactInfos()->kirbytext() ?>
         <?php echo $page->contactExtras()->kirbytext() ?>
+        <a href="mailto:stage@irradie.fr">stage@irradie.fr</a>
       </div>
-      <div class="">
+      <div class="follow">
         <h3>Follow us on:</h3>
         <?php echo $page->socialMedia()->kirbytext() ?>
-        <?php echo $page->newsletter()->kirbytext() ?>
+        <a href="#"><?php echo $page->newsletter()->kirbytext() ?></a>
       </div>
-      <div class="">
+      <div class="credit">
         <h3>Credit</h3>
-        <h4>Design & Art Direction: Irradié</h4>
-        <h4>Developpment: <a href="#">Lucas Fayolle</a></h4>
+        <h3>Design & Art Direction: Irradié</h3>
+        <h3>Developpment: <a href="#">Lucas Fayolle</a></h3>
       </div>
     </section>
 

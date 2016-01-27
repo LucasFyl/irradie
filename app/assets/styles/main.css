@@ -1052,3 +1052,234 @@ footer > ul li a, footer > ul li p {
 #main.home #menu {
   display: none;
 }
+
+#main.about {
+  height: 100%;
+  width: 100%;
+  background: black;
+  padding: 2rem 4rem;
+  color: white;
+}
+#main.about header a, #main.about header h1 {
+  color: white;
+}
+#main.about .image {
+  background: url("../images/asset-about-illu1.png") no-repeat left center;
+}
+@media screen and (max-width: 1100px) {
+  #main.about .image {
+    display: none;
+  }
+}
+#main.about .text {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 40.2913699012%;
+  float: right;
+}
+#main.about .text:last-child {
+  margin-right: 0;
+}
+#main.about .text p {
+  margin-top: 0;
+  font-family: "arn-webfont", trebuchet, sans-serif;
+  font-size: 2.6rem;
+  line-height: 3.7rem;
+  letter-spacing: .2rem;
+}
+#main.about .intro::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#main.about .intro h2 {
+  display: block;
+  margin-top: 10rem;
+  margin-bottom: 14rem;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%;
+  float: none;
+  font-family: "arn-webfont", trebuchet, sans-serif;
+  font-size: 3.9rem;
+  line-height: 5.4rem;
+  letter-spacing: .2rem;
+  color: white;
+}
+#main.about .intro h2:last-child {
+  margin-right: 0;
+}
+#main.about .intro .image {
+  min-height: 45rem;
+  min-width: 41rem;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
+  margin-left: 17.0596085997%;
+  background-position: left 4rem;
+}
+#main.about .intro .image:last-child {
+  margin-right: 0;
+}
+#main.about .intro .text {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 40.2913699012%;
+  max-width: 57rem;
+  float: right;
+}
+#main.about .intro .text:last-child {
+  margin-right: 0;
+}
+@media screen and (max-width: 1100px) {
+  #main.about .intro .text {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+    margin-left: 25.5894128995%;
+  }
+  #main.about .intro .text:last-child {
+    margin-right: 0;
+  }
+}
+#main.about section {
+  margin-left: 17.0596085997%;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+}
+#main.about section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#main.about section > div {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 6.1721527019%;
+  min-width: 12rem;
+  margin-right: 12rem;
+}
+#main.about section > div:last-child {
+  margin-right: 0;
+}
+#main.about section > div:nth-child(2) {
+  margin-right: 9rem;
+}
+#main.about section h2, #main.about section h3, #main.about section p {
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  color: #999999;
+  margin: 0;
+  white-space: nowrap;
+}
+#main.about section h2, #main.about section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 4.5rem;
+}
+#main.about section p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.8rem;
+  margin-bottom: 2.5rem;
+}
+#main.about section p:last-child {
+  margin-bottom: 0;
+}
+#main.about .gallery {
+  margin-left: 17.0596085997%;
+  position: relative;
+  margin-right: -4rem;
+  max-width: 100vw;
+  overflow: hidden;
+}
+#main.about .gallery .wrap {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 200%;
+}
+#main.about .gallery figure {
+  margin: 0;
+  display: block;
+  float: left;
+  margin-left: 8.5rem;
+}
+#main.about .gallery figure figcaption {
+  margin-top: 3.8rem;
+  margin-bottom: 0;
+}
+#main.about .gallery figure figcaption p {
+  margin-top: 0;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+}
+#main.about .gallery figure figcaption span {
+  text-transform: capitalize;
+  color: #999999;
+}
+#main.about .separation {
+  width: 100%;
+  margin-top: 7.5rem;
+  margin-bottom: 11rem;
+}
+#main.about .separation::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#main.about .separation .image {
+  min-height: 25.6rem;
+  min-width: 25.6rem;
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 23.2317613015%;
+  background: url("../images/asset-about-illu1.png") no-repeat left center;
+  background-size: 25.6rem;
+}
+#main.about .separation .image:last-child {
+  margin-right: 0;
+}
+#main.about .separation .text {
+  min-width: 57rem;
+}
+#main.about section.footer > div h3 {
+  margin-bottom: 2.3rem;
+}
+#main.about section.footer > div a {
+  color: #999999;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+#main.about section.footer > div p, #main.about section.footer > div h3 {
+  white-space: normal;
+}
+#main.about section.footer > div a:hover {
+  color: white;
+}
+#main.about section.footer > div.contact {
+  min-width: 17rem;
+}
+#main.about section.footer > div.contact p:nth-child(3) {
+  text-transform: none !important;
+  letter-spacing: 0.06rem;
+}
+#main.about section.footer > div.follow p:last-child {
+  padding-bottom: 4rem;
+  border-bottom: 1px solid #999999;
+  font-size: 1.4rem;
+  text-transform: none !important;
+}
+#main.about section.footer > div.credit h3:not(:first-child) {
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

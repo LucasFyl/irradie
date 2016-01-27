@@ -1,3 +1,196 @@
-#content.about {
-  
+$grey: #999999;
+#main.about {
+  @include size(100%);
+  background: black;
+  padding: 2rem 4rem;
+  color: white;
+
+  header {
+    a, h1 {color: white;}
+  }
+  .image {
+    background: url('../images/asset-about-illu1.png') no-repeat left center;
+
+    @include media($small-only) {
+      display: none;
+    }
+  }
+  .text {
+    @include span-columns(5);
+    float: right;
+
+    p {
+      margin-top: 0;
+      font-family: $arn;
+      font-size: 2.6rem;
+      line-height: 3.7rem;
+      letter-spacing: .2rem;
+    }
+  }
+  .intro {
+    @include clearfix;
+    h2 {
+      display: block;
+      margin-top: 10rem;
+      margin-bottom: 14rem;
+      @include span-columns(8);
+      @include shift(2);
+      float: none;
+
+      font-family: $arn;
+      font-size: 3.9rem;
+      line-height: 5.4rem;
+      letter-spacing: .2rem;
+      color: white;
+    }
+    .image {
+      min-height: 45rem;
+      min-width: 41rem;
+      @include span-columns(4);
+      @include shift(2);
+      background-position: left 4rem;
+    }
+    .text {
+      @include span-columns(5);
+      max-width: 57rem;
+      float: right;
+
+      @include media($small-only) {
+        @include span-columns(8);
+        @include shift(3);
+      }
+    }
+  }
+  section {
+    @include shift(2);
+    @include clearfix;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+
+    > div {
+      @include span-columns(1);
+      min-width: 12rem;
+      margin-right: 12rem;
+      &:nth-child(2) {
+        margin-right: 9rem;
+      }
+    }
+    h2, h3, p {
+      font-family: $atlasReg;
+      color: $grey;
+      margin: 0;
+      white-space: nowrap;
+    }
+    h2, h3 {
+      font-size: 1.4rem;
+      margin-bottom: 4.5rem;
+    }
+    p {
+      font-size: 1rem;
+      text-transform: uppercase;
+      line-height: 1.8rem;
+      margin-bottom: 2.5rem;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .gallery {
+    @include shift(2);
+    position: relative;
+    margin-right: -4rem;
+    max-width: 100vw;
+    overflow: hidden;
+
+    .wrap {
+      overflow-y: hidden;
+      overflow-x: scroll;
+      width: 200%;
+    }
+    figure {
+      margin: 0;
+      display: block;
+      float: left;
+
+      margin-left: 8.5rem;
+
+      figcaption {
+        margin-top: 3.8rem;
+        margin-bottom: 0;
+
+        p {
+          margin-top: 0;
+          font-size:1.4rem;
+          text-transform: uppercase;
+          text-align: center;
+          font-family: $atlasReg;
+        }
+
+
+        span {
+          text-transform: capitalize;;
+          color: $grey;
+        }
+      }
+    }
+  }
+  .separation {
+    width: 100%;
+    @include clearfix;
+    margin-top: 7.5rem;
+    margin-bottom: 11rem;
+
+    .image {
+      min-height: 25.6rem;
+      min-width: 25.6rem;
+      @include span-columns(3);
+      background: url('../images/asset-about-illu1.png') no-repeat left center;
+      background-size:25.6rem;
+    }
+    .text {
+      min-width: 57rem;
+    }
+  }
+
+  section.footer {
+    > div {
+      h3 {
+        margin-bottom: 2.3rem;
+      }
+      a {
+        color: $grey;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+      p, h3 {white-space: normal;}
+      a:hover {
+        color: white;
+      }
+
+      &.contact {
+        min-width: 17rem;
+        p:nth-child(3) {
+          text-transform: none !important;
+          letter-spacing: 0.06rem;
+        }
+      }
+      &.follow {
+        p:last-child {
+          padding-bottom: 4rem;
+          border-bottom: 1px solid $grey;
+          font-size: 1.4rem;
+          text-transform: none !important;
+        }
+      }
+      &.credit {
+        h3:not(:first-child) {
+          text-transform: uppercase;
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
+    }
+  }
 }
