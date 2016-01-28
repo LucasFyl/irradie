@@ -890,6 +890,7 @@ body {
 }
 
 .projects {
+  padding-top: 8rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -941,6 +942,9 @@ header div.menu {
 header div.logo-wrap {
   flex-grow: 1;
   height: 6rem;
+}
+header div.logo-wrap a {
+  text-decoration: none;
 }
 header div.logo-wrap h1.logo {
   text-align: center;

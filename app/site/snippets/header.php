@@ -15,7 +15,7 @@
       <a href="#">Menu</a>
     </div>
     <div class="logo-wrap">
-      <h1 class="logo">Irradié</h1>
+      <a href="<?php echo $site->url() ?>"><h1 class="logo">Irradié</h1></a>
     </div>
     <div class="shop">
       <a href="#" target="_blank">Shop</a>
