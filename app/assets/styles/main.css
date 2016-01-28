@@ -890,26 +890,28 @@ body {
 }
 
 .projects {
+  height: 100%;
+  width: 100%;
+  position: relative;
   padding-top: 8rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
 }
 @media screen and (min-width: 1440px) {
   .projects {
     max-width: 144rem;
     margin: 0 auto;
+    height: 483rem;
   }
 }
 @media screen and (min-width: 1920px) {
   .projects {
     max-width: 192rem;
     margin: 0 auto;
+    height: 643rem;
   }
 }
 .projects figure {
+  display: inline-block;
+  vertical-align: top;
   margin: 0 5rem 5rem 0;
 }
 .projects figure figcaption a {
