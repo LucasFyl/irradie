@@ -1,6 +1,9 @@
 body {
   @include size(100%);
   position: relative;
+  &.locked {
+    overflow: hidden;
+  }
 }
 .main {
   @include size(100%);

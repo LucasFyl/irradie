@@ -1,9 +1,10 @@
 <?php snippet('head') ?>
 
-  <div class="main" role="main">
-      <?php snippet('header') ?>
+  <div id="main" class="main <?php echo $page->id() ?>">
+    <?php snippet('header') ?>
 
-      <?php snippet('projects'); ?>
+
+    <?php snippet('projects'); ?>
 
   </div>
 

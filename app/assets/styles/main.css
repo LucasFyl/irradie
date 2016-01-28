@@ -879,6 +879,9 @@ body {
   width: 100%;
   position: relative;
 }
+body.locked {
+  overflow: hidden;
+}
 
 .main {
   height: 100%;
@@ -1024,6 +1027,65 @@ footer > ul li a, footer > ul li p {
   text-decoration: none;
 }
 
+#menu {
+  opacity: 0;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+}
+#menu .half {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  float: left;
+}
+#menu .half a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 100vh;
+  text-decoration: none;
+  font-family: "AtlasGrotesk-Medium-Web", helvetica, sans-serif;
+  font-size: 10rem;
+  color: black;
+}
+#menu a.close {
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  text-transform: uppercase;
+  z-index: 99999;
+}
+
+.top, .right, .bottom, .left {
+  position: fixed;
+  z-index: 9;
+}
+
+.top {
+  top: 5rem;
+}
+
+.bottom {
+  bottom: 5rem;
+}
+
+.left {
+  left: 5rem;
+}
+
+.right {
+  right: 5rem;
+}
+
 .landing {
   height: 100%;
   width: 100%;
@@ -1032,21 +1094,7 @@ footer > ul li a, footer > ul li p {
   overflow: hidden;
   height: 100vh;
   position: relative;
-}
-.landing .top, .landing .right, .landing .bottom, .landing .left {
-  position: fixed;
-}
-.landing .top {
-  top: 5rem;
-}
-.landing .bottom {
-  bottom: 5rem;
-}
-.landing .left {
-  left: 5rem;
-}
-.landing .right {
-  right: 5rem;
+  z-index: 9;
 }
 .landing .logo-wrap {
   position: fixed;
@@ -1084,13 +1132,11 @@ footer > ul li a, footer > ul li p {
   min-height: 150%;
 }
 
-#main.home {
+#main.home,
+#main.work {
   z-index: 99;
   background-color: #f1f1f1;
   padding: 2rem;
-}
-#main.home #menu {
-  display: none;
 }
 
 #main.about {

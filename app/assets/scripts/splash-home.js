@@ -72,12 +72,5 @@
             return x >= min && x <= max;
         }
     };
-    if($(window).width()>950){
-      // console.log($(window).width());
-      $( document ).ready(function(){
-        setTimeout(splashHome.init,400);
-      });
-    }
-
 
 })(jQuery);

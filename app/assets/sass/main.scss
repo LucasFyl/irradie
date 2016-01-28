@@ -6,18 +6,19 @@
  // endbower
 
 
- @import "_addons/rem";
- @import "_addons/slick";
+ @import "_addons/_rem";
+ @import "_addons/_slick";
 
- @import "_base/variables";
- @import "_base/base";
- @import "_base/normalize";
- @import "_base/grid";
- @import "_base/font-face";
- @import "_base/type";
+ @import "_base/_variables";
+ @import "_base/_base";
+ @import "_base/_normalize";
+ @import "_base/_grid";
+ @import "_base/_font-face";
+ @import "_base/_type";
 
  @import "_modules/general";
  @import "_modules/header-footer";
+ @import "_modules/menu";
 
  @import "_pages/home";
  @import "_pages/about";
