@@ -1,0 +1,37 @@
+#menu {
+  opacity: 0;
+  display: none;
+
+  @include size(100%);
+  position: fixed;
+  z-index: 99999;
+  top: 0; left: 0; right: 0;
+  background: white;
+
+  .half {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    float: left;
+    a {
+      display: block;
+      @include size(100%);
+      text-align: center;
+      line-height: 100vh;
+
+      text-decoration: none;
+      font-family: $atlasMed;
+      font-size:10rem;
+      color: black;
+    }
+  }
+
+  a.close {
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: $atlasReg;
+    text-transform: uppercase;
+    z-index: 99999;
+  }
+}
