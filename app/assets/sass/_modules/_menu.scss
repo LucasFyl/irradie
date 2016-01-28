@@ -1,6 +1,6 @@
 #menu {
   opacity: 0;
-  display: none;
+  visibility: hidden;
 
   @include size(100%);
   position: fixed;
