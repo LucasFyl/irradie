@@ -1063,6 +1063,9 @@ footer > ul li a, footer > ul li p {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
   text-transform: uppercase;
   z-index: 99999;
+  padding: 3rem;
+  top: 2rem;
+  right: 2rem;
 }
 
 .top, .right, .bottom, .left {

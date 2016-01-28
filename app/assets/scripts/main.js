@@ -60,7 +60,7 @@ function initMenu() {
 		e.preventDefault();
 		$('body').addClass('locked');
 		TweenMax.to('#menu', 1, {opacity:1,display:'block',ease:Expo.easeOut});
-		TweenMax.fromTo('#menu .half a', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Expo.easeOut,delay:1});
+		TweenMax.fromTo('#menu .half a', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Expo.easeOut,delay:0.6});
 	});
 	$('#menu .close').on('click', function(e){
 		e.preventDefault();
