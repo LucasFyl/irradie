@@ -592,7 +592,7 @@ th {
  * Base styles ~ Grid
  */
 .container {
-  max-width: 90%;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -895,6 +895,18 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
+}
+@media screen and (min-width: 1440px) {
+  .projects {
+    max-width: 144rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .projects {
+    max-width: 192rem;
+    margin: 0 auto;
+  }
 }
 .projects figure {
   margin: 0 5rem 5rem 0;
