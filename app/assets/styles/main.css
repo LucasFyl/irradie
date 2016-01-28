@@ -911,6 +911,10 @@ body {
 .projects figure {
   margin: 0 5rem 5rem 0;
 }
+.projects figure figcaption a {
+  text-decoration: none;
+  color: #3e3e3e;
+}
 .projects figure figcaption p {
   text-align: center;
   font-size: 1.3rem;
@@ -1293,4 +1297,122 @@ footer > ul li a, footer > ul li p {
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+#main.project {
+  padding: 2rem 4rem;
+}
+#main.project .wrap {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+#main.project .infos {
+  position: relative;
+  overflow: auto;
+}
+#main.project .infos h1 {
+  margin-top: 6rem;
+  margin-bottom: 3.5rem;
+  display: inline-block;
+  position: relative;
+  font-size: 4.5rem;
+}
+#main.project .infos h1 .date {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: calc(100% + 1.5rem);
+  color: #999999;
+  font-size: 1.4rem;
+}
+#main.project .infos .client {
+  margin-bottom: 4rem;
+}
+#main.project .infos .client p {
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 1.1rem;
+  color: #999999;
+}
+#main.project .infos .client p span {
+  display: block;
+  color: #4d4d4d;
+}
+#main.project .infos .share {
+  position: absolute;
+  right: 0;
+  top: 6rem;
+}
+#main.project .infos .share ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#main.project .infos .share ul li {
+  text-transform: uppercase;
+  line-height: 1.3;
+  font-size: 1rem;
+  color: #999999;
+  margin-bottom: 2rem;
+}
+#main.project .infos .share ul li a {
+  display: block;
+  width: 100%;
+  text-align: right;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #4d4d4d;
+}
+#main.project img {
+  margin-bottom: 5.5rem;
+}
+@media screen and (max-width: 1826px) {
+  #main.project img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1826px) {
+  #main.project img {
+    width: 100%;
+  }
+  #main.project img:nth-child(7), #main.project img:nth-child(8), #main.project img:nth-child(11), #main.project img:nth-child(12) {
+    width: auto;
+  }
+  #main.project img:nth-child(8), #main.project img:nth-child(12) {
+    float: right;
+  }
+}
+#main.project section {
+  overflow: auto;
+  margin-bottom: 5.5rem;
+}
+#main.project section > div {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+}
+#main.project section > div:last-child {
+  margin-right: 0;
+}
+#main.project section > div:first-child {
+  position: relative;
+}
+#main.project section > div:first-child p {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #999999;
+}
+#main.project section > div:first-child p.text-hide {
+  opacity: 0;
+}
+#main.project section > div:last-child p {
+  font-family: "arn-webfont", trebuchet, sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.8rem;
+  line-height: normal;
+  color: black;
+  margin: 0;
+  text-transform: none;
 }

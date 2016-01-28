@@ -7,10 +7,10 @@ password: >
 language: en
 role: admin
 history:
+  - work/incendiaire
   - about
   - home
   - work/notebook
   - work/le-couture
-  - work/l-inconnu
 firstname: Lucas
 lastname: Fayolle

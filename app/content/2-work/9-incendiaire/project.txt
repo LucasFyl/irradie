@@ -19,3 +19,15 @@ Text2: Chaque image représente une plante imaginaire construite à partir d'él
 ----
 
 Projecttype: Editorial
+
+----
+
+Year: 2014
+
+----
+
+Projecttype1: Editorial
+
+----
+
+Projecttype2: Illustration
