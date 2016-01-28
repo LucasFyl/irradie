@@ -17,6 +17,7 @@
       <?= js('./bower_components/gsap/src/uncompressed/TweenMax.js') ?>
       <?= js('./bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js') ?>
       <?= js('./bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
+      <?= js('assets/scripts/splash-home.js') ?>
       <?= js('assets/scripts/main.js') ?>
 
 

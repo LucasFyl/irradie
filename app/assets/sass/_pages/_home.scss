@@ -1,5 +1,5 @@
 .landing {
-	background:white;
+	// background:white;
 	@include size(100%);
 	min-width: 100vw;
 	max-height: 100vh;
@@ -31,6 +31,22 @@
       background-size: 60rem;
     }
   }
+
+	.cover {
+		@include size(47rem 66rem);
+		position: absolute;
+		z-index: -1;
+		overflow: hidden;
+		top: 50%; margin-top: -33rem;
+		left: 50%; margin-left: -23.5rem;
+		opacity: 0;
+		.background {
+			position: absolute;
+			max-width: none;
+			top:50%; left: 50%;
+			min-height: 150%;
+		}
+	}
 }
 
 #main.home {

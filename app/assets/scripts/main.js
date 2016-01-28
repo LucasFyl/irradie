@@ -9,7 +9,14 @@ function initPage(){
 	detectMobile();
 	hideLoader();
 	window.onresize = resize;
-
+	if ( $('.cover').length ) {
+		$('body').on('mouseenter', '.landing .logo-wrap', function(){
+				TweenMax.to('.cover', 0.5, {opacity:1,ease:Expo.easeOut});
+		});
+		$('body').on('mouseleave', '.landing .logo-wrap', function(){
+				TweenMax.to('.cover', 0.5, {opacity:0,ease:Expo.easeOut});
+		});
+	}
 	if ( $('.projects').length ) {
 		// initScroll();
 	}

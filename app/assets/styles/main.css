@@ -1025,7 +1025,6 @@ footer > ul li a, footer > ul li p {
 }
 
 .landing {
-  background: white;
   height: 100%;
   width: 100%;
   min-width: 100vw;
@@ -1064,6 +1063,25 @@ footer > ul li a, footer > ul li p {
   text-indent: -99999px;
   background: url("../images/logo-black.svg") no-repeat center center;
   background-size: 60rem;
+}
+.landing .cover {
+  height: 66rem;
+  width: 47rem;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+  top: 50%;
+  margin-top: -33rem;
+  left: 50%;
+  margin-left: -23.5rem;
+  opacity: 0;
+}
+.landing .cover .background {
+  position: absolute;
+  max-width: none;
+  top: 50%;
+  left: 50%;
+  min-height: 150%;
 }
 
 #main.home {
