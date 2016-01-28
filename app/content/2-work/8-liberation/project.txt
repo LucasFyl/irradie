@@ -2,7 +2,7 @@ Title: Libération
 
 ----
 
-Text: 
+Text: Création de deux images pour le "Libé des graphistes", numéro spécial du 24 janvier 2014 illustré par une vingtaine de graphistes internationaux.
 
 ----
 
@@ -10,7 +10,7 @@ Date:
 
 ----
 
-Client: 
+Client: Libération
 
 ----
 
@@ -18,4 +18,16 @@ Projecttype: Artwork
 
 ----
 
-Text2: 
+Text2: L’atelier Irradié fut convié à illustrer la rubrique «Le Monde» en jouant sur le losange emblématique du journal.
+
+----
+
+Year: 2014
+
+----
+
+Projecttype1: Editorial
+
+----
+
+Projecttype2: Illustration
