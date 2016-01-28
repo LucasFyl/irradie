@@ -13,6 +13,8 @@
     height: 100vh;
     position: relative;
     float: left;
+    overflow: hidden;
+
     a {
       display: block;
       @include size(100%);
@@ -23,6 +25,17 @@
       font-family: $atlasMed;
       font-size:10rem;
       color: black;
+
+      position: absolute;
+      z-index: 99998;
+    }
+
+
+    &.ready:hover {
+      .cover {
+        opacity: 1;
+        @include transition(opacity 0.25s ease-out);
+      }
     }
   }
 
@@ -37,5 +50,12 @@
     padding: 3rem;
     top: 2rem;
     right: 2rem;
+  }
+
+  .cover {
+    object-fit: cover;
+    min-height: 100vh;
+    opacity: 0;
+    @include transition(opacity 0.25s ease-in);
   }
 }

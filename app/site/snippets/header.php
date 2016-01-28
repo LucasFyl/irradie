@@ -3,11 +3,11 @@
   <a href="#" class="top right close">Close</a>
   <div class="half">
     <a href="<?php echo $pages->find('work')->url() ?>">Work</a>
-    <img src="./assets/images/background-menu-work.gif" alt="#" draggable="false" />
+    <img src="./assets/images/placeholder-background.jpg" alt="#" draggable="false" class="cover" />
   </div>
   <div class="half">
     <a href="<?php echo $pages->find('about')->url() ?>">About</a>
-    <img src="./assets/images/background-menu-about.gif" alt="#" draggable="false" />
+    <img src="./assets/images/placeholder-background.jpg" alt="#" draggable="false" class="cover" />
   </div>
 </div>
 

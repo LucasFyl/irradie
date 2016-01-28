@@ -105,6 +105,9 @@ html {
  * Base styles 		~	 	Type
  */
 /**
+ * Base styles ~ Easings
+ */
+/**
  * Base styles
  */
 html {
@@ -1044,6 +1047,7 @@ footer > ul li a, footer > ul li p {
   height: 100vh;
   position: relative;
   float: left;
+  overflow: hidden;
 }
 #menu .half a {
   display: block;
@@ -1055,6 +1059,12 @@ footer > ul li a, footer > ul li p {
   font-family: "AtlasGrotesk-Medium-Web", helvetica, sans-serif;
   font-size: 10rem;
   color: black;
+  position: absolute;
+  z-index: 99998;
+}
+#menu .half.ready:hover .cover {
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
 }
 #menu a.close {
   color: black;
@@ -1066,6 +1076,12 @@ footer > ul li a, footer > ul li p {
   padding: 3rem;
   top: 2rem;
   right: 2rem;
+}
+#menu .cover {
+  object-fit: cover;
+  min-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.25s ease-in;
 }
 
 .top, .right, .bottom, .left {
@@ -1096,8 +1112,8 @@ footer > ul li a, footer > ul li p {
   max-height: 100vh;
   overflow: hidden;
   height: 100vh;
-  position: relative;
-  z-index: 9;
+  position: absolute;
+  z-index: 1;
 }
 .landing .logo-wrap {
   position: fixed;
@@ -1140,6 +1156,11 @@ footer > ul li a, footer > ul li p {
   z-index: 99;
   background-color: #f1f1f1;
   padding: 2rem;
+}
+
+#main.home {
+  position: relative;
+  top: 100vh;
 }
 
 #main.about {

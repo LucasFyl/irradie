@@ -1,6 +1,7 @@
 /*jshint -W117 */
 /*jslint latedef:false*/
 /* jshint unused:false */
+var splashHome;
 var isMobile = false;
 var controller = new ScrollMagic.Controller();
 // Page load event
@@ -10,22 +11,28 @@ function initPage(){
 	hideLoader();
 	initMenu();
 	window.onresize = resize;
+
 	if ( $('#main.home').length ) {
 
-    if($(window).width()>950){
-      setTimeout(splashHome.init,250);
-    }
-
-		$('body').on('mouseenter', '.landing .logo-wrap', function(){
-				TweenMax.to('.cover', 0.5, {opacity:1,ease:Expo.easeOut});
-		});
-		$('body').on('mouseleave', '.landing .logo-wrap', function(){
-				TweenMax.to('.cover', 0.5, {opacity:0,ease:Expo.easeOut});
-		});
+		initSplashScreen();
 	}
 	if ( $('.projects').length ) {
 		// initScroll();
 	}
+}
+function initSplashScreen() {
+	'use strict';
+
+	if( $(window).width() > 950 ){
+		setTimeout(splashHome.init,250);
+	}
+
+	$('body').on('mouseenter', '.landing .logo-wrap', function(){
+			TweenMax.to('.cover', 0.5, {opacity:1,ease:Expo.easeOut});
+	});
+	$('body').on('mouseleave', '.landing .logo-wrap', function(){
+			TweenMax.to('.cover', 0.5, {opacity:0,ease:Expo.easeOut});
+	});
 }
 function detectMobile(){
 	'use strict';
@@ -56,17 +63,22 @@ function initScroll() {
 }
 function initMenu() {
 	'use strict';
+	// openMenu
 	$('.menu-trigger').on('click', function(e){
 		e.preventDefault();
 		$('body').addClass('locked');
 		TweenMax.to('#menu', 1, {opacity:1,display:'block',ease:Expo.easeOut});
-		TweenMax.fromTo('#menu .half a', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Expo.easeOut,delay:0.6});
+		TweenMax.fromTo('#menu .half a', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Expo.easeOut,delay:0.6,onComplete:function(){
+			$('.half').addClass('ready');
+		}});
 	});
+	// closeMenu
 	$('#menu .close').on('click', function(e){
 		e.preventDefault();
+		$('.half').removeClass('ready');
 		$('body').removeClass('locked');
 		TweenMax.to('#menu .half a', 0.35, {y:50,opacity:0,ease:Expo.easeIn});
-		TweenMax.to('#menu', 1, {opacity:0,display:'none',ease:Expo.easeIn,delay:0.35});
+		TweenMax.to('#menu', 0.5, {opacity:0,display:'none',ease:Expo.easeIn});
 	});
 }
 

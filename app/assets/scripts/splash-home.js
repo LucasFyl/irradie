@@ -1,8 +1,7 @@
 
-(function ($) {
-
-    var splashHome = {
+  var splashHome = {
         init: function() {
+            'use strict';
             splashHome.config = {
                 img: $('img.background'),
                 effect: true
@@ -15,6 +14,7 @@
         },
 
         initImg: function() {
+            'use strict';
             var img = splashHome.config.img;
 
             $.data(img, 'positions', {
@@ -33,6 +33,7 @@
         },
 
         initEvents: function() {
+            'use strict';
             var img = splashHome.config.img;
             var effect = splashHome.config.effect;
 
@@ -69,8 +70,9 @@
         },
 
         between: function(x, min, max) {
+            'use strict';
             return x >= min && x <= max;
         }
     };
 
-})(jQuery);
+// })(jQuery);
