@@ -70,8 +70,13 @@ function initMenu() {
 	// openMenu
 	$(document).on('click', '.menu-trigger', function(e){
 		e.preventDefault();
+			//  Temp fix for overlaping landing on home page
+		if ( $(window).scrollTop() < $(window).height() ) {
+			TweenMax.to(window, 0.25, {scrollTo: $(window).height(),ease:Power2.easeOut});
+		}
+
 		$('body').addClass('locked');
-		TweenMax.to('#menu', 1, {opacity:1,visibility:'visible',ease:Expo.easeOut});
+		TweenMax.to('#menu', 1, {delay:0.25,opacity:1,visibility:'visible',ease:Expo.easeOut});
 		TweenMax.fromTo('#menu .half a', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Expo.easeOut,delay:0.6,onComplete:function(){
 			$('.half').addClass('ready');
 		}});
