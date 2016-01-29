@@ -50,6 +50,11 @@ footer {
   @include size(100%);
   padding-top: 8rem;
 
+  position: fixed;
+  bottom:0;
+  height: 25.5rem;
+
+
   > div {
     width: 100%;
     a {

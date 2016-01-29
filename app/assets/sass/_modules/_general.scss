@@ -28,12 +28,12 @@ body {
   @include media(min-width 1440px) {
     max-width: 144rem;
     margin:0 auto;
-    height: 483rem;
+    // height: 483rem;
   }
   @include media(min-width 1920px) {
     max-width: 192rem;
     margin:0 auto;
-    height: 643rem;
+    // height: 643rem;
   }
 
 

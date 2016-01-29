@@ -10,6 +10,7 @@ function initPage(){
 	detectMobile();
 	hideLoader();
 	initMenu();
+	setFooter();
 	window.onresize = resize;
 
 	if ( $('#main.home').length ) {
@@ -95,8 +96,10 @@ function initMenu() {
     }
 	}, '.half.ready > a');
 }
-function initMenuHover() {
+function setFooter() {
 	'use strict';
+	var footerH = '25.5rem';
+	TweenMax.set('#main', {marginBottom:footerH});
 }
 $(document).ready(function(){
 	'use strict';
