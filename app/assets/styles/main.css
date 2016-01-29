@@ -1071,6 +1071,7 @@ footer > ul li a, footer > ul li p {
 #menu .half .cover img {
   object-fit: cover;
   min-height: 100vh;
+  min-width: 100%;
 }
 #menu .half a {
   display: block;
