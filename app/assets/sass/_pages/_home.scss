@@ -10,14 +10,14 @@
 .right   {right:  5rem;}
 
 .landing {
-	// background:white;
+	background:white;
 	@include size(100%);
 	min-width: 100vw;
 	max-height: 100vh;
   overflow: hidden;
   height: 100vh;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 
   .logo-wrap {
 		width: 100%; height:15rem;

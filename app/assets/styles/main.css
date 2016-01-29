@@ -985,6 +985,7 @@ footer {
   width: 100%;
   padding-top: 8rem;
   position: fixed;
+  z-index: 1;
   bottom: 0;
   height: 25.5rem;
 }
@@ -1105,6 +1106,7 @@ footer > ul li a, footer > ul li p {
 }
 
 .landing {
+  background: white;
   height: 100%;
   width: 100%;
   min-width: 100vw;
@@ -1112,7 +1114,7 @@ footer > ul li a, footer > ul li p {
   overflow: hidden;
   height: 100vh;
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 .landing .logo-wrap {
   width: 100%;
