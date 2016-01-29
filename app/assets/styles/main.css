@@ -1049,6 +1049,14 @@ footer > ul li a, footer > ul li p {
   float: left;
   overflow: hidden;
 }
+#menu .half .cover {
+  opacity: 0;
+  position: relative;
+}
+#menu .half .cover img {
+  object-fit: cover;
+  min-height: 100vh;
+}
 #menu .half a {
   display: block;
   height: 100%;
@@ -1060,11 +1068,7 @@ footer > ul li a, footer > ul li p {
   font-size: 10rem;
   color: black;
   position: absolute;
-  z-index: 99998;
-}
-#menu .half.ready:hover .cover {
-  opacity: 1;
-  transition: opacity 0.25s ease-out;
+  z-index: 99999;
 }
 #menu a.close {
   color: black;
@@ -1076,12 +1080,6 @@ footer > ul li a, footer > ul li p {
   padding: 3rem;
   top: 2rem;
   right: 2rem;
-}
-#menu .cover {
-  object-fit: cover;
-  min-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.25s ease-in;
 }
 
 .top, .right, .bottom, .left {

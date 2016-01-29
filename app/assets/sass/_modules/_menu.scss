@@ -15,6 +15,16 @@
     float: left;
     overflow: hidden;
 
+    .cover {
+      opacity: 0;
+      position: relative;
+      // @include transition(opacity 0.5s ease-in);
+      img {
+        object-fit: cover;
+        min-height: 100vh;
+      }
+    }
+
     a {
       display: block;
       @include size(100%);
@@ -27,16 +37,18 @@
       color: black;
 
       position: absolute;
-      z-index: 99998;
+      z-index: 99999;
     }
 
 
-    &.ready:hover {
-      .cover {
-        opacity: 1;
-        @include transition(opacity 0.25s ease-out);
-      }
-    }
+    // &.ready {
+    //   &:hover {
+    //     .cover {
+    //       opacity: 1;
+    //       @include transition(opacity 0.5s ease-out);
+    //     }
+    //   }
+    // }
   }
 
   a.close {
@@ -50,12 +62,5 @@
     padding: 3rem;
     top: 2rem;
     right: 2rem;
-  }
-
-  .cover {
-    object-fit: cover;
-    min-height: 100vh;
-    opacity: 0;
-    @include transition(opacity 0.25s ease-in);
   }
 }
