@@ -5,7 +5,7 @@
 	z-index: 9;
 }
 .top     {top:    5rem;}
-.bottom  {bottom: 5rem;}
+.bottom  {top: calc(100% - 10rem);}
 .left    {left:   5rem;}
 .right   {right:  5rem;}
 
@@ -35,15 +35,18 @@
       background-size: 60rem;
     }
   }
-
+	.fixed-wrap {
+		position: fixed;
+		z-index: 1;
+		width: 100%;
+		top: 50%; margin-top: -33rem;
+	}
 	.cover {
 		@include size(47rem 66rem);
-		position: absolute;
-		z-index: -1;
-		overflow: hidden;
-		top: 50%; margin-top: -33rem;
+		position: relative;
 		left: 50%; margin-left: -23.5rem;
-		opacity: 0;
+		overflow: hidden;
+		// opacity: 0;
 		.background {
 			position: absolute;
 			max-width: none;

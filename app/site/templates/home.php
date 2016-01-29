@@ -17,9 +17,12 @@
 
     <div class="logo-wrap"><h1 class="logo">Irradié</h1></div>
 
-    <div class="cover">
-      <img src="/assets/images/placeholder-background.jpg" alt="#" class="background" />
+    <div class="fixed-wrap">
+      <div class="cover">
+        <img src="/assets/images/placeholder-background.jpg" alt="#" class="background" />
+      </div>
     </div>
+
   </div>
 
 

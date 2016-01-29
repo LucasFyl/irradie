@@ -27,14 +27,14 @@ function initSplashScreen() {
 	}
 
 
-	$(document).on({
-    mouseenter: function () {
-			TweenMax.to('.cover', 0.5, {opacity:1,ease:Expo.easeOut});
-		},
-		mouseleave: function() {
-			TweenMax.to('.cover', 0.5, {opacity:0,ease:Expo.easeOut});
-		}
-	}, '.landing .logo-wrap');
+	// $(document).on({
+  //   mouseenter: function () {
+	// 		TweenMax.to('.cover', 0.5, {opacity:1,ease:Expo.easeOut});
+	// 	},
+	// 	mouseleave: function() {
+	// 		TweenMax.to('.cover', 0.5, {opacity:0,ease:Expo.easeOut});
+	// 	}
+	// }, '.landing .logo-wrap');
 }
 function detectMobile(){
 	'use strict';

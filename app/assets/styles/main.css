@@ -1092,7 +1092,7 @@ footer > ul li a, footer > ul li p {
 }
 
 .bottom {
-  bottom: 5rem;
+  top: calc(100% - 10rem);
 }
 
 .left {
@@ -1129,17 +1129,20 @@ footer > ul li a, footer > ul li p {
   background: url("../images/logo-black.svg") no-repeat center center;
   background-size: 60rem;
 }
+.landing .fixed-wrap {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 50%;
+  margin-top: -33rem;
+}
 .landing .cover {
   height: 66rem;
   width: 47rem;
-  position: absolute;
-  z-index: -1;
-  overflow: hidden;
-  top: 50%;
-  margin-top: -33rem;
+  position: relative;
   left: 50%;
   margin-left: -23.5rem;
-  opacity: 0;
+  overflow: hidden;
 }
 .landing .cover .background {
   position: absolute;
