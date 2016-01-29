@@ -56,8 +56,8 @@
 
                 if (!effect){ return; }
 
-                var amountMovedX = ((e.pageX-$(window).width()/2) * -1 / 1.5) / 3;
-                var amountMovedY = ((e.pageY-$(window).height()/2) * -1 / 1.5) / 3;
+                var amountMovedX = ((e.pageX-$(window).width()/2) * -1 / 1.5) / 10;
+                var amountMovedY = ((e.pageY-$(window).height()/2) * -1 / 1.5) / 10;
 
                 if (!splashHome.between(amountMovedY, -$.data( img, 'offset').top, $.data( img, 'offset').top) || !splashHome.between(amountMovedX, -$.data( img, 'offset').left, $.data( img, 'offset').left))
                     {return;}
