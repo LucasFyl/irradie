@@ -13,7 +13,6 @@
 			console.log('controller:',controller);
 		},
     home: function(controller){
-			console.log('controller:',controller);
       //  Scene for 4 small texts : graphic design art direction
       var topEl = $('.landing .top'),
           bottomEl = $('.landing .bottom'),
