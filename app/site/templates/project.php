@@ -1,5 +1,4 @@
 <?php snippet('head') ?>
-
   <div id="main" class="main project <?php echo $page->id() ?>">
 
     <?php snippet('header') ?>
@@ -52,4 +51,4 @@
       <?php endforeach; ?>
     </div>
   </div>
-<?php snippet('footer') ?>
+  <?php snippet('footer') ?>

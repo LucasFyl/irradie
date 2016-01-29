@@ -11,16 +11,17 @@
           <li><p>© Irradié 2016</p></li>
         </ul>
       </footer>
-
+    </div>
 
       <?= js('bower_components/jquery/dist/jquery.js') ?>
       <?= js('bower_components/gsap/src/uncompressed/TweenMax.js') ?>
+      <?= js('bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js') ?>
-      <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js') ?>
       <?= js('assets/scripts/splash-home.js') ?>
-      <?= js('assets/scripts/menu.js') ?>
+      <?= js('assets/scripts/modernizr.js') ?>
+      <?= js('assets/scripts/dynamicNav.js') ?>
       <?= js('assets/scripts/main.js') ?>
       <?= js('assets/scripts/scrollmagic-magic.js') ?>
 

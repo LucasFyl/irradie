@@ -1,4 +1,4 @@
-(function(){
+/*(function(){
   'use strict';
 	var Menu = {
 		init: function(){
@@ -19,4 +19,4 @@
 
     }
   };
-})();
+})();*/

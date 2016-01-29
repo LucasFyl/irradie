@@ -1,6 +1,5 @@
 <?php snippet('head') ?>
 
-
   <div class="landing">
     <div class="top left">
       <p><?php echo $page->topleft()->html() ?></p>

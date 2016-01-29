@@ -12,6 +12,7 @@ function initPage(){
 	initMenu();
 	setFooter();
 	window.onresize = resize;
+	// Navigation.init();
 
 	if ( $('#main.home').length ) {
 		initSplashScreen();
@@ -47,7 +48,7 @@ function detectMobile(){
 }
 function hideLoader(){
 	'use strict';
-	TweenMax.to('#loader', 1, {opacity:0,display:'none',ease:Expo.easeOut});
+	TweenMax.to('#loader', 1, {opacity:0,visibility:'hidden',ease:Expo.easeOut});
 }
 function resize() {
 	'use strict';

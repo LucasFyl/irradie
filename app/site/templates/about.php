@@ -75,7 +75,7 @@
       <div class="follow">
         <h3>Follow us on:</h3>
         <?php echo $page->socialMedia()->kirbytext() ?>
-        <a href="#"><?php echo $page->newsletter()->kirbytext() ?></a>
+        <a class="ajaxy" href="<?php echo $pages->find('work/incendiaire')->url(); ?>"><?php echo $page->newsletter()->kirbytext() ?></a>
       </div>
       <div class="credit">
         <h3>Credit</h3>

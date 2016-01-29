@@ -757,7 +757,7 @@ th {
 @font-face {
   font-family: 'AtlasGrotesk-Regular-Web';
   src: url("../fonts/AtlasGrotesk-Regular-Web.eot");
-  src: url("../fonts/AtlasGrotesk-Regular-Web.eot") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Regular-Web.woff2") format("woff2"), url("../fonts/AtlasGrotesk-Regular-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-Regular-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Regular-Web.svg#AtlasGrotesk-Regular-Web") format("svg");
+  src: url("../fonts/AtlasGrotesk-Regular-Web.eot") format("embedded-opentype"), url("../fonts/AtlasGrotesk-Regular-Web.woff") format("woff"), url("../fonts/AtlasGrotesk-Regular-Web.ttf") format("truetype"), url("../fonts/AtlasGrotesk-Regular-Web.svg#AtlasGrotesk-Regular-Web") format("svg");
 }
 @font-face {
   font-family: 'AtlasGrotesk-RegularItalic-Web';
@@ -884,6 +884,19 @@ body {
 }
 body.locked {
   overflow: hidden;
+}
+
+#loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  opacity: 1;
+  visibility: visible;
 }
 
 .main {
