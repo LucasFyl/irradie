@@ -70,10 +70,13 @@ function initMenu() {
 	// openMenu
 	$(document).on('click', '.menu-trigger', function(e){
 		e.preventDefault();
-			//  Temp fix for overlaping landing on home page
-		if ( $(window).scrollTop() < $(window).height() ) {
-			TweenMax.to(window, 0.25, {scrollTo: $(window).height(),ease:Power2.easeOut});
+		//  Temp fix for overlaping landing on home page
+		if($('#main.home').length) {
+			if ( $(window).scrollTop() < $(window).height() ) {
+				TweenMax.to(window, 0.25, {scrollTo: $(window).height(),ease:Power2.easeOut});
+			}
 		}
+
 
 		$('body').addClass('locked');
 		TweenMax.to('#menu', 1, {delay:0.25,opacity:1,visibility:'visible',ease:Expo.easeOut});
