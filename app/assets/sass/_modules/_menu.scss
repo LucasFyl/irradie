@@ -68,5 +68,9 @@
     padding: 3rem;
     top: 2rem;
     right: 2rem;
+
+    @include media($mobile) {
+      font-size: 1.5rem;
+    }
   }
 }

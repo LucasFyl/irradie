@@ -13,6 +13,14 @@
       <img src="./assets/images/placeholder-background.jpg" alt="#" draggable="false" />
     </div>
   </div>
+
+  <div class="menu-mobile hide-desktop">
+    <ul>
+      <li><a href="<?php echo $pages->find('work')->url() ?>">Work</a></li>
+      <li><a href="<?php echo $pages->find('about')->url() ?>">About</a></li>
+      <li><a href="#" target="_blank">Shop</a></li>
+    </ul>
+  </div>
 </div>
 
 <header class="<?php echo $page->id() ?>">

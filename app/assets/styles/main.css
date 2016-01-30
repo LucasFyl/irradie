@@ -1045,6 +1045,32 @@ header .menu a, header .shop a {
   font-size: 1.6rem;
 }
 
+.menu-mobile {
+  height: 100vh;
+}
+.menu-mobile ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-mobile ul li {
+  width: 100%;
+  line-height: 12rem;
+}
+.menu-mobile ul li a {
+  display: block;
+  width: 100%;
+  font-size: 4.5rem;
+  color: black;
+  text-align: center;
+  font-family: "AtlasGrotesk-Medium-Web", helvetica, sans-serif;
+  text-decoration: none;
+}
+
 footer {
   background: white;
   position: relative;
@@ -1185,6 +1211,11 @@ footer > ul li a, footer > ul li p {
   padding: 3rem;
   top: 2rem;
   right: 2rem;
+}
+@media screen and (max-width: 480px) {
+  #menu a.close {
+    font-size: 1.5rem;
+  }
 }
 
 .top, .right, .bottom, .left {
