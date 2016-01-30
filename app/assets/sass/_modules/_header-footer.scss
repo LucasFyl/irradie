@@ -8,6 +8,14 @@ header {
   div.menu {
     float: left;
     border-right: 1px solid #d0d0d0;
+
+    @include media($mobile) {
+      flex: 1;
+      order:2;
+      border-right:0;
+      border-left: 1px solid #d0d0d0;
+      align-self: flex-end;
+    }
   }
   div.logo-wrap {
     flex-grow: 1;
@@ -21,10 +29,18 @@ header {
       width: 100%;
       margin: 0;
     }
+    @include media($mobile) {
+      align-self: flex-start;
+      flex:2;
+      order:1;
+    }
   }
   div.shop {
     float: right;
     border-left: 1px solid #d0d0d0;
+    @include media($mobile) {
+      display: none;
+    }
   }
 
   .menu, .shop {
@@ -50,10 +66,12 @@ footer {
   @include size(100%);
   padding-top: 8rem;
 
-  // position: fixed;
   z-index: 1;
   bottom:0;
-  // height: 25.5rem;
+
+  @include media($mobile) {
+    padding-top: 0;
+  }
 
 
   > div {
@@ -71,6 +89,12 @@ footer {
       &:hover {
         color: black;
       }
+      @include media($mobile) {
+        text-align: left;
+        padding-left: 4rem;
+        font-size: 2rem;
+        margin: 6rem 0;
+      }
     }
   }
   > ul {
@@ -82,8 +106,20 @@ footer {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+
+    @include media($mobile) {
+      flex-flow: column nowrap;
+      padding-top: 0rem;
+    }
+
     li {
       padding-bottom: 4rem;
+
+      @include media($mobile) {
+        padding-bottom: 2rem;
+        text-align: left;
+        padding-left: 4rem;
+      }
       a, p {
         margin: 0;
         display: block;
@@ -96,6 +132,9 @@ footer {
         color: #4d4d4d;
         line-height: 1;
         text-decoration: none;
+        @include media($mobile) {
+          text-align: left;
+        }
       }
     }
   }

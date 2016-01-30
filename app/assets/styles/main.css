@@ -914,6 +914,12 @@ body.locked {
   position: relative;
   padding-top: 8rem;
 }
+@media screen and (max-width: 480px) {
+  .projects {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+}
 @media screen and (min-width: 1440px) {
   .projects {
     max-width: 144rem;
@@ -930,6 +936,28 @@ body.locked {
   display: inline-block;
   vertical-align: top;
   margin: 0 5rem 5rem 0;
+  order: 4;
+}
+@media screen and (max-width: 480px) {
+  .projects figure {
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .projects figure:first-child {
+    order: 3;
+  }
+}
+@media screen and (max-width: 480px) {
+  .projects figure:nth-child(2) {
+    order: 2;
+  }
+}
+@media screen and (max-width: 480px) {
+  .projects figure:nth-child(3) {
+    order: 1;
+  }
 }
 .projects figure figcaption a {
   text-decoration: none;
@@ -942,6 +970,11 @@ body.locked {
 }
 .projects figure figcaption p span {
   color: #999999;
+}
+@media screen and (max-width: 480px) {
+  .projects figure figcaption p {
+    display: none;
+  }
 }
 .projects figure:first-child, .projects figure:nth-child(3), .projects figure:nth-child(4) {
   padding-left: 0;
@@ -958,6 +991,15 @@ header div.menu {
   float: left;
   border-right: 1px solid #d0d0d0;
 }
+@media screen and (max-width: 480px) {
+  header div.menu {
+    flex: 1;
+    order: 2;
+    border-right: 0;
+    border-left: 1px solid #d0d0d0;
+    align-self: flex-end;
+  }
+}
 header div.logo-wrap {
   flex-grow: 1;
   height: 6rem;
@@ -971,9 +1013,21 @@ header div.logo-wrap h1.logo {
   width: 100%;
   margin: 0;
 }
+@media screen and (max-width: 480px) {
+  header div.logo-wrap {
+    align-self: flex-start;
+    flex: 2;
+    order: 1;
+  }
+}
 header div.shop {
   float: right;
   border-left: 1px solid #d0d0d0;
+}
+@media screen and (max-width: 480px) {
+  header div.shop {
+    display: none;
+  }
 }
 header .menu, header .shop {
   width: 37rem;
@@ -1000,6 +1054,11 @@ footer {
   z-index: 1;
   bottom: 0;
 }
+@media screen and (max-width: 480px) {
+  footer {
+    padding-top: 0;
+  }
+}
 footer > div {
   width: 100%;
 }
@@ -1017,6 +1076,14 @@ footer > div a {
 footer > div a:hover {
   color: black;
 }
+@media screen and (max-width: 480px) {
+  footer > div a {
+    text-align: left;
+    padding-left: 4rem;
+    font-size: 2rem;
+    margin: 6rem 0;
+  }
+}
 footer > ul {
   margin: 0;
   padding: 6rem 0 0 0;
@@ -1026,8 +1093,21 @@ footer > ul {
   flex-flow: row wrap;
   justify-content: space-around;
 }
+@media screen and (max-width: 480px) {
+  footer > ul {
+    flex-flow: column nowrap;
+    padding-top: 0rem;
+  }
+}
 footer > ul li {
   padding-bottom: 4rem;
+}
+@media screen and (max-width: 480px) {
+  footer > ul li {
+    padding-bottom: 2rem;
+    text-align: left;
+    padding-left: 4rem;
+  }
 }
 footer > ul li a, footer > ul li p {
   margin: 0;
@@ -1041,6 +1121,11 @@ footer > ul li a, footer > ul li p {
   color: #4d4d4d;
   line-height: 1;
   text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  footer > ul li a, footer > ul li p {
+    text-align: left;
+  }
 }
 
 #menu {
@@ -1062,6 +1147,11 @@ footer > ul li a, footer > ul li p {
   z-index: 9;
   float: left;
   overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  #menu .half {
+    display: none;
+  }
 }
 #menu .half .cover {
   opacity: 0;
@@ -1169,6 +1259,11 @@ footer > ul li a, footer > ul li p {
   top: 50%;
   left: 50%;
 }
+@media screen and (max-width: 480px) {
+  .landing {
+    display: none !important;
+  }
+}
 
 #main.home,
 #main.work {
@@ -1180,6 +1275,11 @@ footer > ul li a, footer > ul li p {
 #main.home {
   position: relative;
   top: 100vh;
+}
+@media screen and (max-width: 480px) {
+  #main.home {
+    top: 0 !important;
+  }
 }
 
 #main.about {

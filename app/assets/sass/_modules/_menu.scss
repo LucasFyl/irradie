@@ -16,6 +16,10 @@
     float: left;
     overflow: hidden;
 
+    @include media($mobile) {
+      display: none;
+    }
+
     .cover {
       opacity: 0;
       position: relative;
