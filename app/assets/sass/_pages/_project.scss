@@ -1,9 +1,13 @@
 #main.project {
   padding: 2rem 4rem;
-
   .wrap {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    background: white;
+  }
+  @include media($desktop) {
+    .wrap {
+      padding-left: 15rem;
+      padding-right: 15rem;
+    }
   }
   .infos {
     position: relative;
@@ -93,8 +97,19 @@
     overflow: auto;
     margin-bottom: 5.5rem;
 
+    @include media($mobile)  {
+        &:last-of-type {
+        > div:first-child {
+          display: none;
+        }
+      }
+    }
+
     > div {
       @include span-columns(6);
+      @include media($mobile) {
+        @include span-columns(12);
+      }
 
       &:first-child  {
         position: relative;

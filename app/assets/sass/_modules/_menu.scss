@@ -23,7 +23,6 @@
     .cover {
       opacity: 0;
       position: relative;
-      // @include transition(opacity 0.5s ease-in);
       img {
         object-fit: cover;
         min-height: 100vh;
@@ -45,16 +44,6 @@
       position: absolute;
       z-index: 99999;
     }
-
-
-    // &.ready {
-    //   &:hover {
-    //     .cover {
-    //       opacity: 1;
-    //       @include transition(opacity 0.5s ease-out);
-    //     }
-    //   }
-    // }
   }
 
   a.close {

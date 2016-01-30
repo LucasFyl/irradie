@@ -5,6 +5,15 @@ body {
     overflow: hidden;
   }
 }
+.top, .right,.bottom, .left {
+	position: fixed;
+	z-index: 9;
+}
+.top     {top:    5rem;}
+.bottom  {top: calc(100% - 10rem);}
+.left    {left:   5rem;}
+.right   {right:  5rem;}
+
 #loader {
   @include size(100%);
   position: fixed;

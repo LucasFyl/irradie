@@ -886,6 +886,27 @@ body.locked {
   overflow: hidden;
 }
 
+.top, .right, .bottom, .left {
+  position: fixed;
+  z-index: 9;
+}
+
+.top {
+  top: 5rem;
+}
+
+.bottom {
+  top: calc(100% - 10rem);
+}
+
+.left {
+  left: 5rem;
+}
+
+.right {
+  right: 5rem;
+}
+
 #loader {
   height: 100%;
   width: 100%;
@@ -1218,27 +1239,6 @@ footer > ul li a, footer > ul li p {
   }
 }
 
-.top, .right, .bottom, .left {
-  position: fixed;
-  z-index: 9;
-}
-
-.top {
-  top: 5rem;
-}
-
-.bottom {
-  top: calc(100% - 10rem);
-}
-
-.left {
-  left: 5rem;
-}
-
-.right {
-  right: 5rem;
-}
-
 .landing {
   background: white;
   height: 100%;
@@ -1548,8 +1548,13 @@ footer > ul li a, footer > ul li p {
   padding: 2rem 4rem;
 }
 #main.project .wrap {
-  padding-left: 15rem;
-  padding-right: 15rem;
+  background: white;
+}
+@media screen and (min-width: 480px) {
+  #main.project .wrap {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
 }
 #main.project .infos {
   position: relative;
@@ -1631,6 +1636,11 @@ footer > ul li a, footer > ul li p {
   overflow: auto;
   margin-bottom: 5.5rem;
 }
+@media screen and (max-width: 480px) {
+  #main.project section:last-of-type > div:first-child {
+    display: none;
+  }
+}
 #main.project section > div {
   float: left;
   display: block;
@@ -1639,6 +1649,17 @@ footer > ul li a, footer > ul li p {
 }
 #main.project section > div:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  #main.project section > div {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+  }
+  #main.project section > div:last-child {
+    margin-right: 0;
+  }
 }
 #main.project section > div:first-child {
   position: relative;
