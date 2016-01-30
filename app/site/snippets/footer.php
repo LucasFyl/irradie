@@ -19,8 +19,9 @@
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js') ?>
+      <?= js('assets/scripts/vendors/modernizr.js') ?>
+      <?= js('assets/scripts/vendors/hoverIntent.jquery.js') ?>
       <?= js('assets/scripts/splash-home.js') ?>
-      <?= js('assets/scripts/modernizr.js') ?>
       <?= js('assets/scripts/dynamicNav.js') ?>
       <?= js('assets/scripts/main.js') ?>
       <?= js('assets/scripts/scrollmagic-magic.js') ?>

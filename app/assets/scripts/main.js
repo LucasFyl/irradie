@@ -76,8 +76,6 @@ function initMenu() {
 				TweenMax.to(window, 0.25, {scrollTo: $(window).height(),ease:Power2.easeOut});
 			}
 		}
-
-
 		$('body').addClass('locked');
 		TweenMax.to('#menu', 1, {delay:0.25,opacity:1,visibility:'visible',ease:Expo.easeOut});
 		TweenMax.fromTo('#menu .half a', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Expo.easeOut,delay:0.6,onComplete:function(){
@@ -104,6 +102,13 @@ function initMenu() {
 			TweenMax.to(target,0.5,{opacity:0,ease:Power2.easeInOut});
     }
 	}, '.half.ready > a');
+	// $('.half.ready > a').hoverIntent(function(){
+	// 		var target = $(this).next('.cover');
+	// 		TweenMax.to(target,0.5,{opacity:1,ease:Power2.easeInOut});
+	// },function(){
+	// 		var target = $(this).next('.cover');
+	// 		TweenMax.to(target,0.5,{opacity:0,ease:Power2.easeInOut});
+	// });
 }
 function setFooter() {
 	'use strict';
