@@ -71,7 +71,7 @@ function initMenu() {
 	$(document).on('click', '.menu-trigger', function(e){
 		e.preventDefault();
 		//  Temp fix for overlaping landing on home page
-		if($('#main.home').length) {
+		if($('#main.home').length && isMobile === false) {
 			if ( $(window).scrollTop() < $(window).height() ) {
 				TweenMax.to(window, 0.25, {scrollTo: $(window).height(),ease:Power2.easeOut});
 			}

@@ -12,6 +12,7 @@
         </ul>
       </footer>
     </div>
+    <div class="isMobile"></div>
 
       <?= js('bower_components/jquery/dist/jquery.js') ?>
       <?= js('bower_components/gsap/src/uncompressed/TweenMax.js') ?>
