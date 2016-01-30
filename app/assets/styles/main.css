@@ -997,10 +997,8 @@ footer {
   height: 100%;
   width: 100%;
   padding-top: 8rem;
-  position: fixed;
   z-index: 1;
   bottom: 0;
-  height: 25.5rem;
 }
 footer > div {
   width: 100%;

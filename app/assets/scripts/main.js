@@ -112,8 +112,9 @@ function initMenu() {
 }
 function setFooter() {
 	'use strict';
-	var footerH = '25.5rem';
-	TweenMax.set('#main', {marginBottom:footerH});
+	var footerH = $('footer').height() + 80;
+	TweenMax.set('#main', {marginBottom: footerH});
+	TweenMax.set('footer', {position:'fixed', height:footerH});
 }
 $(document).ready(function(){
 	'use strict';
