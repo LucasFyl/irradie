@@ -99,9 +99,9 @@ body {
     &:nth-child(2)  { @include size(92rem 54rem);   top:8rem;       right: 0;}
     &:nth-child(3)  { @include size(30rem 23rem);   top: 43rem;     left: 0;}
     &:nth-child(4)  { @include size(48rem 67.5rem); top: 81rem;     left: 0;}
-    &:nth-child(5)  { @include size(30rem 23rem);   top: 76rem;     left:66rem;}
+    &:nth-child(5)  { @include size(30rem 23rem);   top: 76rem;     left: 47%;}
     &:nth-child(6)  { @include size(30rem 40.4rem); top: 76rem;     right: 0;}
-    &:nth-child(7)  { @include size(30rem 44rem);   top: 123.5rem;  left:66rem;}
+    &:nth-child(7)  { @include size(30rem 44rem);   top: 123.5rem;  left: 47%;}
     &:nth-child(8)  { @include size(30rem 23rem);   top: 130rem;    right: 0;}
     &:nth-child(9)  { @include size(92rem 54rem);   top: 175.5rem;  left: 0;}
     &:nth-child(10) { @include size(30rem 23rem);   top: 167rem;    right: 0;}

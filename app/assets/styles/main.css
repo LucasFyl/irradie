@@ -124,9 +124,14 @@ html {
     font-size: 71.4%;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 1000px) and (max-width: 1350px) {
   html {
-    font-size: 40%;
+    font-size: 52%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  html {
+    font-size: 24%;
   }
 }
 
@@ -1012,7 +1017,7 @@ body.locked {
   height: 23rem;
   width: 30rem;
   top: 76rem;
-  left: 66rem;
+  left: 47%;
 }
 .projects figure:nth-child(6) {
   height: 40.4rem;
@@ -1024,7 +1029,7 @@ body.locked {
   height: 44rem;
   width: 30rem;
   top: 123.5rem;
-  left: 66rem;
+  left: 47%;
 }
 .projects figure:nth-child(8) {
   height: 23rem;
