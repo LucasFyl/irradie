@@ -4,7 +4,13 @@
 html {
     font-family: $base-font;
     font-size: 62.5%;
-    @include media($isMobile) {
+    @include media(min-width 1920px) {
+      font-size: 83.3%;
+    }
+    @include media(min-width 1450px max-width 1920px)  {
+      font-size: 71.4%;
+    }
+    @include media(max-width 1100px) {
       font-size: 40%;
     }
 }
