@@ -8,6 +8,10 @@
 			if ( $('#main.home').length ) {
 				this.home(controller);
 			}
+
+      if ( $('.projects').length ) {
+        this.projects(controller);
+      }
 		},
 		about: function(controller){
 			console.log('controller:',controller);
@@ -50,22 +54,40 @@
         .setTween(splashTween);
 
 		},
-		work: function(controller){
-			// var UJheight = $('article.first').height();
-			// var UJTween1 = new TweenMax.to('article.first .big', 0.25, {top:'-=60rem',ease:Linear.easeNone});
-			// var UJTween2 = new TweenMax.to('article.first .small', 0.25, {top:'-=20rem',ease:Linear.easeNone});
-			// var UJscene1 = new ScrollMagic.Scene({
-			// 		triggerElement: 'article.first',
-			// 		triggerHook: 'onLeave',
-			// 		duration: UJheight
-			// 	}).addTo(controller)
-			// 	.setTween(UJTween1);
-			// var UJscene2 = new ScrollMagic.Scene({
-			// 		triggerElement: 'article.first',
-			// 		triggerHook: 'onLeave',
-			// 		duration: UJheight
-			// 	}).addTo(controller)
-			// 	.setTween(UJTween2);
+		projects: function(controller){
+
+        var el = $('.projects figure'),
+            length = el.length;
+
+        // console.log(el, length);
+        var duration = $('.projects').height();
+        TweenMax.set(el, {y:'+=100px'});
+
+        for (var i = 0; i < length; i++) {
+          var element = el[i];
+          var tween = TweenMax.to(element, 0.75, {y:'-=200px',ease:Power3.easeOut});
+          var projectsTween = new ScrollMagic.Scene({
+            triggerElement: element,
+            triggerHook: 0.5,
+            duration: duration
+          }).addTo(controller)
+          .setTween(tween);
+        }
+        //  Scene for 4 small texts : graphic design art direction
+        // var duration = $('.projects').height();
+        // $('.projects figure').each(function(duration){
+        //   var _this = $(this),
+        //       _this1 = this;
+        //   // TweenMax.set(_this, {y:'+=10rem'});
+        //
+        //   var tween = TweenMax.to(_this, 0.75, {top:'+=100px',ease:Power2.easeOut});
+        //   var projectsTween = new ScrollMagic.Scene({
+        //     triggerElement: _this,
+        //     triggerHook: 0.5,
+        //     duration: duration
+        //   }).addTo(controller)
+        //   .setTween(tween);
+        // });
 		}
 	};
 	MagicStuff.init();
