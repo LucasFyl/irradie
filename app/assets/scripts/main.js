@@ -41,7 +41,7 @@ function detectMobile(){
 }
 function hideLoader(){
 	'use strict';
-	TweenMax.to('#loader', 1, {opacity:0,visibility:'hidden',ease:Expo.easeOut});
+	TweenMax.to('#loader', 1, {opacity:0,visibility:'hidden',display:'none',ease:Power2.easeOut});
 }
 function resize() {
 	'use strict';
@@ -125,7 +125,42 @@ function glitchifyImg() {
 }
 function initMousewheel() {
 	'use strict';
+	var g1 = $('.gallery-1');
+	var g2 = $('.gallery-2');
+
+	var g1h = g1.find('figure:first').height();
+	var g2h = g2.find('figure:first').height();
+	var g1w = 0;
+	var g2w = 0;
+
+	TweenMax.set(g1, {height:g1h});
+	TweenMax.set(g2, {height:g2h});
+
+	g1.find('figure').each( function(index, element){
+		var style = element.currentStyle || window.getComputedStyle(element),
+			width = element.offsetWidth,
+			margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+		g1w = g1w + (width + margin); 
+		// console.log(width, margin);
+	});
+
+	g2.find('figure').each( function(index, element){
+		var style = element.currentStyle || window.getComputedStyle(element),
+			width = element.offsetWidth,
+			margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
+		g2w = g2w + width + margin; 
+	});
 	
+	var wrap1 = g1.find('.wrap');
+	var wrap2 = g2.find('.wrap');
+
+	TweenMax.set(wrap1, {width:g1w});
+	TweenMax.set(wrap2, {width:g2w});
+
+   $('.gallery').mousewheel(function(event, delta) {
+      this.scrollLeft -= (delta * 2);
+      event.preventDefault();
+   });
 }
 $(document).ready(function(){
 	'use strict';
