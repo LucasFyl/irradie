@@ -20,6 +20,7 @@
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js') ?>
+      <?= js('bower_components/jquery-mousewheel/jquery.mousewheel.js') ?>
       <?= js('assets/scripts/vendors/modernizr.js') ?>
       <?= js('assets/scripts/splash-home.js') ?>
       <?= js('assets/scripts/dynamicNav.js') ?>

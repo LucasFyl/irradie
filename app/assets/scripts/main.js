@@ -18,6 +18,9 @@ function initPage(){
 		glitchifyImg();
 		// initSplashScreen();
 	}
+	if ( $('#main.about').length ) {
+		initMousewheel();
+	}
 
 	setTimeout(hideLoader, 250);
 }
@@ -119,7 +122,10 @@ function glitchifyImg() {
 	}
 	update();
 	setInterval(update, 26);
-
+}
+function initMousewheel() {
+	'use strict';
+	
 }
 $(document).ready(function(){
 	'use strict';
