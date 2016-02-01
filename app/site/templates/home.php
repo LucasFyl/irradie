@@ -18,7 +18,10 @@
 
     <div class="fixed-wrap">
       <div class="cover">
-        <img src="/assets/images/placeholder-background.jpg" alt="#" class="background" />
+        <div class="background-wrap">
+          <img width="470" height="659" class="glitch" />
+        </div>
+        <!-- <img src="/assets/images/placeholder-background.jpg" alt="#" class="background" /> -->
       </div>
     </div>
 

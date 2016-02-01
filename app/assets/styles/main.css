@@ -1393,21 +1393,23 @@ footer > ul li a, footer > ul li p {
   z-index: 1;
   width: 100%;
   top: 50%;
-  margin-top: -33rem;
+  margin-top: -330px;
 }
 .landing .cover {
-  height: 66rem;
-  width: 47rem;
+  height: 659px;
+  width: 470px;
   position: relative;
   left: 50%;
-  margin-left: -23.5rem;
+  margin-left: -235px;
   overflow: hidden;
 }
 .landing .cover .background {
   position: absolute;
-  max-width: none;
   top: 50%;
   left: 50%;
+}
+.landing .cover .background img {
+  max-width: none;
 }
 @media screen and (max-width: 480px) {
   .landing {
