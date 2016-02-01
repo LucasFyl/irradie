@@ -1502,6 +1502,9 @@ footer > ul li a, footer > ul li p {
   width: 31.7615656014%;
   margin-left: 17.0596085997%;
   background-position: left 4rem;
+  background-size: contain;
+  padding-bottom: 4rem;
+  box-sizing: content-box;
 }
 #main.about .intro .image:last-child {
   margin-right: 0;

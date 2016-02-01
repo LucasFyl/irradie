@@ -49,6 +49,9 @@ $grey: #999999;
       @include span-columns(4);
       @include shift(2);
       background-position: left 4rem;
+      background-size: contain;
+      padding-bottom: 4rem;
+      box-sizing: content-box;
     }
     .text {
       @include span-columns(5);
