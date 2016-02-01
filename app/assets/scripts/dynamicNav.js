@@ -4,7 +4,7 @@
 (function(){
   'use strict';
 	function loadContent(_href) {
-    TweenMax.to(window, 0.5, {scrollTo:0,ease:Power2.easeOut});
+    TweenMax.to(window, 1, {scrollTo:0,ease:Power2.easeOut});
 		TweenMax.to('#loader', 0.5, {delay:0.5,opacity:1,visibility:'visible',onComplete:function(){
 			window.location.href = _href;
 		}});
