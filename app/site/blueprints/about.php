@@ -4,6 +4,9 @@ title: About
 pages: true
 files: true
 fields:
+  General:
+    label: General informations
+    type: headline
   title:
     label: Title
     type:  text
@@ -15,6 +18,9 @@ fields:
     label: First text
     type:  textarea
     help: first paragraph, above the first gallery
+  SCSOP:
+    label: Services, Clients & Selected Online Press
+    type: headline
   services:
     label: Services
     type:  textarea
@@ -43,10 +49,55 @@ fields:
     buttons:
       - link
       - email
+  Publications:
+    label: Publications
+    type: headline
+  rowPublications1:
+    label: Colonne 1
+    type: textarea
+    buttons: 
+      - link
+    width: 1/3
+  rowPublications2:
+    label: Colonne 2
+    type: textarea
+    buttons: 
+      - link
+    width: 1/3
+  rowPublications3:
+    label: Colonne 3
+    type: textarea
+    buttons: 
+      - link
+    width: 1/3
+  Exhibitions:
+    label: Exhibitions
+    type: headline
+  rowExhibitions1:
+    label: Colonne 1
+    type: textarea
+    buttons: 
+      - link
+    width: 1/3
+  rowExhibitions2:
+    label: Colonne 2
+    type: textarea
+    buttons: 
+      - link
+    width: 1/3
+  rowExhibitions3:
+    label: Colonne 3
+    type: textarea
+    buttons: 
+      - link
+    width: 1/3
   secondText:
     label: Second text
     type:  textarea
     help: second paragraph, above the second gallery
+  contact:
+    label: Contact / Social informations
+    type: headline
   contactInfos:
     label: Contact informations
     type: textarea

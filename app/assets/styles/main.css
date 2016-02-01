@@ -1605,6 +1605,44 @@ footer > ul li a, footer > ul li p {
   text-transform: capitalize;
   color: #999999;
 }
+#main.about .gallery figure.infos {
+  width: 118rem;
+  height: 55.5rem;
+  overflow: auto;
+  margin: 0;
+}
+#main.about .gallery figure.infos > div {
+  display: inline-block;
+  float: left;
+}
+#main.about .gallery figure.infos .title-wrap {
+  width: 27.5rem;
+  height: 55.5rem;
+}
+#main.about .gallery figure.infos .title-wrap h3 {
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  font-family: "arn-webfont", trebuchet, sans-serif;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#main.about .gallery figure.infos .title-wrap h3 span {
+  display: block;
+  transform: rotate(-90deg);
+}
+#main.about .gallery figure .row {
+  margin-left: 7.7rem;
+  padding-top: 9rem;
+}
+#main.about .gallery figure .row p {
+  font-size: 1.1rem;
+  color: #999999;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
 #main.about .separation {
   width: 100%;
   margin-top: 7.5rem;

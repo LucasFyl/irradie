@@ -133,6 +133,46 @@ $grey: #999999;
           color: $grey;
         }
       }
+      &.infos {
+        width: 118rem;
+        height: 55.5rem;
+        overflow: auto;
+        margin: 0;
+
+        > div {
+          display: inline-block;
+          float: left;
+        }
+        .title-wrap {
+          width: 27.5rem;
+          height: 55.5rem;
+          h3 {
+            font-size: 2.1rem;
+            line-height: 2.1rem;
+            font-family: $arn;
+            color: white; 
+            text-align: center;
+            
+            position: relative;
+            top: 50%; @include transform(translateY(-50%));
+            
+            span {
+              display: block;
+              @include transform(rotate(-90deg));
+            }
+          }
+        }
+      }
+      .row {
+        margin-left: 7.7rem;
+        padding-top: 9rem;
+        p {
+          font-size: 1.1rem;
+          color: $grey;
+          text-transform: uppercase;
+          line-height: 1.5;
+        }
+      }
     }
   }
   .separation {

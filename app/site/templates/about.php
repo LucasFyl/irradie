@@ -42,6 +42,20 @@
   				  </figcaption>
   				</figure>
   			<?php endforeach; ?>
+          <figure class="infos">
+            <div class="title-wrap">
+              <h3><span>Publications</span></h3>
+            </div>
+            <div class="row">
+              <?php echo $page->rowPublications1()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowPublications2()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowPublications3()->kirbytext() ?>
+            </div>
+          </figure>
       </div>
     </div>
 
@@ -62,6 +76,20 @@
   				  </figcaption>
   				</figure>
   			<?php endforeach; ?>
+          <figure class="infos">
+            <div class="title-wrap">
+              <h3><span>Exhibitions</span></h3>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions1()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions2()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions3()->kirbytext() ?>
+            </div>
+          </figure>
       </div>
     </div>
 

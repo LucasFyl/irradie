@@ -7,9 +7,9 @@ password: >
 language: en
 role: admin
 history:
+  - about
   - work/liberation
   - work/incendiaire
-  - about
   - home
   - work/notebook
 firstname: Lucas
