@@ -9,8 +9,6 @@ function initPage(){
 	'use strict';
 	detectMobile();
 
-	setFooter();
-	initMenu();
 
 	window.onresize = resize;
 
@@ -22,7 +20,9 @@ function initPage(){
 		initMousewheel();
 	}
 
+	setTimeout(setFooter, 200);
 	setTimeout(hideLoader, 250);
+	setTimeout(initMenu, 300);
 }
 function initSplashScreen() {
 	'use strict';
@@ -130,8 +130,8 @@ function initMousewheel() {
 
 	var g1h = g1.find('figure:first').height();
 	var g2h = g2.find('figure:first').height();
-	var g1w = 0;
-	var g2w = 0;
+	var g1w = 10;
+	var g2w = 10;
 
 	TweenMax.set(g1, {height:g1h});
 	TweenMax.set(g2, {height:g2h});
