@@ -157,11 +157,11 @@ function initMousewheel() {
 	TweenMax.set(wrap1, {width:g1w});
 	TweenMax.set(wrap2, {width:g2w});
 
-    $('.gallery').mousewheel(function(event, delta) {
-      this.scrollLeft -= (delta * 2);
-      console.log(event.deltaX, event.deltaY, event.deltaFactor);
-      event.preventDefault();
-    });
+    // $('.gallery').mousewheel(function(event, delta) {
+    //   this.scrollLeft -= (delta * 2);
+    //   console.log(event.deltaX, event.deltaY, event.deltaFactor);
+    //   event.preventDefault();
+    // });
 
 	// var lastScrollTop = 0;
 	// $(window).on('wheel', function(event){

@@ -1610,7 +1610,7 @@ footer > ul li a, footer > ul li p {
 }
 #main.about .gallery figure.infos {
   width: 118rem;
-  height: 55.5rem;
+  height: 555px;
   overflow: auto;
   margin: 0;
 }
@@ -1620,7 +1620,7 @@ footer > ul li a, footer > ul li p {
 }
 #main.about .gallery figure.infos .title-wrap {
   width: 27.5rem;
-  height: 55.5rem;
+  height: 555px;
 }
 #main.about .gallery figure.infos .title-wrap h3 {
   font-size: 2.1rem;

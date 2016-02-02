@@ -8,13 +8,34 @@
 			if ( $('#main.home').length ) {
 				this.home(controller);
 			}
+      if ( $('#main.about').length ) {
+        this.about(controller);
+      }
 
       if ( $('.projects').length ) {
         this.projects(controller);
       }
+
+
 		},
 		about: function(controller){
-			console.log('controller:',controller);
+      var el = $('.gallery');
+      var duration = $(window).height();
+      // For each gallery, trigger horizontal scroll when in viewport until it leaves:
+      el.each(function(index, value){
+        var element = $(value),
+            wrap = element.find('.wrap');
+
+        // var fixedPageTween = TweenMax.set('body', {overflow:'hidden'});
+        var galleryTween = TweenMax.to(wrap, 0.25, {x:'-60%',ease:Linear.easeNone});
+        var galleryScene = new ScrollMagic.Scene({
+          triggerElement: this,
+          triggerHook: 'onEnter',
+          duration: duration,
+          offset: 0
+        }).addTo(controller)
+        .setTween(galleryTween);
+      });
 		},
     home: function(controller){
       //  Scene for 4 small texts : graphic design art direction
@@ -58,12 +79,10 @@
 
         var el = $('.projects figure'),
             length = el.length;
-
-        // console.log(el, length);
         // var duration = $('.projects').height();
-        var duration = $(window).height();
+        var duration = $(window).height() * 1.5;
         TweenMax.set(el, {y:50});
-
+        // Pour chaque figure dans .projects, when reaches 0.25 viewport anim y :
         for (var i = 0; i < length; i++) {
           var element = el[i];
           var tween = TweenMax.to(element, 0.75, {y:0,ease:Power2.easeOut});
@@ -74,21 +93,6 @@
           }).addTo(controller)
           .setTween(tween);
         }
-        //  Scene for 4 small texts : graphic design art direction
-        // var duration = $('.projects').height();
-        // $('.projects figure').each(function(duration){
-        //   var _this = $(this),
-        //       _this1 = this;
-        //   // TweenMax.set(_this, {y:'+=10rem'});
-        //
-        //   var tween = TweenMax.to(_this, 0.75, {top:'+=100px',ease:Power2.easeOut});
-        //   var projectsTween = new ScrollMagic.Scene({
-        //     triggerElement: _this,
-        //     triggerHook: 0.5,
-        //     duration: duration
-        //   }).addTo(controller)
-        //   .setTween(tween);
-        // });
 		}
 	};
 	MagicStuff.init();
