@@ -21,7 +21,7 @@
       var topEl = $('.landing .top'),
           bottomEl = $('.landing .bottom'),
           duration = $('.landing').height() / 2,
-          textTween = TweenMax.to([topEl, bottomEl], 0.25, {top:'-=10rem',opacity:0,ease:Linear.easeNone});
+          textTween = TweenMax.to([topEl, bottomEl], 0.25, {top:'-=5rem',opacity:0,ease:Linear.easeNone});
       var landingTextScene = new ScrollMagic.Scene({
       		triggerElement: '#main',
       		triggerHook: 'onEnter',
@@ -60,15 +60,16 @@
             length = el.length;
 
         // console.log(el, length);
-        var duration = $('.projects').height();
-        TweenMax.set(el, {y:'+=100px'});
+        // var duration = $('.projects').height();
+        var duration = $(window).height();
+        TweenMax.set(el, {y:50});
 
         for (var i = 0; i < length; i++) {
           var element = el[i];
-          var tween = TweenMax.to(element, 0.75, {y:'-=200px',ease:Power3.easeOut});
+          var tween = TweenMax.to(element, 0.75, {y:0,ease:Power2.easeOut});
           var projectsTween = new ScrollMagic.Scene({
             triggerElement: element,
-            triggerHook: 0.5,
+            triggerHook: 0.25,
             duration: duration
           }).addTo(controller)
           .setTween(tween);
