@@ -7,9 +7,10 @@
 		init: function(){
 			if ( $('#main.home').length ) {
 				this.home(controller);
-			}
-      if ( $('#main.about').length ) {
+			} else if ( $('#main.about').length ) {
         this.about(controller);
+      } else if ( $('#main.project').length ) {
+        this.project(controller);
       }
 
       if ( $('.projects').length ) {
@@ -93,7 +94,24 @@
           }).addTo(controller)
           .setTween(tween);
         }
-		}
+		},
+    project: function(controller) {
+      var el = $('#main .wrap > img'),
+          duration = $(window).height();
+
+      TweenMax.set(el, {y:50});
+
+      el.each(function(index, value){
+        var tween = TweenMax.to(value, 0.75, {y:0,ease:Power2.easeOut});
+        var projectTween = new ScrollMagic.Scene({
+          triggerElement: value,
+          triggerHook: 0.8,
+          duration: duration
+        }).addTo(controller)
+        .setTween(tween);
+      });
+
+    }
 	};
 	MagicStuff.init();
 })();
