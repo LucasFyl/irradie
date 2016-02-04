@@ -1359,36 +1359,36 @@ footer > ul li a, footer > ul li p {
 }
 
 .block-prevnext {
+  height: 73rem;
+  width: 8.8rem;
   position: fixed;
-  top: 50%;
+  top: 3.5rem;
   transform: translateZ(0);
-  transform: rotate(-90deg);
-}
-.block-prevnext:after {
-  content: " ";
-  width: 90vh;
-  height: 1px;
-  position: absolute;
-  background: #b4b4b4;
-  left: -30vh;
 }
 .block-prevnext.prev {
   left: 0;
-}
-.block-prevnext.prev:after {
-  bottom: -1rem;
+  border-right: 1px solid #b4b4b4;
 }
 .block-prevnext.next {
   right: 0;
+  border-left: 1px solid #b4b4b4;
 }
-.block-prevnext.next:after {
-  top: -1rem;
+.block-prevnext .title-block {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .block-prevnext .title-block a {
+  transform: rotate(-90deg);
+  display: block;
   text-decoration: none;
   color: #3e3e3e;
+  width: 250%;
+  position: absolute;
+  left: -6rem;
 }
 .block-prevnext .title-block p {
+  display: block;
   text-align: center;
   font-size: 1.3rem;
   letter-spacing: .1rem;
