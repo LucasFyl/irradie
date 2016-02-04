@@ -16,7 +16,5 @@
         </a>
       </figcaption>
     </figure>
-
-
   <?php endforeach; ?>
 </div>

@@ -3,3 +3,23 @@ Title: Dark Sand
 ----
 
 Text: 
+
+----
+
+Year: 
+
+----
+
+Client: 
+
+----
+
+Projecttype1: Editorial
+
+----
+
+Projecttype2: 
+
+----
+
+Text2: 

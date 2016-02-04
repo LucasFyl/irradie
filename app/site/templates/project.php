@@ -2,6 +2,7 @@
   <div id="main" class="main project <?php echo $page->id() ?>">
 
     <?php snippet('header') ?>
+
     <div class="wrap">
       <div class="infos">
         <h1><?php echo $page->title() ?>
@@ -50,5 +51,7 @@
         <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
       <?php endforeach; ?>
     </div>
+    <?php snippet('prev-next') ?>
+    
   </div>
   <?php snippet('footer') ?>
