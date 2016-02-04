@@ -14,10 +14,10 @@ function initPage(){
 
 	if ( $('#main.home').length ) {
 		glitchifyImg();
-		// initSplashScreen();
-	}
-	if ( $('#main.about').length ) {
+	} else if ( $('#main.about').length ) {
 		initMousewheel();
+	} else if ( $('#main.project').length ) {
+		initNextPrev();
 	}
 
 	setTimeout(setFooter, 200);
@@ -156,24 +156,18 @@ function initMousewheel() {
 
 	TweenMax.set(wrap1, {width:g1w});
 	TweenMax.set(wrap2, {width:g2w});
+}
+function initNextPrev() {
 
-    // $('.gallery').mousewheel(function(event, delta) {
-    //   this.scrollLeft -= (delta * 2);
-    //   console.log(event.deltaX, event.deltaY, event.deltaFactor);
-    //   event.preventDefault();
-    // });
+	$(document).on({
+	    mouseenter: function () {
+			$(this).addClass('active');
+	    },
+	    mouseleave: function () {
+			$(this).removeClass('active');
+	    }
+	}, '.block-prevnext');
 
-	// var lastScrollTop = 0;
-	// $(window).on('wheel', function(event){
-	// 	var delta = e.originalEvent.deltaY;
-
-	// 	if (delta > 0) {
-	// 		// $('body').text('down');
-	// 	}
-	// 	else {
-	// 		// $('body').text('up');
-	// 	}
-	// });
 }
 $(document).ready(function(){
 	'use strict';
