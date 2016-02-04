@@ -11,7 +11,7 @@
 
 	<div class="img-wrap">
 		<?php foreach ($page->prev()->images()->slice(1, 3) as $image): ?>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->prev()->title() ?>" />
+        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->prev()->title() ?>" / draggable="false">
 		<?php endforeach; ?>
 	</div>
 </div>
@@ -29,7 +29,7 @@
 	</div>
 	<div class="img-wrap">
 		<?php foreach ($page->next()->images()->slice(1, 3) as $image): ?>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->next()->title() ?>" />
+        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->next()->title() ?>" / draggable="false">
 		<?php endforeach; ?>
 	</div>
 </div>

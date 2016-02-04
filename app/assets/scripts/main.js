@@ -159,28 +159,32 @@ function initMousewheel() {
 }
 function initNextPrev() {
 
+	var onEnter = new TimelineMax();
+	var onLeave = new TimelineMax();
+	var _this, imgWrap, img;
+	
 	$(document).on({
 	    mouseenter: function () {
-	    	var _this = this,
-	    		imgWrap = $(_this).find('.img-wrap'),
-	    		img     = imgWrap.find('img');
-
-	    	TweenMax.set(imgWrap, {visibility:'visible'});
-	    	TweenMax.to(_this, 0.5, {width:'20.5rem',ease:Power2.easeOut});
-	    	TweenMax.staggerFromTo(img, 0.5, {opacity:0,y:50}, {opacity:1,y:0,delay:0.25,ease:Power2.easeOut}, 0.1);
-
-	    	// TweenMax.to('header, .wrap', 0.5, {x:'13%',ease:Power2.easeOut});
+	    	_this = this,
+    		imgWrap = $(_this).find('.img-wrap'),
+    		img     = imgWrap.find('img');
+	    	onEnter
+			  	.to(_this, 0.5, {width:'20.5rem',ease:Power2.easeOut})
+	    		.set(imgWrap, {visibility:'visible'})
+			  	.staggerFromTo(img, 0.3, {opacity:0,y:50}, {opacity:1,y:0,ease:Power2.easeOut}, 0.1);
+			
+			onEnter.play();
 	    },
 	    mouseleave: function () {
 	    	var _this = this,
 	    		imgWrap = $(_this).find('.img-wrap'),
 	    		img     = imgWrap.find('img');
-
-	    	TweenMax.set(imgWrap, {visibility:'hidden',delay:0.8});
-	    	TweenMax.to(_this, 0.25, {width:'8.8rem',delay:0.18,ease:Power2.easeIn});
-	    	TweenMax.to(img, 0.35, {opacity:0,y:100,ease:Power1.easeIn});
-
-			// TweenMax.to('header, .wrap', 0.25, {x:0,ease:Power1.easeIn});
+			onLeave
+			  	.staggerTo(img, 0.35, {opacity:0,y:100,ease:Power2.easeIn}, 0.1)
+			  	.to(_this, 0.25, {width:'8.8rem',ease:Power2.easeIn})
+				.set(imgWrap, {visibility:'hidden',delay:0.8});
+			
+			onLeave.play();
 	    }
 	}, '.block-prevnext');
 
