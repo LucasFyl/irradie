@@ -171,7 +171,7 @@ function initNextPrev() {
 	    	onEnter
 			  	.to(_this, 0.5, {width:'20.5rem',ease:Power2.easeOut})
 	    		.set(imgWrap, {visibility:'visible'})
-			  	.staggerFromTo(img, 0.3, {opacity:0,y:50}, {opacity:1,y:0,ease:Power2.easeOut}, 0.1);
+			  	.staggerFromTo(img, 0.3, {opacity:0,y:30}, {opacity:1,y:0,ease:Power2.easeOut}, 0.1);
 			
 			onEnter.play();
 	    },
@@ -180,7 +180,7 @@ function initNextPrev() {
 	    		imgWrap = $(_this).find('.img-wrap'),
 	    		img     = imgWrap.find('img');
 			onLeave
-			  	.staggerTo(img, 0.35, {opacity:0,y:100,ease:Power2.easeIn}, 0.1)
+			  	.staggerTo(img, 0.35, {opacity:0,y:20,ease:Power2.easeIn}, 0.1)
 			  	.to(_this, 0.25, {width:'8.8rem',ease:Power2.easeIn})
 				.set(imgWrap, {visibility:'hidden',delay:0.8});
 			
