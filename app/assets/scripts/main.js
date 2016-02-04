@@ -161,10 +161,26 @@ function initNextPrev() {
 
 	$(document).on({
 	    mouseenter: function () {
-			$(this).addClass('active');
+	    	var _this = this,
+	    		imgWrap = $(_this).find('.img-wrap'),
+	    		img     = imgWrap.find('img');
+
+	    	TweenMax.set(imgWrap, {visibility:'visible'});
+	    	TweenMax.to(_this, 0.5, {width:'20.5rem',ease:Power2.easeOut});
+	    	TweenMax.staggerFromTo(img, 0.5, {opacity:0,y:50}, {opacity:1,y:0,delay:0.25,ease:Power2.easeOut}, 0.1);
+
+	    	// TweenMax.to('header, .wrap', 0.5, {x:'13%',ease:Power2.easeOut});
 	    },
 	    mouseleave: function () {
-			$(this).removeClass('active');
+	    	var _this = this,
+	    		imgWrap = $(_this).find('.img-wrap'),
+	    		img     = imgWrap.find('img');
+
+	    	TweenMax.set(imgWrap, {visibility:'hidden',delay:0.8});
+	    	TweenMax.to(_this, 0.25, {width:'8.8rem',delay:0.18,ease:Power2.easeIn});
+	    	TweenMax.to(img, 0.35, {opacity:0,y:100,ease:Power1.easeIn});
+
+			// TweenMax.to('header, .wrap', 0.25, {x:0,ease:Power1.easeIn});
 	    }
 	}, '.block-prevnext');
 

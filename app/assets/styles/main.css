@@ -1422,7 +1422,6 @@ footer > ul li a, footer > ul li p {
   display: block;
   margin-bottom: 3.5rem !important;
   opacity: 0;
-  visibility: hidden;
 }
 .block-prevnext .img-wrap img:last-child {
   margin-bottom: 0 !important;
