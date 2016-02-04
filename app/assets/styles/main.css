@@ -1358,6 +1358,68 @@ footer > ul li a, footer > ul li p {
   }
 }
 
+.block-prevnext {
+  position: fixed;
+  top: 50%;
+  transform: translateZ(0);
+  transform: rotate(-90deg);
+}
+.block-prevnext:after {
+  content: " ";
+  width: 90vh;
+  height: 1px;
+  position: absolute;
+  background: #b4b4b4;
+  left: -30vh;
+}
+.block-prevnext.prev {
+  left: 0;
+}
+.block-prevnext.prev:after {
+  bottom: -1rem;
+}
+.block-prevnext.next {
+  right: 0;
+}
+.block-prevnext.next:after {
+  top: -1rem;
+}
+.block-prevnext .title-block a {
+  text-decoration: none;
+  color: #3e3e3e;
+}
+.block-prevnext .title-block p {
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: .1rem;
+}
+.block-prevnext .title-block p span {
+  color: #999999;
+}
+@media screen and (max-width: 480px) {
+  .block-prevnext .title-block p {
+    display: none;
+  }
+}
+.block-prevnext .img-wrap {
+  position: fixed;
+  top: -15rem;
+  left: 4.5rem;
+  transform: rotate(90deg);
+  width: 10.7rem;
+  opacity: 0;
+  visibility: hidden;
+}
+.block-prevnext .img-wrap img {
+  width: 10.7rem !important;
+  height: 7.1rem !important;
+  display: block;
+  margin-bottom: 3.5rem !important;
+}
+.block-prevnext .img-wrap img:last-child {
+  margin-bottom: 0 !important;
+}
+
 .landing {
   background: white;
   height: 100%;
