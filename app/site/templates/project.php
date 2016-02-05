@@ -24,8 +24,15 @@
         </div>
       </div>
 
-      <?php foreach($page->images()->sortBy('asc')->slice(1, 2) as $image): ?>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
+      <!-- Get images - cover, limit 2 -->
+
+      <?php $images = $page->images()->sortBy('title', 'asc')->slice(1, 2) ?>
+      <?php foreach ($images as $image): ?>
+        <?php  if(substr($image, -8) === 'half.jpg'): ?>
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" class="half"/>
+        <?php else : ?>
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
+        <?php endif; ?>
       <?php endforeach; ?>
 
       <section>
@@ -37,8 +44,13 @@
         </div>
       </section>
 
-      <?php foreach($page->images()->sortBy('asc')->slice(3,4) as $image): ?>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
+      <?php $images = $page->images()->sortBy('title', 'asc')->slice(3, 4) ?>
+      <?php foreach ($images as $image): ?>
+        <?php  if(substr($image, -8) === 'half.jpg'): ?>
+         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" class="half"/>
+        <?php else : ?>
+         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
+        <?php endif; ?>
       <?php endforeach; ?>
 
 
@@ -47,10 +59,17 @@
         <div><?php echo $page->text2()->kirbytext() ?></div>
       </section>
 
-      <?php foreach($page->images()->sortBy('asc')->slice(7) as $image): ?>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
+      <?php $images = $page->images()->sortBy('title', 'asc')->slice(7) ?>
+      <?php foreach ($images as $image): ?>
+        <?php  if(substr($image, -8) === 'half.jpg'): ?>
+         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" class="half"/>
+        <?php else : ?>
+         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
+        <?php endif; ?>
       <?php endforeach; ?>
     </div>
+
+
     <?php snippet('prev-next') ?>
     
   </div>
