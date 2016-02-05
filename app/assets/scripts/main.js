@@ -15,7 +15,7 @@ function initPage(){
 	if ( $('#main.home').length ) {
 		glitchifyImg();
 	} else if ( $('#main.about').length ) {
-		initMousewheel();
+		setTimeout(initMousewheel, 200);
 	} else if ( $('#main.project').length ) {
 		initNextPrev();
 	}
@@ -154,10 +154,11 @@ function initMousewheel() {
 	var wrap1 = g1.find('.wrap');
 	var wrap2 = g2.find('.wrap');
 
-	TweenMax.set(wrap1, {width:g1w});
-	TweenMax.set(wrap2, {width:g2w});
+	TweenMax.set(wrap1, {width:g1w,height:g1h});
+	TweenMax.set(wrap2, {width:g2w,height:g2h});
 }
 function initNextPrev() {
+	'use strict';
 
 	var onEnter = new TimelineMax();
 	var onLeave = new TimelineMax();

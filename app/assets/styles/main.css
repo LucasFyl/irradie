@@ -1652,9 +1652,10 @@ footer > ul li a, footer > ul li p {
   overflow: hidden;
 }
 #main.about .gallery .wrap {
+  position: absolute;
+  left: 0;
   overflow-y: hidden;
   overflow-x: scroll;
-  width: 200%;
 }
 #main.about .gallery figure {
   margin: 0;

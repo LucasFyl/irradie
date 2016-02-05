@@ -22,21 +22,54 @@
 		about: function(controller){
       var el = $('.gallery');
       var duration = $(window).height();
-      // For each gallery, trigger horizontal scroll when in viewport until it leaves:
-      el.each(function(index, value){
-        var element = $(value),
-            wrap = element.find('.wrap');
+      var limit1, limit2;
+      var galleryTween;
 
-        // var fixedPageTween = TweenMax.set('body', {overflow:'hidden'});
-        var galleryTween = TweenMax.to(wrap, 0.25, {x:'-60%',ease:Linear.easeNone});
-        var galleryScene = new ScrollMagic.Scene({
-          triggerElement: this,
-          triggerHook: 'onEnter',
-          duration: duration,
-          offset: 0
-        }).addTo(controller)
-        .setTween(galleryTween);
-      });
+      setTimeout(function(){
+        el.each(function(index,value) {
+          var element = $(value),
+              wrap = element.find('.wrap');
+
+          var foo = wrap.width(),
+              bar = element.find('figure.infos').width();
+                  
+          if ( element.is('.gallery-1') ) {
+            limit1 = foo - bar;
+            galleryTween = new TweenMax.to(wrap, 0.25, {left:-limit1,ease:Linear.easeNone});
+            // return galleryTween;
+          } else if ( element.is('.gallery-2') ) {
+            limit2 = foo - bar;
+            galleryTween = new TweenMax.to(wrap, 0.25, {left:-limit2,ease:Linear.easeNone});
+            // return galleryTween;
+          }
+
+          var galleryScene = new ScrollMagic.Scene({
+            triggerElement: this,
+            triggerHook: 'onEnter',
+            duration: duration,
+            offset: 0
+          }).addTo(controller)
+          .setTween(galleryTween);
+
+        });
+      },1000);
+        
+
+      // For each gallery, trigger horizontal scroll when in viewport until it leaves:
+      // el.each(function(index, value){
+      //   var element = $(value),
+      //       wrap = element.find('.wrap');
+
+      //   // var fixedPageTween = TweenMax.set('body', {overflow:'hidden'});
+      //   var galleryTween = TweenMax.to(wrap, 0.25, {x:'-60%',ease:Linear.easeNone});
+      //   var galleryScene = new ScrollMagic.Scene({
+      //     triggerElement: this,
+      //     triggerHook: 'onEnter',
+      //     duration: duration,
+      //     offset: 0
+      //   }).addTo(controller)
+      //   .setTween(galleryTween);
+      // });
 		},
     home: function(controller){
       //  Scene for 4 small texts : graphic design art direction

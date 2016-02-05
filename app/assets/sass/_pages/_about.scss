@@ -107,9 +107,12 @@ $grey: #999999;
     overflow: hidden;
 
     .wrap {
+      position: absolute;
+      left: 0;
+      
       overflow-y: hidden;
       overflow-x: scroll;
-      width: 200%;
+      // width: 200%;
     }
     figure {
       margin: 0;
