@@ -15,7 +15,7 @@ function initPage(){
 	if ( $('#main.home').length ) {
 		glitchifyImg();
 	} else if ( $('#main.about').length ) {
-		setTimeout(initMousewheel, 200);
+		setTimeout(initGallery, 200);
 	} else if ( $('#main.project').length ) {
 		initNextPrev();
 	}
@@ -46,6 +46,8 @@ function hideLoader(){
 function resize() {
 	'use strict';
 	// Manage resize exception
+	setFooter();
+	initGallery();
 }
 function initScroll() {
 		'use strict';
@@ -123,7 +125,7 @@ function glitchifyImg() {
 	update();
 	setInterval(update, 26);
 }
-function initMousewheel() {
+function initGallery() {
 	'use strict';
 	var g1 = $('.gallery-1');
 	var g2 = $('.gallery-2');
