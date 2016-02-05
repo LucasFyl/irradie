@@ -1663,6 +1663,9 @@ footer > ul li a, footer > ul li p {
   float: left;
   margin-left: 8.5rem;
 }
+#main.about .gallery figure:first-child {
+  margin-left: 0;
+}
 #main.about .gallery figure figcaption {
   margin-top: 3.8rem;
   margin-bottom: 0;

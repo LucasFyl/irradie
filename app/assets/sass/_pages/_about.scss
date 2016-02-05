@@ -109,7 +109,7 @@ $grey: #999999;
     .wrap {
       position: absolute;
       left: 0;
-      
+
       overflow-y: hidden;
       overflow-x: scroll;
       // width: 200%;
@@ -120,6 +120,9 @@ $grey: #999999;
       float: left;
 
       margin-left: 8.5rem;
+      &:first-child {
+        margin-left: 0;
+      }
 
       figcaption {
         margin-top: 3.8rem;
