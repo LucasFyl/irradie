@@ -29,7 +29,9 @@
       <?php $images = $page->images()->sortBy('title', 'asc')->slice(1, 2) ?>
       <?php foreach ($images as $image): ?>
         <?php  if(substr($image, -8) === 'half.jpg'): ?>
-          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" class="half"/>
+        <figure class="half">
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>"/>
+        </figure>
         <?php else : ?>
           <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
         <?php endif; ?>
@@ -47,9 +49,11 @@
       <?php $images = $page->images()->sortBy('title', 'asc')->slice(3, 4) ?>
       <?php foreach ($images as $image): ?>
         <?php  if(substr($image, -8) === 'half.jpg'): ?>
-         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" class="half"/>
+        <figure class="half">
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>"/>
+        </figure>
         <?php else : ?>
-         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
+        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
         <?php endif; ?>
       <?php endforeach; ?>
 
@@ -62,9 +66,11 @@
       <?php $images = $page->images()->sortBy('title', 'asc')->slice(7) ?>
       <?php foreach ($images as $image): ?>
         <?php  if(substr($image, -8) === 'half.jpg'): ?>
-         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" class="half"/>
+        <figure class="half">
+          <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>"/>
+        </figure>
         <?php else : ?>
-         <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
+        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title() ?>" />
         <?php endif; ?>
       <?php endforeach; ?>
     </div>

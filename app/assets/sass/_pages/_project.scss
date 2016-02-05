@@ -81,18 +81,30 @@
     @include media(min-width 1826px) {
       width: 100%;
 
-      &:nth-child(7),
-      &:nth-child(8),
-      &:nth-child(11),
-      &:nth-child(12) {
-        width: auto;
-      }
-      &:nth-child(8),
-      &:nth-child(12) {
-        float: right;
-      }
+      // &:nth-child(7),
+      // &:nth-child(8),
+      // &:nth-child(11),
+      // &:nth-child(12) {
+      //   width: auto;
+      // }
+      // &:nth-child(8),
+      // &:nth-child(12) {
+      //   float: right;
+      // }
     }
   }
+
+    figure.half {
+      margin: 0;
+      width: 50%;
+      float: left;
+      &:first-of-type {
+        padding-right: 2.5rem;
+      }
+      &:last-of-type {
+        padding-left: 2.5rem;
+      }
+    }
   section {
     overflow: auto;
     margin-bottom: 5.5rem;

@@ -1864,12 +1864,17 @@ footer > ul li a, footer > ul li p {
   #main.project img {
     width: 100%;
   }
-  #main.project img:nth-child(7), #main.project img:nth-child(8), #main.project img:nth-child(11), #main.project img:nth-child(12) {
-    width: auto;
-  }
-  #main.project img:nth-child(8), #main.project img:nth-child(12) {
-    float: right;
-  }
+}
+#main.project figure.half {
+  margin: 0;
+  width: 50%;
+  float: left;
+}
+#main.project figure.half:first-of-type {
+  padding-right: 2.5rem;
+}
+#main.project figure.half:last-of-type {
+  padding-left: 2.5rem;
 }
 #main.project section {
   overflow: auto;
