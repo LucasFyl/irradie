@@ -223,7 +223,17 @@ function landingProjectTl() {
 		.play();
 }
 function landingHomeTl() {
-	// TODO
+	
+	var landingTl = new TimelineMax();
+
+	landingTl
+		.set('.top, .bottom', {y:20,opacity:0})
+		.set('.logo-wrap', {y:'-60%',opacity:0})
+		.set('.fixed-wrap', {opacity:0})
+		.staggerTo('.top, .bottom', 0.25, {delay:0.5,y:0,opacity:1,ease:Power2.easeOut}, 0.1)
+		.to('.logo-wrap', 0.5, {y:'-50%',opacity:1,ease:Power3.easeOut})
+		.to('.fixed-wrap', 1.5, {opacity:1,ease:Power1.easeOut})
+		.play();
 }
 $(document).ready(function(){
 	'use strict';
