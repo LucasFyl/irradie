@@ -18,6 +18,7 @@ function initPage(){
 		setTimeout(initGallery, 200);
 	} else if ( $('#main.project').length ) {
 		initNextPrev();
+		landingProjectTl();
 	}
 
 	setTimeout(setFooter, 200);
@@ -190,7 +191,21 @@ function initNextPrev() {
 			onLeave.play();
 	    }
 	}, '.block-prevnext');
+}
+function landingProjectTl() {
+	var landingTl = new TimelineMax();
 
+	landingTl
+		.set('.share li', {y:20,opacity:0,delay:0.25})
+		.set('header, .block-prevnext', {opacity:0})
+		.set('.wrap img:first', {opacity:0})
+		.staggerFromTo('.infos h1, .infos .client', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Power2.easeOut}, 0.1)
+		.staggerTo('.share li', 0.25, {y:0,opacity:1,ease:Power2.easeOut}, 0.1)
+		.to('.wrap img:first', 0.5, {opacity:1})
+		.fromTo('header', 0.5, {y:-50,opacity:0}, {y:0,opacity:1,ease:Power2.easeOut}, '-=1')
+		.fromTo('.block-prevnext.prev', 0.35, {x:-100}, {x:0,opacity:1})
+		.fromTo('.block-prevnext.next', 0.35, {x:100}, {x:0,opacity:1}, '-=0.35')
+		.play();
 }
 $(document).ready(function(){
 	'use strict';
