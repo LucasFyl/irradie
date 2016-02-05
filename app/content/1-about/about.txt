@@ -13,7 +13,7 @@ Introtext: We combine marketing and design to help brands define their positions
 Firsttext: 
 
 We combine marketing and design to help brands define their positions, create a unique voice and build sustainable value. We specialise in brand strategy, identity, packaging, digital design and retail environments, working with everything from small scale companies to global corporations.
-		The studio engages in projects of varying scales and scopes both locally and internationally. Our clients are artisans, obsessives, game-changers. From start-ups to global brands, our engagements are founded on a shared passion for design and creativity, down to every last detail.
+    The studio engages in projects of varying scales and scopes both locally and internationally. Our clients are artisans, obsessives, game-changers. From start-ups to global brands, our engagements are founded on a shared passion for design and creativity, down to every last detail.
 
 ----
 

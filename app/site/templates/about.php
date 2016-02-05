@@ -5,7 +5,7 @@
     <?php snippet('header') ?>
 
     <div class="intro">
-      <h2><?php echo $page->introText() ?></h2>
+      <h2><?php echo $page->introText()->kirbytext() ?></h2>
 
       <div class="image"></div>
       <div class="text">

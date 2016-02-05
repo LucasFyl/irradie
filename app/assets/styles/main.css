@@ -1553,14 +1553,18 @@ footer > ul li a, footer > ul li p {
   width: 65.8807828007%;
   margin-left: 17.0596085997%;
   float: none;
-  font-family: "arn-webfont", trebuchet, sans-serif;
-  font-size: 3.9rem;
-  line-height: 5.4rem;
-  letter-spacing: .2rem;
-  color: white;
 }
 #main.about .intro h2:last-child {
   margin-right: 0;
+}
+#main.about .intro h2 p {
+  font-family: "arn-webfont", trebuchet, sans-serif;
+  font-size: 3.2rem;
+  line-height: 5.4rem;
+  letter-spacing: .2rem;
+  color: white;
+  margin: 0;
+  width: 105%;
 }
 #main.about .intro .image {
   min-height: 45rem;
