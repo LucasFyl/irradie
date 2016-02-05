@@ -14,6 +14,7 @@ function initPage(){
 
 	if ( $('#main.home').length ) {
 		glitchifyImg();
+		landingHomeTl();
 	} else if ( $('#main.about').length ) {
 		setTimeout(initGallery, 200);
 	} else if ( $('#main.project').length ) {
@@ -206,6 +207,9 @@ function landingProjectTl() {
 		.fromTo('.block-prevnext.prev', 0.35, {x:-100}, {x:0,opacity:1})
 		.fromTo('.block-prevnext.next', 0.35, {x:100}, {x:0,opacity:1}, '-=0.35')
 		.play();
+}
+function landingHomeTl() {
+	// TODO
 }
 $(document).ready(function(){
 	'use strict';
