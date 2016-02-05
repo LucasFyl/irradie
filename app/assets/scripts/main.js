@@ -194,7 +194,7 @@ function initNextPrev() {
 			onLeave
 			  	.staggerTo(img, 0.35, {opacity:0,y:20,ease:Power2.easeIn}, 0.1)
 			  	.to(_this, 0.25, {width:'8.8rem',ease:Power2.easeIn})
-				.set(imgWrap, {visibility:'hidden',delay:0.8});
+				.set(imgWrap, {visibility:'hidden'});
 			
 			if ( $(_this).is('.prev') ) {
 				TweenMax.to('#main .wrap', 0.25, {delay:0.5,paddingLeft:'-=10rem',ease:Power2.easeIn});
@@ -228,10 +228,10 @@ function landingHomeTl() {
 
 	landingTl
 		.set('.top, .bottom', {y:20,opacity:0})
-		.set('.logo-wrap', {y:'-60%',opacity:0})
+		.set('.landing .logo-wrap', {y:'-60%',opacity:0})
 		.set('.fixed-wrap', {opacity:0})
 		.staggerTo('.top, .bottom', 0.25, {delay:0.5,y:0,opacity:1,ease:Power2.easeOut}, 0.1)
-		.to('.logo-wrap', 0.5, {y:'-50%',opacity:1,ease:Power3.easeOut})
+		.to('.landing .logo-wrap', 0.5, {y:'-50%',opacity:1,ease:Power3.easeOut})
 		.to('.fixed-wrap', 1.5, {opacity:1,ease:Power1.easeOut})
 		.play();
 }
