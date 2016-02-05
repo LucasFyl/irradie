@@ -1851,16 +1851,7 @@ footer > ul li a, footer > ul li p {
 }
 #main.project img {
   margin-bottom: 5.5rem;
-}
-@media screen and (max-width: 1826px) {
-  #main.project img {
-    width: 100%;
-  }
-}
-@media screen and (min-width: 1826px) {
-  #main.project img {
-    width: 100%;
-  }
+  width: 100%;
 }
 #main.project figure.half {
   margin: 0;
@@ -1876,6 +1867,7 @@ footer > ul li a, footer > ul li p {
 #main.project section {
   overflow: auto;
   margin-bottom: 5.5rem;
+  width: 100%;
 }
 @media screen and (max-width: 480px) {
   #main.project section:last-of-type > div:first-child {
