@@ -20,6 +20,9 @@
       position: relative;
 
       font-size: 4.5rem;
+      @include media($mobile) {
+        font-size: 4rem;
+      }
 
       .date {
         margin: 0;
@@ -28,6 +31,9 @@
 
         color: $grey;
         font-size: 1.4rem;
+        @include media($mobile) {
+          left: 0;top: 100%;
+        }
       }
     }
     .client {
@@ -46,6 +52,11 @@
     .share {
       position: absolute;
       right: 0; top:6rem;
+
+      @include media($mobile) {
+        top: 2rem;
+      }
+
       ul {
         list-style: none;
         padding: 0;
@@ -74,6 +85,10 @@
   img {
     margin-bottom: 5.5rem;
     width: 100%;
+
+    @include media($mobile) {
+      margin-bottom: 2.5rem;
+    }
   }
 
   figure.half {

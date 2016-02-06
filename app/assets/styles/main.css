@@ -1365,6 +1365,11 @@ footer > ul li a, footer > ul li p {
   transform: translateZ(0);
   z-index: 999;
 }
+@media screen and (max-width: 480px) {
+  .block-prevnext {
+    display: none;
+  }
+}
 .block-prevnext > a {
   display: block;
   height: 100%;
@@ -1880,6 +1885,11 @@ footer > ul li a, footer > ul li p {
   position: relative;
   font-size: 4.5rem;
 }
+@media screen and (max-width: 480px) {
+  #main.project .infos h1 {
+    font-size: 4rem;
+  }
+}
 #main.project .infos h1 .date {
   margin: 0;
   position: absolute;
@@ -1887,6 +1897,12 @@ footer > ul li a, footer > ul li p {
   left: calc(100% + 1.5rem);
   color: #999999;
   font-size: 1.4rem;
+}
+@media screen and (max-width: 480px) {
+  #main.project .infos h1 .date {
+    left: 0;
+    top: 100%;
+  }
 }
 #main.project .infos .client {
   margin-bottom: 4rem;
@@ -1905,6 +1921,11 @@ footer > ul li a, footer > ul li p {
   position: absolute;
   right: 0;
   top: 6rem;
+}
+@media screen and (max-width: 480px) {
+  #main.project .infos .share {
+    top: 2rem;
+  }
 }
 #main.project .infos .share ul {
   list-style: none;
@@ -1929,6 +1950,11 @@ footer > ul li a, footer > ul li p {
 #main.project img {
   margin-bottom: 5.5rem;
   width: 100%;
+}
+@media screen and (max-width: 480px) {
+  #main.project img {
+    margin-bottom: 2.5rem;
+  }
 }
 #main.project figure.half {
   margin: 0;

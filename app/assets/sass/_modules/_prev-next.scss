@@ -6,6 +6,11 @@
 	position: fixed; top: 0;
 	@include transform(translateZ(0));
 	z-index: 999;
+
+	@include media($mobile) {
+		display: none;
+	}
+
 	> a {
 		display: block;
 		@include size(100%);
