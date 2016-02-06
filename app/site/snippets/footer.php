@@ -22,7 +22,7 @@
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js') ?>
       <?= js('bower_components/jquery-mousewheel/jquery.mousewheel.js') ?>
       <?= js('assets/scripts/vendors/modernizr.js') ?>
-      <?= js('assets/scripts/splash-home.js') ?>
+      <?= js('assets/scripts/ParallaxScroll.js') ?>
       <?= js('assets/scripts/dynamicNav.js') ?>
       <?= js('assets/scripts/main.js') ?>
       <?= js('assets/scripts/scrollmagic-magic.js') ?>

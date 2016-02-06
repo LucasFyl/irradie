@@ -22,6 +22,10 @@ function initPage(){
 		landingProjectTl();
 	}
 
+	if( $('.projects').length ) {
+		ParallaxScroll.init;
+	}
+
 	setTimeout(setFooter, 200);
 	setTimeout(hideLoader, 250);
 	setTimeout(initMenu, 300);
