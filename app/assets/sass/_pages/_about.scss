@@ -29,13 +29,22 @@ $grey: #999999;
   }
   .intro {
     @include clearfix;
+
     h2 {
+      @include media($desktop) {
+        @include span-columns(8);
+        @include shift(2);
+        margin-top: 10rem;
+        margin-bottom: 14rem;
+      }
+      @include media($mobile) {
+        @include span-columns(12);
+        margin: 0;
+      }
+
       display: block;
-      margin-top: 10rem;
-      margin-bottom: 14rem;
-      @include span-columns(8);
-      @include shift(2);
-      float: none;
+      float: none !important;
+
       p {
         font-family: $arn;
         font-size: 3.2rem;
@@ -44,6 +53,11 @@ $grey: #999999;
         color: white;
         margin: 0;
         width: 105%;
+        @include media($mobile) {
+          font-size: 2.1rem;
+          line-height: 1.3;
+          margin-top: 2rem;
+        }
       }
     }
     .image {
@@ -55,6 +69,15 @@ $grey: #999999;
       background-size: contain;
       padding-bottom: 4rem;
       box-sizing: content-box;
+
+      @include media($mobile) {
+        margin: 3rem auto;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 20rem;
+        padding-bottom: 0;
+        background-position: center center;
+      }
     }
     .text {
       @include span-columns(5);
@@ -65,6 +88,14 @@ $grey: #999999;
         @include span-columns(8);
         @include shift(3);
       }
+      @include media($mobile) {
+        @include span-columns(12);
+        margin: 0;
+        p {
+          font-size: 2.1rem;
+          line-height: 1.3;
+        }
+      }
     }
   }
   section {
@@ -72,6 +103,9 @@ $grey: #999999;
     @include clearfix;
     margin-top: 15rem;
     margin-bottom: 10rem;
+    @include media($mobile) {
+      margin: 0;
+    }
 
     > div {
       @include span-columns(1);
@@ -79,6 +113,10 @@ $grey: #999999;
       margin-right: 12rem;
       &:nth-child(2) {
         margin-right: 9rem;
+      }
+      @include media($mobile) {
+        margin-right: 0;
+        margin-bottom: 5rem;
       }
     }
     h2, h3, p {
@@ -90,6 +128,12 @@ $grey: #999999;
     h2, h3 {
       font-size: 1.4rem;
       margin-bottom: 4.5rem;
+      @include media($mobile) {
+        margin-bottom: 2rem;
+        overflow: auto;
+        white-space: normal;
+        line-height: 1.3;
+      }
     }
     p {
       font-size: 1rem;
@@ -108,6 +152,11 @@ $grey: #999999;
     margin-right: -4rem;
     max-width: 100vw;
     overflow: hidden;
+
+    //temp:
+    @include media($mobile) {
+      display: none;
+    }
 
     .wrap {
       position: absolute;
@@ -202,6 +251,10 @@ $grey: #999999;
     }
     .text {
       min-width: 57rem;
+      @include media($mobile) {
+        min-width: 100%;
+        margin-top: 5rem;
+      }
     }
   }
 

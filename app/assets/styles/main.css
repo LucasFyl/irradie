@@ -1540,17 +1540,33 @@ footer > ul li a, footer > ul li p {
 }
 #main.about .intro h2 {
   display: block;
-  margin-top: 10rem;
-  margin-bottom: 14rem;
-  float: left;
-  display: block;
-  margin-right: 2.3576515979%;
-  width: 65.8807828007%;
-  margin-left: 17.0596085997%;
-  float: none;
+  float: none !important;
 }
-#main.about .intro h2:last-child {
-  margin-right: 0;
+@media screen and (min-width: 480px) {
+  #main.about .intro h2 {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+    margin-left: 17.0596085997%;
+    margin-top: 10rem;
+    margin-bottom: 14rem;
+  }
+  #main.about .intro h2:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main.about .intro h2 {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    margin: 0;
+  }
+  #main.about .intro h2:last-child {
+    margin-right: 0;
+  }
 }
 #main.about .intro h2 p {
   font-family: "arn-webfont", trebuchet, sans-serif;
@@ -1560,6 +1576,13 @@ footer > ul li a, footer > ul li p {
   color: white;
   margin: 0;
   width: 105%;
+}
+@media screen and (max-width: 480px) {
+  #main.about .intro h2 p {
+    font-size: 2.1rem;
+    line-height: 1.3;
+    margin-top: 2rem;
+  }
 }
 #main.about .intro .image {
   min-height: 45rem;
@@ -1576,6 +1599,16 @@ footer > ul li a, footer > ul li p {
 }
 #main.about .intro .image:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  #main.about .intro .image {
+    margin: 3rem auto;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 20rem;
+    padding-bottom: 0;
+    background-position: center center;
+  }
 }
 #main.about .intro .text {
   float: left;
@@ -1600,6 +1633,22 @@ footer > ul li a, footer > ul li p {
     margin-right: 0;
   }
 }
+@media screen and (max-width: 480px) {
+  #main.about .intro .text {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    margin: 0;
+  }
+  #main.about .intro .text:last-child {
+    margin-right: 0;
+  }
+  #main.about .intro .text p {
+    font-size: 2.1rem;
+    line-height: 1.3;
+  }
+}
 #main.about section {
   margin-left: 17.0596085997%;
   margin-top: 15rem;
@@ -1609,6 +1658,11 @@ footer > ul li a, footer > ul li p {
   clear: both;
   content: "";
   display: table;
+}
+@media screen and (max-width: 480px) {
+  #main.about section {
+    margin: 0;
+  }
 }
 #main.about section > div {
   float: left;
@@ -1624,6 +1678,12 @@ footer > ul li a, footer > ul li p {
 #main.about section > div:nth-child(2) {
   margin-right: 9rem;
 }
+@media screen and (max-width: 480px) {
+  #main.about section > div {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+}
 #main.about section h2, #main.about section h3, #main.about section p {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
   color: #999999;
@@ -1633,6 +1693,14 @@ footer > ul li a, footer > ul li p {
 #main.about section h2, #main.about section h3 {
   font-size: 1.4rem;
   margin-bottom: 4.5rem;
+}
+@media screen and (max-width: 480px) {
+  #main.about section h2, #main.about section h3 {
+    margin-bottom: 2rem;
+    overflow: auto;
+    white-space: normal;
+    line-height: 1.3;
+  }
 }
 #main.about section p {
   font-size: 1rem;
@@ -1649,6 +1717,11 @@ footer > ul li a, footer > ul li p {
   margin-right: -4rem;
   max-width: 100vw;
   overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  #main.about .gallery {
+    display: none;
+  }
 }
 #main.about .gallery .wrap {
   position: absolute;
@@ -1743,6 +1816,12 @@ footer > ul li a, footer > ul li p {
 }
 #main.about .separation .text {
   min-width: 57rem;
+}
+@media screen and (max-width: 480px) {
+  #main.about .separation .text {
+    min-width: 100%;
+    margin-top: 5rem;
+  }
 }
 #main.about section.footer > div h3 {
   margin-bottom: 2.3rem;
