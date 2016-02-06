@@ -208,6 +208,7 @@ function initNextPrev() {
 	}, '.block-prevnext');
 }
 function landingProjectTl() {
+	'use strict';
 	var landingTl = new TimelineMax();
 
 	landingTl
@@ -223,7 +224,7 @@ function landingProjectTl() {
 		.play();
 }
 function landingHomeTl() {
-	
+	'use strict';
 	var landingTl = new TimelineMax();
 
 	landingTl

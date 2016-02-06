@@ -25,34 +25,56 @@
       var limit1, limit2;
       var galleryTween;
 
-      setTimeout(function(){
-        el.each(function(index,value) {
-          // namespace
-          var element = $(value),
-              wrap = element.find('.wrap');
-          // define sizes for calc
-          var foo = wrap.width(),
-              bar = element.find('figure.infos').width();
-          if ( element.is('.gallery-1') ) {
-            // define limit scroll-x : - (container width - .infos width)
-            limit1 = foo - bar; limit1 = -limit1;
-            // define tween per gallery
-            galleryTween = new TweenMax.to(wrap, 0.25, {left:limit1,ease:Linear.easeNone});
-          } else if ( element.is('.gallery-2') ) {
-            limit2 = foo - bar; limit2 = -limit2;
-            galleryTween = new TweenMax.to(wrap, 0.25, {left:limit2,ease:Linear.easeNone});
-          }
+      // setTimeout(function(){
+      //   el.each(function(index,value) {
+      //     // namespace
+      //     var element = $(value),
+      //         wrap = element.find('.wrap');
+      //     // define sizes for calc
+      //     var foo = wrap.width(),
+      //         bar = element.find('figure.infos').width();
+      //     // init scrolltop value for body
+      //     // var scrollTop;
 
-          var galleryScene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 0.5,
-            duration: duration,
-            offset: 0
-          }).addTo(controller)
-          .setTween(galleryTween);
 
-        });
-      },1000);
+      //     if ( element.is('.gallery-1') ) {
+
+      //       // define limit scroll-x : - (container width - .infos width)
+      //       limit1 = foo - bar; limit1 = -limit1;
+      //       // assign element scroll top value
+      //       // scrollTop = - element.offset().top;
+      //       // define tween per gallery
+      //       galleryTween = new TweenMax.to(wrap, 0.25, {left:limit1,ease:Linear.easeNone,onComplete:function(){
+      //         // TweenMax.set('body', {position:'static'});
+      //       }});
+      //     } else if ( element.is('.gallery-2') ) {
+
+      //       limit2 = foo - bar; limit2 = -limit2;
+      //       // scrollTop = - element.offset().top;
+      //       galleryTween = new TweenMax.to(wrap, 0.25, {left:limit2,ease:Linear.easeNone,onComplete:function(){
+      //         // TweenMax.set('body', {position:'static'});
+      //       }});
+      //     }
+      //     // Scroll animation scene :
+      //     var galleryScene = new ScrollMagic.Scene({
+      //       triggerElement: this,
+      //       triggerHook: 0.74,
+      //       duration: duration,
+      //       offset: 0
+      //     }).addTo(controller)
+      //     .setTween(galleryTween);
+      //     // Screenlock Scene
+      //     // var lockTween = new TweenMax.to('body', 0.1, {position:'fixed',top:scrollTop});
+      //     // var screenLockScene = new ScrollMagic.Scene({
+      //     //   triggerElement: this,
+      //     //   triggerHook: 0.75,
+      //     //   duration: duration,
+      //     //   offset: 0
+      //     // }).addTo(controller)
+      //     // .setTween(lockTween);
+
+      //   });
+      // },1000);
 		},
     home: function(controller){
       //  Scene for 4 small texts : graphic design art direction
