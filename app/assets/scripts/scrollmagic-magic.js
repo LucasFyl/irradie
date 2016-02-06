@@ -116,22 +116,22 @@
 		},
 		projects: function(controller){
 
-        // var el = $('.projects figure'),
-        //     length = el.length;
-        // // var duration = $('.projects').height();
-        // var duration = $(window).height() * 1.5;
-        // TweenMax.set(el, {y:50});
-        // // Pour chaque figure dans .projects, when reaches 0.25 viewport anim y :
-        // for (var i = 0; i < length; i++) {
-        //   var element = el[i];
-        //   var tween = TweenMax.to(element, 0.75, {y:0,ease:Power2.easeOut});
-        //   var projectsTween = new ScrollMagic.Scene({
-        //     triggerElement: element,
-        //     triggerHook: 0.25,
-        //     duration: duration
-        //   }).addTo(controller)
-        //   .setTween(tween);
-        // }
+        var el = $('.projects figure'),
+            length = el.length;
+        // var duration = $('.projects').height();
+        var duration = $(window).height() * 1.5;
+        TweenMax.set(el, {y:50});
+        // Pour chaque figure dans .projects, when reaches 0.25 viewport anim y :
+        for (var i = 0; i < length; i++) {
+          var element = el[i];
+          var tween = TweenMax.to(element, 0.75, {y:0,ease:Power2.easeOut});
+          var projectsTween = new ScrollMagic.Scene({
+            triggerElement: element,
+            triggerHook: 0.25,
+            duration: duration
+          }).addTo(controller)
+          .setTween(tween);
+        }
 		},
     project: function(controller) {
       var el = $('#main .wrap > img'),

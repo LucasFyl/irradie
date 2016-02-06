@@ -1,7 +1,7 @@
 <div class="projects">
   <?php foreach(page('work')->children()->visible() as $project): ?>
 
-    <figure data-parallax="{'y': -150, 'smoothness': 10}" >
+    <figure>
       <?php if ($project->hasImages()): ?>
         <a href="<?php echo $project->url() ?>" class="ajaxy">
           <img src="<?php echo $project->image('01-cover.jpg')->url() ?>" alt="<?php echo $project->title(); ?>" />
