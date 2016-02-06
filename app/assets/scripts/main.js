@@ -9,7 +9,6 @@ function initPage(){
 	'use strict';
 	detectMobile();
 
-
 	window.onresize = resize;
 
 	if ( $('#main.home').length ) {
