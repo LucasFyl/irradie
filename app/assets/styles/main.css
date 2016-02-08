@@ -1145,8 +1145,9 @@ header div.logo-wrap a {
 }
 header div.logo-wrap h1.logo {
   text-align: center;
-  font-size: 2.4rem;
+  font-size: 3rem;
   width: 100%;
+  letter-spacing: 1.5px;
   margin: 0;
 }
 @media screen and (max-width: 480px) {
@@ -1157,6 +1158,7 @@ header div.logo-wrap h1.logo {
   }
 }
 header div.shop {
+  letter-spacing: 1px;
   float: right;
   border-left: 1px solid #d0d0d0;
 }
@@ -1895,8 +1897,10 @@ footer > ul li a, footer > ul li p {
   position: absolute;
   top: 0;
   left: calc(100% + 1.5rem);
+  font-family: "AtlasGrotesk-Light-Web", helvetica, sans-serif;
   color: #999999;
   font-size: 1.4rem;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 480px) {
   #main.project .infos h1 .date {
@@ -1909,13 +1913,14 @@ footer > ul li a, footer > ul li p {
 }
 #main.project .infos .client p {
   text-transform: uppercase;
+  letter-spacing: 1px;
   line-height: 1.3;
   font-size: 1.1rem;
-  color: #999999;
+  color: #4d4d4d;
 }
 #main.project .infos .client p span {
   display: block;
-  color: #4d4d4d;
+  color: #999999;
 }
 #main.project .infos .share {
   position: absolute;
@@ -1933,9 +1938,11 @@ footer > ul li a, footer > ul li p {
   margin: 0;
 }
 #main.project .infos .share ul li {
+  font-family: "AtlasGrotesk-Light-Web", helvetica, sans-serif;
   text-transform: uppercase;
   line-height: 1.3;
   font-size: 1rem;
+  letter-spacing: 1px;
   color: #999999;
   margin-bottom: 2rem;
 }
@@ -2002,8 +2009,10 @@ footer > ul li a, footer > ul li p {
 }
 #main.project section > div:first-child p {
   margin: 0;
+  font-family: "AtlasGrotesk-Light-Web", helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 1rem;
+  letter-spacing: 1px;
   color: #999999;
 }
 #main.project section > div:first-child p.text-hide {

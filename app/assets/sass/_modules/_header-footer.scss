@@ -25,8 +25,9 @@ header {
     }
     h1.logo {
       text-align: center;
-      font-size: 2.4rem;
+      font-size: 3rem;
       width: 100%;
+      letter-spacing: 1.5px;
       margin: 0;
     }
     @include media($mobile) {
@@ -36,6 +37,7 @@ header {
     }
   }
   div.shop {
+    letter-spacing: 1px;
     float: right;
     border-left: 1px solid #d0d0d0;
     @include media($mobile) {
