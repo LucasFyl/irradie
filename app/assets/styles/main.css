@@ -1874,6 +1874,8 @@ footer > ul li a, footer > ul li p {
 
 #main.project {
   padding: 2rem 4rem;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 #main.project .wrap {
   background: white;
