@@ -21,9 +21,9 @@ $grey: #999999;
 
     p {
       margin-top: 0;
-      font-family: $arn;
-      font-size: 2.6rem;
-      line-height: 3.7rem;
+      font-family: $atlasReg;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
       letter-spacing: .2rem;
     }
   }
@@ -46,13 +46,15 @@ $grey: #999999;
       float: none !important;
 
       p {
-        font-family: $arn;
-        font-size: 3.2rem;
-        line-height: 5.4rem;
+        font-family: $atlasReg;
+        font-size: 3.8rem;
+        line-height: 5.3rem;
         letter-spacing: .2rem;
+
         color: white;
         margin: 0;
         width: 105%;
+
         @include media($mobile) {
           font-size: 2.1rem;
           line-height: 1.3;
@@ -128,6 +130,7 @@ $grey: #999999;
     h2, h3 {
       font-size: 1.4rem;
       margin-bottom: 4.5rem;
+      letter-spacing: 1px;
       @include media($mobile) {
         margin-bottom: 2rem;
         overflow: auto;
@@ -137,6 +140,7 @@ $grey: #999999;
     }
     p {
       font-size: 1rem;
+      letter-spacing: 1px;
       text-transform: uppercase;
       line-height: 1.8rem;
       margin-bottom: 2.5rem;
@@ -268,6 +272,8 @@ $grey: #999999;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 1rem;
+        letter-spacing: 1px;
+        font-family: $atlasReg;
       }
       p, h3 {white-space: normal;}
       a:hover {

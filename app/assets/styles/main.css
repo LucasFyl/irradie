@@ -1535,9 +1535,9 @@ footer > ul li a, footer > ul li p {
 }
 #main.about .text p {
   margin-top: 0;
-  font-family: "arn-webfont", trebuchet, sans-serif;
-  font-size: 2.6rem;
-  line-height: 3.7rem;
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
   letter-spacing: .2rem;
 }
 #main.about .intro::after {
@@ -1576,9 +1576,9 @@ footer > ul li a, footer > ul li p {
   }
 }
 #main.about .intro h2 p {
-  font-family: "arn-webfont", trebuchet, sans-serif;
-  font-size: 3.2rem;
-  line-height: 5.4rem;
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  font-size: 3.8rem;
+  line-height: 5.3rem;
   letter-spacing: .2rem;
   color: white;
   margin: 0;
@@ -1700,6 +1700,7 @@ footer > ul li a, footer > ul li p {
 #main.about section h2, #main.about section h3 {
   font-size: 1.4rem;
   margin-bottom: 4.5rem;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 480px) {
   #main.about section h2, #main.about section h3 {
@@ -1711,6 +1712,7 @@ footer > ul li a, footer > ul li p {
 }
 #main.about section p {
   font-size: 1rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 1.8rem;
   margin-bottom: 2.5rem;
@@ -1838,6 +1840,8 @@ footer > ul li a, footer > ul li p {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
 }
 #main.about section.footer > div p, #main.about section.footer > div h3 {
   white-space: normal;
@@ -2019,7 +2023,8 @@ footer > ul li a, footer > ul li p {
   opacity: 0;
 }
 #main.project section > div:last-child p {
-  font-family: "arn-webfont", trebuchet, sans-serif;
+  letter-spacing: 1px;
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
   font-size: 2.5rem;
   line-height: 3.8rem;
   line-height: normal;
