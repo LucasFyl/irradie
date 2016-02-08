@@ -58,7 +58,7 @@
       var topEl = $('.landing .top'),
           bottomEl = $('.landing .bottom'),
           duration = $('.landing').height() / 2,
-          textTween = TweenMax.to([topEl, bottomEl], 0.25, {top:'-=50px',opacity:0,ease:Linear.easeNone});
+          textTween = TweenMax.to([topEl, bottomEl], 0.25, {y:-50,opacity:0,ease:Linear.easeNone});
       var landingTextScene = new ScrollMagic.Scene({
       		triggerElement: '#main',
       		triggerHook: 'onEnter',

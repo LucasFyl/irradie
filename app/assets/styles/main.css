@@ -906,21 +906,24 @@ body.locked {
   z-index: 9;
   transform: translateZ(0);
 }
+.top p, .right p, .bottom p, .left p {
+  margin: 0;
+}
 
 .top {
-  top: 5rem;
+  top: 3rem;
 }
 
 .bottom {
-  top: calc(100% - 10rem);
+  bottom: 3rem;
 }
 
 .left {
-  left: 5rem;
+  left: 3rem;
 }
 
 .right {
-  right: 5rem;
+  right: 3rem;
 }
 
 #loader {
@@ -1281,6 +1284,7 @@ footer > ul li a, footer > ul li p {
   width: 100%;
   text-align: center;
   font-size: 1rem;
+  letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
   color: #4d4d4d;
