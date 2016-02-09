@@ -74,9 +74,8 @@
         <?php endif; ?>
       <?php endforeach; ?>
     </div>
-
-
-    <?php snippet('prev-next') ?>
-    
   </div>
+  
+  <?php snippet('prev-next') ?>
+
   <?php snippet('footer') ?>
