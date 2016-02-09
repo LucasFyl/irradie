@@ -37,15 +37,16 @@ header {
     }
   }
   div.shop {
-    letter-spacing: 1px;
     float: right;
     border-left: 1px solid #d0d0d0;
+    
     @include media($mobile) {
       display: none;
     }
   }
 
   .menu, .shop {
+    letter-spacing: 1px;
     width: 37rem;
     height: 6rem;
     a {

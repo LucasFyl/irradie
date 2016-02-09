@@ -1161,7 +1161,6 @@ header div.logo-wrap h1.logo {
   }
 }
 header div.shop {
-  letter-spacing: 1px;
   float: right;
   border-left: 1px solid #d0d0d0;
 }
@@ -1171,6 +1170,7 @@ header div.shop {
   }
 }
 header .menu, header .shop {
+  letter-spacing: 1px;
   width: 37rem;
   height: 6rem;
 }
