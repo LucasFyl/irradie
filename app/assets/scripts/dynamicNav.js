@@ -5,7 +5,11 @@
   'use strict';
 
 	function loadContent(_href) {
-    TweenMax.to(window, 1, {scrollTo:0,ease:Power2.easeOut});
+    var thisPos = $(window).scrollTop();
+    TweenMax.fromTo(window, 1, {scrollTo:thisPos}, {scrollTo:0,ease:Power2.easeOut});
+    if( thisPos === 0 ) {
+      TweenMax.to('#main .wrap, header, footer', 0.5,{y:50,opacity:0,ease:Expo.easeIn});
+    }
 		TweenMax.to('#loader', 0.5, {delay:0.5,opacity:1,visibility:'visible',onComplete:function(){
 			window.location.href = _href;
 		}});

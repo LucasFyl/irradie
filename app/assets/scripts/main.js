@@ -2,10 +2,10 @@
 /*jslint latedef:false*/
 /* jshint unused:false */
 var Spash;
-var lastScrollTop = 0;
 var isMobile = false;
 var controller = new ScrollMagic.Controller();
-// Page load event
+
+// Page load function
 function initPage(){
 	'use strict';
 	detectMobile();
@@ -18,6 +18,7 @@ function initPage(){
 	} else if ( $('#main.about').length ) {
 		setTimeout(initGallery, 200);
 	} else if ( $('#main.project').length ) {
+		TweenMax.set(window, {scrollTo:0});
 		landingProjectTl();
 		initNextPrev();
 	}
@@ -29,13 +30,6 @@ function initPage(){
 	setTimeout(setFooter, 200);
 	setTimeout(hideLoader, 250);
 	setTimeout(initMenu, 300);
-}
-function initSplashScreen() {
-	'use strict';
-
-	if( $(window).width() > 950 ){
-		setTimeout(Splash.init,250);
-	}
 }
 function detectMobile(){
 	'use strict';
@@ -225,6 +219,7 @@ function initNextPrev() {
 	    }
 	}, '.block-prevnext');
 
+	// TODO: test this,  might be useless
 	$('.block-prevnext').off('mouseenter, mouseleave');
 }
 function landingProjectTl() {
