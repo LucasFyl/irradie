@@ -22,9 +22,9 @@ function initPage(){
 		initNextPrev();
 	}
 
-	// if( $('.projects').length ) {
-	// 	ParallaxScroll.init;
-	// }
+	if( $('.projects').length ) {
+		setTimeout(ProjectsParallax.init, 200);
+	}
 
 	setTimeout(setFooter, 200);
 	setTimeout(hideLoader, 250);
