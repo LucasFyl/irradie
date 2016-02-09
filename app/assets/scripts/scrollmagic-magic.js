@@ -92,12 +92,12 @@
 
 		},
 		projects: function(controller){
-
+        // Projects 'parallax' style anim:
         var el = $('.projects figure'),
             length = el.length;
-        // var duration = $('.projects').height();
         var duration = $(window).height() * 1.5;
         TweenMax.set(el, {y:50});
+
         // Pour chaque figure dans .projects, when reaches 0.25 viewport anim y :
         for (var i = 0; i < length; i++) {
           var element = el[i];
@@ -111,21 +111,29 @@
         }
 		},
     project: function(controller) {
+      // Project image anim
       var el = $('#main .wrap > img'),
           duration = $(window).height();
-
       TweenMax.set(el, {y:50});
-
       el.each(function(index, value){
-        var tween = TweenMax.to(value, 0.75, {y:0,ease:Power2.easeOut});
-        var projectTween = new ScrollMagic.Scene({
+        var projectTween = TweenMax.to(value, 0.75, {y:0,ease:Power2.easeOut});
+        var projectScene = new ScrollMagic.Scene({
           triggerElement: value,
           triggerHook: 0.8,
           duration: duration
         }).addTo(controller)
-        .setTween(tween);
+        .setTween(projectTween);
       });
-
+      // Project next/prev anim : 
+      TweenMax.set('.block-prevnext', {opacity:0, display:'none', visibility:'hidden'});
+      var prevnextTween = new TweenMax.fromTo('.block-prevnext', 0.5, {opacity:0, display:'none', visibility:'hidden'}, {opacity:1, display:'block', visibility:'visible'});
+      var prevnextScene = new ScrollMagic.Scene({
+        triggerElement: 'header',
+        triggerHook:    'onLeave',
+        duration:        250,
+        offset:          50
+      }).addTo(controller)
+      .setTween(prevnextTween);
     }
 	};
 	MagicStuff.init();

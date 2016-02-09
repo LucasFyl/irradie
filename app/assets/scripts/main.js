@@ -176,26 +176,26 @@ function initGallery() {
 }
 function initNextPrev() {
 	'use strict';
-
-	var onEnter = new TimelineMax();
-	var onLeave = new TimelineMax();
+	// var isVisible = false;
+	var onEnter   = new TimelineMax();
+	var onLeave   = new TimelineMax();
 	var _this, imgWrap, img;
 
-	$(window).on('scroll', function(){
-		var st = $(this).scrollTop();
+	// $(window).on('scroll', function(){
+	// 	var st = $(this).scrollTop();
+	// 	setTimeout(function(){
+	// 		if(st > 100 && isVisible === false) {
+	// 			// scroll out header
+	// 			TweenMax.to('.block-prevnext', 0.5, {opacity:1, display:'block', visibility:'visible'});
+	// 			isVisible = true;
+	// 		} else {
+	// 		    // scroll in header
+	// 			TweenMax.to('.block-prevnext', 0.5, {opacity:0, display:'none', visibility:'hidden'});
+	// 			isVisible = false;
+	// 		}
+	// 	}, 250);
 
-		if(st > lastScrollTop && st > 100) {
-
-			// scroll down
-			TweenMax.to('.block-prevnext', 0.5, {opacity:1, display:'block', visibility:'visible'});
-		} else {
-
-		    // scroll up
-			TweenMax.to('.block-prevnext', 0.5, {opacity:0, display:'none', visibility:'hidden'});
-		}
-
-		lastScrollTop = st;
-	});
+	// });
 
 	$(document).on({
 	    mouseenter: function () {
