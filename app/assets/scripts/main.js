@@ -179,57 +179,47 @@ function initNextPrev() {
 	// var isVisible = false;
 	var onEnter   = new TimelineMax();
 	var onLeave   = new TimelineMax();
-	var _this, imgWrap, img;
-
-	// $(window).on('scroll', function(){
-	// 	var st = $(this).scrollTop();
-	// 	setTimeout(function(){
-	// 		if(st > 100 && isVisible === false) {
-	// 			// scroll out header
-	// 			TweenMax.to('.block-prevnext', 0.5, {opacity:1, display:'block', visibility:'visible'});
-	// 			isVisible = true;
-	// 		} else {
-	// 		    // scroll in header
-	// 			TweenMax.to('.block-prevnext', 0.5, {opacity:0, display:'none', visibility:'hidden'});
-	// 			isVisible = false;
-	// 		}
-	// 	}, 250);
-
-	// });
+	var _this, imgWrap, img, text;
 
 	$(document).on({
 	    mouseenter: function () {
 	    	if( $(this).is(':visible')) {
-	    		_this = this,
+	    		_this   = this,
+	    		text    = $(_this).find('.title-block'),
 	    		imgWrap = $(_this).find('.img-wrap'),
 	    		img     = imgWrap.find('img');
+
 		    	onEnter
-				  	.to(_this, 0.5, {width:'20.5rem',ease:Power2.easeOut})
+				  	.to(_this, 0.5, {width:'18rem',ease:Power2.easeOut})
+				  	.to(text, 0.25, {opacity:0,ease:Power2.easeInOut}, '-=0.5')
 		    		.set(imgWrap, {visibility:'visible'})
-				  	.staggerFromTo(img, 0.3, {opacity:0,y:30}, {opacity:1,y:0,ease:Power2.easeOut}, 0.1);
+				  	.staggerFromTo(img, 0.25, {opacity:0,y:30}, {opacity:1,y:0,ease:Power2.easeOut}, 0.1);
 				
 				if ( $(_this).is('.prev') ) {
-					TweenMax.to('#main .wrap, header, footer', 0.5, {x:115,ease:Power2.easeOut});
+					TweenMax.to('#main .wrap, header, footer, .next', 0.5, {x:115,ease:Power2.easeOut});
 				} else {
-					TweenMax.to('#main .wrap, header, footer', 0.5, {x:-115,ease:Power2.easeOut});
+					TweenMax.to('#main .wrap, header, footer, .prev', 0.5, {x:-115,ease:Power2.easeOut});
 				}
 				onEnter.play();
 	    	}
 		    	
 	    },
 	    mouseleave: function () {
-	    	var _this = this,
-	    		imgWrap = $(_this).find('.img-wrap'),
-	    		img     = imgWrap.find('img');
+	    	_this   = this,
+			text    = $(_this).find('.title-block'),
+    		imgWrap = $(_this).find('.img-wrap'),
+    		img     = imgWrap.find('img');
+
 			onLeave
-			  	.staggerTo(img, 0.35, {opacity:0,y:20,ease:Power2.easeIn}, 0.1)
+			  	.to(img, 0.25, {opacity:0,y:20,ease:Power2.easeIn})
 			  	.to(_this, 0.25, {width:'8.8rem',ease:Power2.easeIn})
+			  	.to(text, 0.25, {opacity:1,ease:Power2.easeInOut})
 				.set(imgWrap, {visibility:'hidden'});
 			
 			if ( $(_this).is('.prev') ) {
-				TweenMax.to('#main .wrap, header, footer', 0.25, {delay:0.5,x:0,ease:Power2.easeIn});
+				TweenMax.to('#main .wrap, header, footer, .next', 0.25, {x:0,ease:Power2.easeIn});
 			} else {
-				TweenMax.to('#main .wrap, header, footer', 0.25, {x:0,ease:Power2.easeIn});
+				TweenMax.to('#main .wrap, header, footer, .prev', 0.25, {x:0,ease:Power2.easeIn});
 			}
 			onLeave.play();
 	    }
@@ -244,13 +234,11 @@ function landingProjectTl() {
 	landingTl
 		.set('.share li', {y:20,opacity:0,delay:0.25})
 		.set('header, .block-prevnext', {opacity:0})
-		.set('.wrap img:first', {opacity:0})
+		.set('.wrap img', {opacity:0})
 		.staggerFromTo('.infos h1, .infos .client', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Power2.easeOut}, 0.1)
 		.staggerTo('.share li', 0.25, {y:0,opacity:1,ease:Power2.easeOut}, 0.1)
 		.to('.wrap img', 0.5, {opacity:1})
 		.fromTo('header', 0.5, {y:-50,opacity:0}, {y:0,opacity:1,ease:Power2.easeOut}, '-=1')
-		// .fromTo('.block-prevnext.prev', 0.35, {x:-100}, {x:0,opacity:1})
-		// .fromTo('.block-prevnext.next', 0.35, {x:100}, {x:0,opacity:1}, '-=0.35')
 		.play();
 }
 function landingHomeTl() {
