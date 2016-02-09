@@ -21,9 +21,9 @@ function initPage(){
 		landingProjectTl();
 	}
 
-	if( $('.projects').length ) {
-		ParallaxScroll.init;
-	}
+	// if( $('.projects').length ) {
+	// 	ParallaxScroll.init;
+	// }
 
 	setTimeout(setFooter, 200);
 	setTimeout(hideLoader, 250);
@@ -33,7 +33,7 @@ function initSplashScreen() {
 	'use strict';
 
 	if( $(window).width() > 950 ){
-		setTimeout(splashHome.init,250);
+		setTimeout(Splash.init,250);
 	}
 }
 function detectMobile(){
@@ -67,6 +67,7 @@ function initScroll() {
 }
 function initMenu() {
 	'use strict';
+	var isSplash = false;
 	// openMenu
 	$(document).on('click', '.menu-trigger', function(e){
 		e.preventDefault();
@@ -80,6 +81,9 @@ function initMenu() {
 		TweenMax.to('#menu', 1, {delay:0.25,opacity:1,visibility:'visible',ease:Expo.easeOut});
 		TweenMax.fromTo('#menu .half a', 0.5, {y:50,opacity:0}, {y:0,opacity:1,ease:Expo.easeOut,delay:0.6,onComplete:function(){
 			$('.half').addClass('ready');
+			TweenMax.to('.half:first .cover', 0.5, {opacity:1,ease:Power2.easeOut});
+			Splash.init();
+			isSplash = true;
 		}});
 	});
 	// closeMenu
@@ -89,17 +93,22 @@ function initMenu() {
 		$('body').removeClass('locked');
 		TweenMax.to('#menu .half a', 0.35, {y:50,opacity:0,ease:Expo.easeIn});
 		TweenMax.to('#menu', 0.5, {opacity:0,visibility:'hidden',ease:Expo.easeIn});
+		if(isSplash) isSpash = false;
+		$('#menu .half').off('mousemove');
 	});
 	// Menu hover effect :
 	$(document).on({
     mouseenter: function () {
-			var target = $(this).next('.cover');
-			TweenMax.to(target,0.5,{opacity:1,ease:Power2.easeInOut});
+		var target = $(this).next('.cover');
+		TweenMax.to(target,0.5,{opacity:1,ease:Power2.easeInOut});
+		if(!isSplash) Splash.init();
     },
 
     mouseleave: function () {
-			var target = $(this).next('.cover');
-			TweenMax.to(target,0.5,{opacity:0,ease:Power2.easeInOut});
+		var target = $(this).next('.cover');
+		TweenMax.to(target,0.5,{opacity:0,ease:Power2.easeInOut});
+		$('#menu .half').off('mousemove');
+		isSplash = false;
     }
 	}, '.half.ready > a');
 }
