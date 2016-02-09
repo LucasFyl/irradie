@@ -13,20 +13,21 @@
       </footer>
     </div>
     <div class="isMobile"></div>
-
+    
+    <!-- Vendor Scripts -->
       <?= js('bower_components/jquery/dist/jquery.js') ?>
       <?= js('bower_components/gsap/src/uncompressed/TweenMax.js') ?>
       <?= js('bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js') ?>
-      <?= js('bower_components/jquery-mousewheel/jquery.mousewheel.js') ?>
       <?= js('assets/scripts/vendors/modernizr.js') ?>
-      <?= js('assets/scripts/Splash.js') ?>
+    <!-- Custom Scripts -->
+      <?= js('assets/scripts/MousemoveEffect.js') ?>
       <?= js('assets/scripts/ProjectsParallax.js') ?>
-      <?= js('assets/scripts/dynamicNav.js') ?>
+      <?= js('assets/scripts/PageTransition.js') ?>
       <?= js('assets/scripts/main.js') ?>
-      <?= js('assets/scripts/scrollmagic-magic.js') ?>
+      <?= js('assets/scripts/ScrollAnimations.js') ?>
 
 
       <!-- build:remove -->
