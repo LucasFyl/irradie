@@ -65,8 +65,7 @@
             var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
-                triggerHook: 'onEnter',
-                duration: duration
+                triggerHook: 'onEnter'
             }).addTo(controller)
             .setTween(tween);
         });
@@ -76,8 +75,7 @@
             var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
-                triggerHook: 'onEnter',
-                duration: duration
+                triggerHook: 'onEnter'
             }).addTo(controller)
             .setTween(tween);
         });
@@ -87,8 +85,7 @@
             var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
-                triggerHook: 'onEnter',
-                duration: duration
+                triggerHook: 'onEnter'
             }).addTo(controller)
             .setTween(tween);
         });
