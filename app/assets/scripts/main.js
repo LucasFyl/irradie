@@ -27,8 +27,8 @@ function initPage(){
 		setTimeout(ProjectsParallax.init, 200);
 	}
 
-	setTimeout(setFooter, 200);
 	setTimeout(hideLoader, 250);
+	setTimeout(setFooter, 300);
 	setTimeout(initMenu, 300);
 }
 function detectMobile(){
