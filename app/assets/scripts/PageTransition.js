@@ -12,12 +12,24 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
     (function(){
     'use strict';
 
-    function loadContent(_href) {
+    function loadProject(_href) {
       var thisPos = $(window).scrollTop();
       TweenMax.fromTo(window, 1, {scrollTo:thisPos}, {scrollTo:0,ease:Power2.easeOut});
       if( thisPos === 0 ) {
         TweenMax.to('#main .wrap, header, footer', 0.5,{y:50,opacity:0,ease:Expo.easeIn});
       }
+      TweenMax.to('#loader', 0.5, {delay:0.5,opacity:1,visibility:'visible',onComplete:function(){
+        window.location.href = _href;
+      }});
+    }
+    function loadNext(_href) {
+      TweenMax.to('#main .wrap, header, footer, .prev', 0.75, {x:-250,opacity:0,ease:Power2.easeInOut});
+      TweenMax.to('#loader', 0.5, {delay:0.5,opacity:1,visibility:'visible',onComplete:function(){
+        window.location.href = _href;
+      }});
+    }
+    function loadPrevious(_href) {
+      TweenMax.to('#main .wrap, header, footer, .next', 0.75, {x:250,opacity:0,ease:Power2.easeInOut});
       TweenMax.to('#loader', 0.5, {delay:0.5,opacity:1,visibility:'visible',onComplete:function(){
         window.location.href = _href;
       }});
@@ -34,7 +46,13 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
         history.pushState(null, null, _href);
         everPushedSomething = true;
         // load the content
-        loadContent(_href);
+        if ( _this.hasClass('prev-project') ) {
+          loadPrevious(_href);
+        } else if ( _this.hasClass('next-project') ) {
+          loadNext(_href);
+        } else {
+          loadProject(_href);
+        }
       });
     } else {
         // history is not supported; nothing fancy here
@@ -44,7 +62,7 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
     $(window).bind("popstate", function() {
       if (!everPushedSomething) {
         var link = location.pathname.replace(/^.*[\\/]/, ""); // get filename only
-        loadContent(link);
+        loadProject(link);
       }
       everPushedSomething = true;
     });

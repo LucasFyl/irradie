@@ -1400,7 +1400,7 @@ footer > ul li a, footer > ul li p {
   top: 50%;
   transform: translateY(-50%);
 }
-.block-prevnext .title-block a {
+.block-prevnext .title-block > span {
   transform: rotate(-90deg);
   display: block;
   text-decoration: none;

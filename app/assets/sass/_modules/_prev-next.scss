@@ -29,7 +29,7 @@
 		top: 50%;
 		@include transform(translateY(-50%));
 
-		a {
+		> span {
 			@include transform(rotate(-90deg));
 			display: block; 
 	        text-decoration: none;
