@@ -61,7 +61,7 @@
         
         $('[data-parallax="quick"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:300})
+            TweenMax.set(element, {y:250})
             var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
@@ -72,7 +72,7 @@
         });
         $('[data-parallax="medium"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:200})
+            TweenMax.set(element, {y:175})
             var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
