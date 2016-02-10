@@ -60,38 +60,35 @@
         var duration = $(window).height();
         
         $('[data-parallax="quick"]').each(function(index, value){
-            var foo = (Math.random() * 1 + 0).toFixed(2);
-            console.log(foo);
+            var randomTrigger = (Math.random() * 1 + 0).toFixed(2);
             var element = $(value);
             TweenMax.set(element, {y:200})
             var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
-                triggerHook: foo
+                triggerHook: randomTrigger
             }).addTo(controller)
             .setTween(tween);
         });
         $('[data-parallax="medium"]').each(function(index, value){
-            var foo = (Math.random() * 1 + 0).toFixed(2);
-            console.log(foo);
+            var randomTrigger = (Math.random() * 1 + 0).toFixed(2);
             var element = $(value);
             TweenMax.set(element, {y:150})
             var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
-                triggerHook: foo
+                triggerHook: randomTrigger
             }).addTo(controller)
             .setTween(tween);
         });
         $('[data-parallax="slow"]').each(function(index, value){
-            var foo = (Math.random() * 1 + 0).toFixed(2);
-            console.log(foo);
+            var randomTrigger = (Math.random() * 1 + 0).toFixed(2);
             var element = $(value);
             TweenMax.set(element, {y:100})
             var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
-                triggerHook: foo
+                triggerHook: randomTrigger
             }).addTo(controller)
             .setTween(tween);
         });
