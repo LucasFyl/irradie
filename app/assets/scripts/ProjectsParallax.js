@@ -62,7 +62,7 @@
         $('[data-parallax="quick"]').each(function(index, value){
             var element = $(value);
             TweenMax.set(element, {y:200})
-            var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
+            var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
                 triggerHook: 'onEnter'
@@ -72,7 +72,7 @@
         $('[data-parallax="medium"]').each(function(index, value){
             var element = $(value);
             TweenMax.set(element, {y:150})
-            var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
+            var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
                 triggerHook: 'onEnter'
@@ -82,7 +82,7 @@
         $('[data-parallax="slow"]').each(function(index, value){
             var element = $(value);
             TweenMax.set(element, {y:100})
-            var tween = TweenMax.to(element, 0.75, {y:0,ease:Linear.easeNone});
+            var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
             var projectsTween = new ScrollMagic.Scene({
                 triggerElement: value,
                 triggerHook: 'onEnter'
