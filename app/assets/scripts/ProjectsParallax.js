@@ -1,6 +1,7 @@
 
 // This Function will always return the initial font-size of the html element 
    var rem = function rem() {
+        'use strict';
         var html = document.getElementsByTagName('html')[0];
 
         return function () {
@@ -10,6 +11,7 @@
 
 // This function will convert pixel to rem
     function toRem(length) {
+        'use strict';
         return (parseInt(length) / rem());
     }
 
@@ -57,40 +59,34 @@
 
     run: function() {
         'use strict';
-        var duration = $(window).height();
+        // var duration = $(window).height();
         
         $('[data-parallax="quick"]').each(function(index, value){
-            var randomTrigger = (Math.random() * 1 + 0).toFixed(2);
             var element = $(value);
-            TweenMax.set(element, {y:200})
-            var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
-            var projectsTween = new ScrollMagic.Scene({
-                triggerElement: value,
-                triggerHook: randomTrigger
-            }).addTo(controller)
-            .setTween(tween);
+            TweenMax.set(element, {y:200});
+            ProjectsParallax.bindAnimation(element, value);
         });
         $('[data-parallax="medium"]').each(function(index, value){
-            var randomTrigger = (Math.random() * 1 + 0).toFixed(2);
             var element = $(value);
-            TweenMax.set(element, {y:150})
-            var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
-            var projectsTween = new ScrollMagic.Scene({
-                triggerElement: value,
-                triggerHook: randomTrigger
-            }).addTo(controller)
-            .setTween(tween);
+            TweenMax.set(element, {y:150});
+            ProjectsParallax.bindAnimation(element, value);
         });
         $('[data-parallax="slow"]').each(function(index, value){
-            var randomTrigger = (Math.random() * 1 + 0).toFixed(2);
             var element = $(value);
-            TweenMax.set(element, {y:100})
-            var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
-            var projectsTween = new ScrollMagic.Scene({
-                triggerElement: value,
-                triggerHook: randomTrigger
-            }).addTo(controller)
-            .setTween(tween);
+            TweenMax.set(element, {y:100});
+            ProjectsParallax.bindAnimation(element, value);
         });
+    },
+    bindAnimation: function(element, value) {
+        'use strict';
+        var randomTrigger = (0.5+(Math.random()*(1-0.5))).toFixed(2);
+        console.log(randomTrigger);
+
+        var tween = TweenMax.to(element, 1.5, {y:0,ease:Power1.easeInOut});
+        var projectsTween = new ScrollMagic.Scene({
+            triggerElement: value,
+            triggerHook: randomTrigger
+        }).addTo(controller)
+        .setTween(tween);
     }
 };
