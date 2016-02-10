@@ -79,7 +79,7 @@
     },
     bindAnimation: function(element, value) {
         'use strict';
-        var randomTrigger = (0.5+(Math.random()*(1-0.5))).toFixed(2);
+        var randomTrigger = (0.7+(Math.random()*(1-0.7))).toFixed(2);
         var randomDuration = (1+(Math.random()*(3-1))).toFixed(1);
         console.log(randomDuration);
 
