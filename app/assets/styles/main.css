@@ -943,8 +943,7 @@ body.locked {
   height: 100%;
   width: 100%;
   max-width: 100vw;
-  overflow-y: visible;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
   z-index: 9;
 }
