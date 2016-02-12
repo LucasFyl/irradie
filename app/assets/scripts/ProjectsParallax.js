@@ -81,7 +81,7 @@
         'use strict';
         var randomTrigger = (0.7+(Math.random()*(1-0.7))).toFixed(2);
         var randomDuration = (1+(Math.random()*(3-1))).toFixed(1);
-        console.log(randomDuration);
+        // console.log(randomDuration);
 
         var tween = TweenMax.to(element, randomDuration, {y:0,ease:Power1.easeInOut});
         var projectsTween = new ScrollMagic.Scene({

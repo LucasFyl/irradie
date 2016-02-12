@@ -14,7 +14,7 @@ html {
     }
     // Medium screeens between 1000px and 1350px
     @include media(min-width 1000px max-width 1350px) {
-      font-size: 52%;
+      font-size: 50%;
     }
     // Small screen between 480px and 1000px
     @include media(min-width 480px max-width 1000px) {

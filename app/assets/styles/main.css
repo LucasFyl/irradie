@@ -126,7 +126,7 @@ html {
 }
 @media screen and (min-width: 1000px) and (max-width: 1350px) {
   html {
-    font-size: 52%;
+    font-size: 50%;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1000px) {

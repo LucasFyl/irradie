@@ -72,8 +72,7 @@
         // });
 
         $('#menu .half').mousemove(function(e){
-            console.log('mousemove');
-
+            
             if (!effect){ return; }
 
             var amountMovedX = ((e.pageX-$(window).width()/2) * -1 / 1.5) / 8;
