@@ -1983,11 +1983,10 @@ footer > ul li a, footer > ul li p {
   margin: 0;
   width: 50%;
   float: left;
-}
-#main.project figure.half:nth-child(odd) {
   padding-right: 2.5rem;
 }
-#main.project figure.half:nth-child(even) {
+#main.project figure.half + figure.half {
+  padding-right: 0;
   padding-left: 2.5rem;
 }
 #main.project section {

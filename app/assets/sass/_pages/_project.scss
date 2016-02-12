@@ -104,12 +104,11 @@
     margin: 0;
     width: 50%;
     float: left;
-    &:nth-child(odd) {
-      padding-right: 2.5rem;
-    }
-    &:nth-child(even) {
-      padding-left: 2.5rem;
-    }
+    padding-right: 2.5rem;
+  }
+  figure.half + figure.half {
+    padding-right: 0;
+    padding-left: 2.5rem;
   }
   section {
     overflow: auto;
