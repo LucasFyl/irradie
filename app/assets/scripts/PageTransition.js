@@ -23,14 +23,16 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
       }});
     }
     function loadNext(_href) {
-      TweenMax.to('#main .wrap, header, footer, .prev', 0.75, {x:-250,opacity:0,ease:Power2.easeInOut});
+      TweenMax.set('footer', {display:'none'});
+      TweenMax.to('#main .wrap, header, .prev', 0.75, {x:-250,opacity:0,ease:Power2.easeInOut});
       TweenMax.to('.next', 0.5, {x:'100%',ease:Power2.easeIn,delay:0.2});
       TweenMax.to('#loader', 0.5, {delay:0.5,opacity:1,visibility:'visible',onComplete:function(){
         window.location.href = _href;
       }});
     }
     function loadPrevious(_href) {
-      TweenMax.to('#main .wrap, header, footer, .next', 0.75, {x:250,opacity:0,ease:Power2.easeInOut});
+      TweenMax.set('footer', {display:'none'});
+      TweenMax.to('#main .wrap, header, .next', 0.75, {x:250,opacity:0,ease:Power2.easeInOut});
       TweenMax.to('.prev', 0.5, {x:'-100%',ease:Power2.easeIn,delay:0.2});
       TweenMax.to('#loader', 0.5, {delay:0.5,opacity:1,visibility:'visible',onComplete:function(){
         window.location.href = _href;
