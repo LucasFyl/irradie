@@ -111,8 +111,12 @@ function initMenu() {
 function setFooter() {
 	'use strict';
 	var footerH = $('footer').height() + 80;
-	var mb = $(window).height() + footerH
-	TweenMax.set('body', {marginBottom:mb});
+	if ($('#main.home').length) {
+		var mb = $(window).height() + footerH
+		TweenMax.set('body', {marginBottom:mb});
+	} else {
+		TweenMax.set('body', {marginBottom:footerH});
+	}
 	TweenMax.set('footer', {position:'fixed', height:footerH});
 }
 function glitchifyImg() {
