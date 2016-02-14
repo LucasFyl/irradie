@@ -4,6 +4,7 @@
 var Spash;
 var isMobile = false;
 var controller = new ScrollMagic.Controller();
+var landingTl = new TimelineMax();
 
 // Page load function
 function initPage(){
@@ -110,7 +111,8 @@ function initMenu() {
 function setFooter() {
 	'use strict';
 	var footerH = $('footer').height() + 80;
-	TweenMax.set('#main', {marginBottom: footerH});
+	var mb = $(window).height() + footerH
+	TweenMax.set('body', {marginBottom:mb});
 	TweenMax.set('footer', {position:'fixed', height:footerH});
 }
 function glitchifyImg() {
@@ -224,8 +226,6 @@ function initNextPrev() {
 }
 function landingProjectTl() {
 	'use strict';
-	var landingTl = new TimelineMax();
-
 	landingTl
 		.set('.share li', {y:20,opacity:0,delay:0.25})
 		.set('header, .block-prevnext', {opacity:0})
@@ -238,8 +238,6 @@ function landingProjectTl() {
 }
 function landingHomeTl() {
 	'use strict';
-	var landingTl = new TimelineMax();
-
 	landingTl
 		.set('.top, .bottom', {y:20,opacity:0})
 		.set('.landing .logo-wrap', {y:'-60%',opacity:0})

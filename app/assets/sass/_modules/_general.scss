@@ -1,6 +1,7 @@
 body {
   @include size(100%);
   position: relative;
+  margin-bottom: 100vh;
   &.locked {
     overflow: hidden;
   }
@@ -26,11 +27,15 @@ body {
   opacity: 1;
   visibility: visible;
 }
+// #super {
+//   @include size(100%);
+//   overflow: auto;
+// }
 .main {
   @include size(100%);
   max-width: 100vw;
   min-height: 100vh;
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
   z-index:9;
 }

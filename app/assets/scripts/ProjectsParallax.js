@@ -62,17 +62,17 @@
         
         $('[data-parallax="quick"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:200});
+            TweenMax.set(element, {y:50});
             ProjectsParallax.bindAnimation(element, value);
         });
         $('[data-parallax="medium"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:150});
+            TweenMax.set(element, {y:-50});
             ProjectsParallax.bindAnimation(element, value);
         });
         $('[data-parallax="slow"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:100});
+            TweenMax.set(element, {y:-20});
             ProjectsParallax.bindAnimation(element, value);
         });
     },

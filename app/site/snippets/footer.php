@@ -11,7 +11,6 @@
           <li><p>© Irradié 2016</p></li>
         </ul>
       </footer>
-    </div>
     <div class="isMobile"></div>
     
     <!-- Vendor Scripts -->
