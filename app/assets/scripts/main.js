@@ -174,34 +174,35 @@ function initGallery() {
 	TweenMax.set(wrap1, {width:g1w,height:g1h});
 	TweenMax.set(wrap2, {width:g2w,height:g2h});
 
-
-    $('.gallery').mousewheel(function(event, delta) {
-      this.scrollLeft -= (delta * 2);
-      // console.log(event.deltaX, event.deltaY, event.deltaFactor);
-      event.preventDefault();
-    });
-	
-	lockScrollOnGallery();
-
-    // RetargetMouseScroll(document, $('.gallery'), false, 0.5);
-    // var lockTween = new TweenMax.to('body', 0.1, {position:'relative',onComplete:function(){
-    // 	lockScrollOnGallery();
-    // }});
-    // var lockScrollScene = new ScrollMagic.Scene({
-    // 	triggerElement: '.gallery',
-    // 	triggerHook: 0.5
-    // }).addTo(controller).setTween(lockTween);
+	ManageGalleryScroll();
 }
-function lockScrollOnGallery() {
-	var retarget = RetargetMouseScroll(document, $('.gallery'), true, 0.5);
-	$(document).on({
-		mouseenter: function(){
-		    retarget;
-		},
-		mouseleave: function(){
-		    retarget.restore();
-		}
-	}, '.gallery');
+
+function ManageGalleryScroll() {
+	$('.gallery').each(function(index, value){
+		var _this        = $(this);
+    	var galleryH     = $('.gallery').height();
+    	var galleryLimit = _this.find('.wrap').width() - _this.width() - 1;
+
+		$(this).mousewheel(function(event, delta) {
+	    	event.preventDefault();
+	    	this.scrollLeft -= (delta * 2);
+
+	    	var ratio        = event.deltaY * event.deltaFactor;
+	    	var galleryPos   = _this.find('.wrap').position().left;
+	    	// console.log(galleryPos, galleryLimit);
+
+	    	// user is scrolling up && gallery scroll position is 0 :
+	    	if (ratio > 0 && galleryPos === 0) {
+	    		TweenMax.to(window, 1, {scrollTo:{y:'-='+galleryH}});
+	    		_this.mouseleave();
+	    	}
+	    	// user is scrolling down and gallery scroll position is 100%
+	    	if (ratio < 0 && galleryPos === -galleryLimit) {
+	    		TweenMax.to(window, 1, {scrollTo:{y:'+='+(galleryH / 2)}});
+	    		_this.mouseleave();
+	    	}
+	    });
+	});
 }
 function initNextPrev() {
 	'use strict';
