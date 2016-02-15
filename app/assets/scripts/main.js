@@ -173,6 +173,35 @@ function initGallery() {
 
 	TweenMax.set(wrap1, {width:g1w,height:g1h});
 	TweenMax.set(wrap2, {width:g2w,height:g2h});
+
+
+    $('.gallery').mousewheel(function(event, delta) {
+      this.scrollLeft -= (delta * 2);
+      // console.log(event.deltaX, event.deltaY, event.deltaFactor);
+      event.preventDefault();
+    });
+	
+	lockScrollOnGallery();
+
+    // RetargetMouseScroll(document, $('.gallery'), false, 0.5);
+    // var lockTween = new TweenMax.to('body', 0.1, {position:'relative',onComplete:function(){
+    // 	lockScrollOnGallery();
+    // }});
+    // var lockScrollScene = new ScrollMagic.Scene({
+    // 	triggerElement: '.gallery',
+    // 	triggerHook: 0.5
+    // }).addTo(controller).setTween(lockTween);
+}
+function lockScrollOnGallery() {
+	var retarget = RetargetMouseScroll(document, $('.gallery'), true, 0.5);
+	$(document).on({
+		mouseenter: function(){
+		    retarget;
+		},
+		mouseleave: function(){
+		    retarget.restore();
+		}
+	}, '.gallery');
 }
 function initNextPrev() {
 	'use strict';

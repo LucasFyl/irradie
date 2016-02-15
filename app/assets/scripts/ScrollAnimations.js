@@ -8,7 +8,7 @@
 			if ( $('#main.home').length ) {
 				this.home(controller);
 			} else if ( $('#main.about').length ) {
-        this.about(controller);
+        // this.about(controller);
       } else if ( $('#main.project').length ) {
         this.project(controller);
       }
@@ -52,6 +52,16 @@
           .setTween(galleryTween);
         });
       },1000);
+
+      // var winH =  $(window).height(),
+      //     halfWinH = winH / 2;
+      // var slowBody = new TweenMax.to('html, body', 1, {scrollTo:'-='+halfWinH,ease:Linear.easeNone});
+      // var slowScroll = new ScrollMagic.Scene({
+      //   triggerElement: '.gallery',
+      //   triggerHook: 0.5,
+      //   duration: halfWinH
+      // }).addTo(controller)
+      // .setTween(slowBody);
 		},
     home: function(controller){
       //  Scene for 4 small texts : graphic design art direction
