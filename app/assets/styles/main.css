@@ -1196,7 +1196,7 @@ header .menu a, header .shop a {
 @media screen and (max-width: 480px) {
   header .menu a, header .shop a {
     font-size: 1.4rem;
-    padding-left: 2rem;
+    padding-left: 1rem;
   }
 }
 
