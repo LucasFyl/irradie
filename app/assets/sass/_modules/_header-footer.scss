@@ -146,7 +146,7 @@ footer {
       padding-bottom: 4rem;
 
       @include media($mobile) {
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         text-align: left;
         padding-left: 4rem;
       }

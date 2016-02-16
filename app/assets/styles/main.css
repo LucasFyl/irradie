@@ -1273,7 +1273,7 @@ footer > ul li {
 }
 @media screen and (max-width: 480px) {
   footer > ul li {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     text-align: left;
     padding-left: 4rem;
   }
@@ -1443,7 +1443,6 @@ footer > ul li a, footer > ul li p {
   height: 4rem;
   width: 100%;
   max-width: 100vw;
-  margin-top: 7rem;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
