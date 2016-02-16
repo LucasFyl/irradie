@@ -126,17 +126,19 @@
     project: function(controller) {
       // Project image anim
       var el = $('#main .wrap > img'),
-          duration = $(window).height();
+          duration = ($(window).height() / 3) * 2;
+      if (isMobile === true) {duration = $(window).height() / 2}
       TweenMax.set(el, {y:50});
       el.each(function(index, value){
         var projectTween = TweenMax.to(value, 0.75, {y:0,ease:Power2.easeOut});
         var projectScene = new ScrollMagic.Scene({
           triggerElement: value,
-          triggerHook: 0.8,
+          triggerHook: 'onEnter',
           duration: duration
         }).addTo(controller)
         .setTween(projectTween);
       });
+
       if (isMobile === false ) {
         // Project next/prev anim : 
         TweenMax.set('.block-prevnext', {opacity:0, display:'none', visibility:'hidden'});
