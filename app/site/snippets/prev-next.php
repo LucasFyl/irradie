@@ -1,5 +1,5 @@
 <?php if( $prev = $page->prevVisible() ):  ?>
-<div class="block-prevnext prev">
+<div class="block-prevnext prev hide-mobile">
 	<a href="<?php echo $prev->url() ?>" class="ajaxy prev-project">
 		<div class="title-block">
 			<span>
@@ -20,7 +20,7 @@
 <?php endif ?>
 
 <?php if( $next = $page->nextVisible() ): ?>
-<div class="block-prevnext next">
+<div class="block-prevnext next hide-mobile">
 	<a href="<?php echo $next->url() ?>" class="ajaxy next-project">
 		<div class="title-block">
 			<span>
@@ -38,3 +38,19 @@
 	</a>
 </div>
 <?php endif ?>
+
+<div class="hide-desktop mobile-prevnext">
+	<div>
+		<?php if( $prev = $page->prevVisible() ):  ?>
+			<a href="<?php echo $prev->url() ?>" class="ajaxy prev-project">Prev</a>
+		<?php endif ?>
+	</div>
+	<div>
+		<a href="<?php echo $page->('work')->url() ?>">All projects</a>
+	</div>
+	<div>
+		<?php if( $next = $page->nextVisible() ): ?>
+			<a href="<?php echo $next->url() ?>" class="ajaxy next-project">Next</a>
+		<?php endif ?>
+	</div>
+</div>
