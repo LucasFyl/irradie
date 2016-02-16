@@ -1379,7 +1379,7 @@ footer > ul li a, footer > ul li p {
 }
 @media screen and (max-width: 480px) {
   .block-prevnext {
-    display: none;
+    display: none !important;
   }
 }
 .block-prevnext > a {
@@ -1437,6 +1437,42 @@ footer > ul li a, footer > ul li p {
 }
 .block-prevnext .img-wrap img:last-child {
   margin-bottom: 0 !important;
+}
+
+.mobile-prevnext {
+  height: 4rem;
+  width: 100%;
+  max-width: 100vw;
+  margin-top: 7rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #d0d0d0;
+}
+@media screen and (min-width: 480px) {
+  .mobile-prevnext {
+    display: none !important;
+  }
+}
+.mobile-prevnext > div {
+  text-align: center;
+}
+.mobile-prevnext > div:first-child {
+  width: 30%;
+  border-right: 1px solid #d0d0d0;
+}
+.mobile-prevnext > div:nth-child(2) {
+  width: 40%;
+}
+.mobile-prevnext > div:last-child {
+  width: 30%;
+  border-left: 1px solid #d0d0d0;
+}
+.mobile-prevnext > div > a {
+  line-height: 4rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #4d4d4d;
 }
 
 .landing {
@@ -1882,6 +1918,7 @@ footer > ul li a, footer > ul li p {
   padding: 2rem 4rem;
   max-width: 100vw;
   overflow-x: hidden;
+  background: white;
 }
 #main.project .wrap {
   background: white;
@@ -1986,9 +2023,19 @@ footer > ul li a, footer > ul li p {
   float: left;
   padding-right: 2.5rem;
 }
+@media screen and (max-width: 480px) {
+  #main.project figure.half {
+    padding-right: 1rem;
+  }
+}
 #main.project figure.half + figure.half {
   padding-right: 0;
   padding-left: 2.5rem;
+}
+@media screen and (max-width: 480px) {
+  #main.project figure.half + figure.half {
+    padding-left: 1rem;
+  }
 }
 #main.project section {
   overflow: auto;

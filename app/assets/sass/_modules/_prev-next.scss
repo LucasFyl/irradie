@@ -8,7 +8,7 @@
 	z-index: 999;
 
 	@include media($mobile) {
-		display: none;
+		display: none !important;
 	}
 
 	> a {
@@ -73,6 +73,44 @@
 			}
 			
 			opacity: 0;
+		}
+	}
+}
+.mobile-prevnext {
+	@include media($desktop) {
+		display: none !important;
+	}
+	height: 4rem;
+	width: 100%;
+	max-width: 100vw;
+	margin-top: 7rem;
+
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+
+	border-bottom: 1px solid #d0d0d0;
+
+	> div {
+		text-align: center;
+
+		&:first-child {
+			width: 30%;
+			border-right: 1px solid #d0d0d0;
+		}
+		&:nth-child(2) {
+			width: 40%;
+		}
+		&:last-child {
+			width: 30%;
+			border-left: 1px solid #d0d0d0;
+		}
+
+		> a {
+			line-height: 4rem;
+			text-decoration: none;
+			font-size: 1.2rem;
+			color: #4d4d4d;
 		}
 	}
 }
