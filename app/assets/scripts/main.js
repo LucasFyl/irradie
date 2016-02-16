@@ -173,10 +173,38 @@ function initGallery() {
 
 	TweenMax.set(wrap1, {width:g1w,height:g1h});
 	TweenMax.set(wrap2, {width:g2w,height:g2h});
-
-	ManageGalleryScroll();
+	
+	// initScrollToGallery();
+	
+	var lockTween = new TweenMax.to('body', 0.1, {position:'relative',onComplete:function(){
+		ManageGalleryScroll();
+	}});
+	var galleryOffset = $('.gallery').height() / 2;
+	var lockScrollScene = new ScrollMagic.Scene({
+		triggerElement: '.gallery',
+		triggerHook: 0.5,
+		offset: - galleryOffset
+	}).addTo(controller).setTween(ManageGalleryScroll);
 }
+// function initScrollToGallery() {
 
+// 	$('.gallery').each(function(index, value){
+// 		var _this         = $(this),
+// 			winH = $(window).height(),
+// 			winHalf = winH / 2,
+// 			galH = _this.height(),
+// 			galHalf = galH / 2,
+// 			galleryOffset = _this.position().top,
+// 			tweenOffset = galleryOffset + (winHalf - galHalf);
+// 		console.log(tweenOffset);
+// 		var T_scrollToGallery = new TweenMax.to(window, 1, {scrollTo:{y:tweenOffset}});
+// 		var S_scrollToGallery = new ScrollMagic.Scene({
+// 				triggerElement: this,
+// 				triggerHook: 'onEnter',
+// 			}).addTo(controller).setTween(T_scrollToGallery);
+
+// 	});
+// }
 function ManageGalleryScroll() {
 	$('.gallery').each(function(index, value){
 		var _this        = $(this);

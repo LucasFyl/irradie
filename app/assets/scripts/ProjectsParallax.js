@@ -62,32 +62,31 @@
         
         $('[data-parallax="quick"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:50});
+            TweenMax.set(element, {y:200});
             ProjectsParallax.bindAnimation(element, value);
         });
         $('[data-parallax="medium"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:-50});
+            TweenMax.set(element, {y:150});
             ProjectsParallax.bindAnimation(element, value);
         });
         $('[data-parallax="slow"]').each(function(index, value){
             var element = $(value);
-            TweenMax.set(element, {y:-20});
+            TweenMax.set(element, {y:100});
             ProjectsParallax.bindAnimation(element, value);
         });
     },
     bindAnimation: function(element, value) {
         'use strict';
         var randomTrigger = (0.7+(Math.random()*(1-0.7))).toFixed(2);
-        var duration = $(window).height();
-        // var randomDuration = (1+(Math.random()*(3-1))).toFixed(1);
+        // var duration = $(window).height();
+        var randomDuration = (1+(Math.random()*(3-1))).toFixed(1);
         // console.log(randomDuration);
 
-        var tween = TweenMax.to(element, 1, {y:0,ease:Linear.easeNone});
+        var tween = TweenMax.to(element, randomDuration, {y:0,ease:Power1.easeInOut});
         var projectsTween = new ScrollMagic.Scene({
             triggerElement: value,
-            triggerHook: randomTrigger,
-            duration: duration,
+            triggerHook: randomTrigger
         }).addTo(controller)
         .setTween(tween);
     }
