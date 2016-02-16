@@ -102,6 +102,9 @@
 
 		},
 		projects: function(controller){
+
+        // See  ../scripts/ProjectsParallax.js
+
         // // Projects 'parallax' style anim:
         // var el = $('.projects figure'),
         //     length = el.length;
@@ -134,16 +137,18 @@
         }).addTo(controller)
         .setTween(projectTween);
       });
-      // Project next/prev anim : 
-      TweenMax.set('.block-prevnext', {opacity:0, display:'none', visibility:'hidden'});
-      var prevnextTween = new TweenMax.fromTo('.block-prevnext', 0.5, {opacity:0, display:'none', visibility:'hidden'}, {opacity:1, display:'block', visibility:'visible'});
-      var prevnextScene = new ScrollMagic.Scene({
-        triggerElement: 'header',
-        triggerHook:    'onLeave',
-        duration:        250,
-        offset:          50
-      }).addTo(controller)
-      .setTween(prevnextTween);
+      if (isMobile === false ) {
+        // Project next/prev anim : 
+        TweenMax.set('.block-prevnext', {opacity:0, display:'none', visibility:'hidden'});
+        var prevnextTween = new TweenMax.fromTo('.block-prevnext', 0.5, {opacity:0, display:'none', visibility:'hidden'}, {opacity:1, display:'block', visibility:'visible'});
+        var prevnextScene = new ScrollMagic.Scene({
+          triggerElement: 'header',
+          triggerHook:    'onLeave',
+          duration:        250,
+          offset:          50
+        }).addTo(controller)
+        .setTween(prevnextTween);
+      }
     }
 	};
 	MagicStuff.init();

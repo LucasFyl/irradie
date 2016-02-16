@@ -111,7 +111,7 @@ function initMenu() {
 function setFooter() {
 	'use strict';
 	var footerH = $('footer').height() + 80;
-	if ($('#main.home').length) {
+	if ($('#main.home').length && isMobile === false) {
 		var mb = $(window).height() + footerH
 		TweenMax.set('body', {marginBottom:mb});
 	} else {
