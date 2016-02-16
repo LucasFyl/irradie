@@ -63,13 +63,17 @@
       right: 0; top:6rem;
 
       @include media($mobile) {
-        top: 2rem;
+        position: static;
       }
 
       ul {
         list-style: none;
         padding: 0;
         margin: 0;
+
+        @include media($mobile) {
+          display: flex;
+        }
         li {
           font-family: $atlasLight;
           text-transform: uppercase;
@@ -78,6 +82,12 @@
           letter-spacing: 1px;
           color: #999999;
           margin-bottom: 2rem;
+          @include media($mobile) {
+            margin-left: 3rem;
+            &:first-child {
+              margin-left: 0;
+            }
+          }
 
           a {
             display: block;

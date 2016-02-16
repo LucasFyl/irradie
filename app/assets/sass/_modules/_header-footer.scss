@@ -67,6 +67,10 @@ header {
       color: #4d4d4d;
 
       font-size: 1.6rem;
+      @include media($mobile) {
+        font-size: 1.4rem;
+        padding-left: 2rem;
+      }
     }
   }
 }
