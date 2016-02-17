@@ -1533,8 +1533,10 @@ footer > ul li a, footer > ul li p {
   margin-left: -235px;
   overflow: hidden;
 }
-.landing .fixed-wrap .cover .video-wrap {
+.landing .fixed-wrap .cover #video-wrap video {
   position: absolute;
+  top: 50%;
+  left: 50%;
 }
 @media screen and (max-width: 480px) {
   .landing {

@@ -18,7 +18,7 @@
 
     <div class="fixed-wrap">
       <div class="cover">
-        <div class="video-wrap">
+        <div id="video-wrap">
           <video poster="/assets/images/placeholder-background.jpg" width="470" height="450" autoplay loop>
             <source src="/assets/video/anim1_3.mp4" type="video/mp4" />
             <!-- <source src="linktovideo.webm" type="video/webm" />

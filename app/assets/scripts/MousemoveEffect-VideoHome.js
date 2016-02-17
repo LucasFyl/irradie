@@ -1,22 +1,22 @@
 
-  var Splash = {
+  var SplashHome = {
     init: function() {
         'use strict';
-        Splash.config = {
-            img: $('#menu .half .cover img'),
+        SplashHome.config = {
+            img: $('#video-wrap video'),
             effect: true
         };
 
-        Splash.initEvents();
+        SplashHome.initEvents();
         $(window).trigger('resize');
-        Splash.initImg();
+        SplashHome.initImg();
 
     },
 
     initImg: function() {
         'use strict';
-        var img = Splash.config.img;
-        // console.log('init Splash with:', img);
+        var img = SplashHome.config.img;
+        // console.log('init SplashHome with:', img);
 
         $.data(img, 'positions', {
             topPosition: -($(img).height() / 2),
@@ -35,9 +35,9 @@
 
     initEvents: function() {
         'use strict';
-        var img = Splash.config.img;
-        var effect = Splash.config.effect;
-        // console.log('init Splash events. effects ->', effect);
+        var img = SplashHome.config.img;
+        var effect = SplashHome.config.effect;
+        // console.log('init SplashHome events. effects ->', effect);
 
         $(window).resize(function(){
             if ($(window).width() < 1024 && $(img).offset().top > 0) {
@@ -49,19 +49,19 @@
                     $(img).css('width', '200%');
                     $(img).css('height', 'auto');
                     effect = true;
-                    Splash.initImg();
+                    SplashHome.initImg();
                 }
             }
         });
 
-        $('#menu .half').mousemove(function(e){
+        $('.landing').mousemove(function(e){
             
             if (!effect){ return; }
 
-            var amountMovedX = ((e.pageX-$(window).width()/2) * -1 / 1.5) / 8;
-            var amountMovedY = ((e.pageY-$(window).height()/2) * -1 / 1.5) / 8;
+            var amountMovedX = ((e.pageX-$(window).width()/2) * -1 / 1.5) / 5;
+            var amountMovedY = ((e.pageY-$(window).height()/2) * -1 / 1.5) / 5;
 
-            // if (!Splash.between(amountMovedY, -$.data( img, 'offset').top, $.data( img, 'offset').top) || !Splash.between(amountMovedX, -$.data( img, 'offset').left, $.data( img, 'offset').left))
+            // if (!SplashHome.between(amountMovedY, -$.data( img, 'offset').top, $.data( img, 'offset').top) || !SplashHome.between(amountMovedX, -$.data( img, 'offset').left, $.data( img, 'offset').left))
                 // {return;}
 
             var marginTop = $.data( img, 'positions' ).topPosition - amountMovedY;

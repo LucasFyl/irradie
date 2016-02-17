@@ -25,6 +25,7 @@
       <?= js('assets/scripts/vendors/RetargetMouseScroll.js') ?>
     <!-- Custom Scripts -->
       <?= js('assets/scripts/MousemoveEffect.js') ?>
+      <?= js('assets/scripts/MousemoveEffect-VideoHome.js') ?>
       <?= js('assets/scripts/ProjectsParallax.js') ?>
       <?= js('assets/scripts/PageTransition.js') ?>
       <?= js('assets/scripts/main.js') ?>

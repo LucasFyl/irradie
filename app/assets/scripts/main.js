@@ -14,6 +14,7 @@ function initPage(){
 	window.onresize = resize;
 
 	if ( $('#main.home').length ) {
+		SplashHome.init();
 		landingHomeTl();
 	} else if ( $('#main.about').length ) {
 		setTimeout(initGallery, 200);
