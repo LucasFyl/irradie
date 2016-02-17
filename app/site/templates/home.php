@@ -18,10 +18,13 @@
 
     <div class="fixed-wrap">
       <div class="cover">
-        <div class="background-wrap">
-          <img width="470" height="659" class="glitch" />
+        <div class="video-wrap">
+          <video poster="/assets/images/placeholder-background.jpg" width="470" height="450" autoplay loop>
+            <source src="/assets/video/anim1_3.mp4" type="video/mp4" />
+            <!-- <source src="linktovideo.webm" type="video/webm" />
+            <source src="linktovideo.ogv" type="video/ogg" /> -->
+          </video>
         </div>
-        <!-- <img src="/assets/images/placeholder-background.jpg" alt="#" class="background" /> -->
       </div>
     </div>
 
