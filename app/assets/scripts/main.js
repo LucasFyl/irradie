@@ -206,7 +206,8 @@ function ManageGalleryScroll() {
 	    		_this.mouseleave();
 	    	}
 	    	// user is scrolling down and gallery scroll position is 100%
-	    	if (ratio < 0 && galleryPos === -galleryLimit) {
+	    	galleryLimit = ((galleryLimit+1) * -1);
+	    	if (ratio < 0 && galleryPos === galleryLimit) {
 	    		TweenMax.to(window, 1, {scrollTo:{y:'+='+(galleryH / 2)}});
 	    		_this.mouseleave();
 	    	}
