@@ -46,8 +46,8 @@
                 effect = false;
             } else {
                 if ($(window).width() >= 1024) {
-                    $(img).css('width', '200%');
-                    $(img).css('height', 'auto');
+                    $(img).css('height', '150%');
+                    $(img).css('width', 'auto');
                     effect = true;
                     Splash.initImg();
                 }
@@ -58,8 +58,8 @@
             
             if (!effect){ return; }
 
-            var amountMovedX = ((e.pageX-$(window).width()/2) * -1 / 1.5) / 8;
-            var amountMovedY = ((e.pageY-$(window).height()/2) * -1 / 1.5) / 8;
+            var amountMovedX = ((e.pageX-$(window).width()/2) * -1 / 1.5) / 6;
+            var amountMovedY = ((e.pageY-$(window).height()/2) * -1 / 1.5) / 6;
 
             // if (!Splash.between(amountMovedY, -$.data( img, 'offset').top, $.data( img, 'offset').top) || !Splash.between(amountMovedX, -$.data( img, 'offset').left, $.data( img, 'offset').left))
                 // {return;}
