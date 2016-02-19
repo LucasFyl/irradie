@@ -2,7 +2,9 @@
 
 title: Work
 pages:
-  template: project
+  template:
+    - project
+    - petit-projet
 files: false
 fields:
   title:
