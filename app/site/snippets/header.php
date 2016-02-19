@@ -4,13 +4,13 @@
   <div class="half">
     <a href="<?php echo $pages->find('work')->url() ?>">Work</a>
     <div class="cover">
-      <img src="/assets/images/asset-nav-work.gif" alt="#" draggable="false" />
+      <img src="<?php echo $pages->find('home')->file('nav-work.gif')->url() ?>" alt="#" draggable="false" />
     </div>
   </div>
   <div class="half">
     <a href="<?php echo $pages->find('about')->url() ?>">About</a>
     <div class="cover">
-      <img src="/assets/images/asset-nav-about.gif" alt="#" draggable="false" />
+      <img src="<?php echo $pages->find('home')->file('nav-about.gif')->url() ?>" alt="#" draggable="false" />
     </div>
   </div>
 

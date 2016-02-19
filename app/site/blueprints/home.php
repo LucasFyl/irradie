@@ -2,6 +2,7 @@
 
 title: Home
 pages: false
+files: true
 fields:
   title:
     label: Title
