@@ -49,8 +49,10 @@ function hideLoader(){
 function resize() {
 	'use strict';
 	// Manage resize exception
-	setFooter();
-	initGallery();
+	setTimeout(function(){
+		setFooter();
+		initGallery();
+	}, 250);
 }
 function initScroll() {
 		'use strict';

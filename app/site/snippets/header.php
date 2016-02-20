@@ -18,7 +18,7 @@
     <ul>
       <li><a href="<?php echo $pages->find('work')->url() ?>">Work</a></li>
       <li><a href="<?php echo $pages->find('about')->url() ?>">About</a></li>
-      <li><a href="#" target="_blank">Shop</a></li>
+      <li><a href="http://irradie.tictail.com/" target="_blank">Shop</a></li>
     </ul>
   </div>
 </div>
@@ -31,6 +31,6 @@
       <a href="<?php echo $site->url() ?>"><h1 class="logo">Irradié</h1></a>
     </div>
     <div class="shop">
-      <a href="#" target="_blank">Shop</a>
+      <a href="http://irradie.tictail.com/" target="_blank">Shop</a>
     </div>
 </header>

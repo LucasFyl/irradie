@@ -5,9 +5,9 @@
         </div>
         <ul>
           <li><a href="#" target="_blank">Newsletter</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
-          <li><a href="#" target="_blank">Tumblr</a></li>
-          <li><a href="#" target="_blank">Instagram</a></li>
+          <li><a href="https://www.facebook.com/atelier.irradie/" target="_blank">Facebook</a></li>
+          <li><a href="http://atelierirradie.tumblr.com/" target="_blank">Tumblr</a></li>
+          <li><a href="https://www.instagram.com/irradieatelier/" target="_blank">Instagram</a></li>
           <li><p>© Irradié 2016</p></li>
         </ul>
       </footer>
