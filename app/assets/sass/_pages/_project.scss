@@ -59,6 +59,7 @@
       }
     }
     .share {
+      min-width: 7rem;
       position: absolute;
       right: 0; top:6rem;
 
@@ -67,6 +68,7 @@
       }
 
       ul {
+        overflow: hidden;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -74,14 +76,18 @@
         @include media($mobile) {
           display: flex;
         }
+
         li {
           font-family: $atlasLight;
           text-transform: uppercase;
+          text-align: right;
           line-height: 1.3;
           font-size: 1rem;
           letter-spacing: 1px;
           color: #999999;
+
           margin-bottom: 2rem;
+          
           @include media($mobile) {
             margin-left: 3rem;
             &:first-child {
@@ -92,11 +98,36 @@
           a {
             display: block;
             width: 100%;
-            text-align: right;
 
             text-decoration: none;
             font-size: 1rem;
             color: #4d4d4d;
+          }
+
+
+
+          &:not(:first-child) {
+            overflow: hidden;
+            position: relative;
+            min-height: 3.3rem;
+            margin-bottom: 0;
+
+            a {
+              position: absolute;
+              left: calc(100% - 1rem);
+
+              @include transition(left 0.25s $ease-in-out-sine);
+            }
+
+            &:hover {
+              a {
+                left: 0;
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            a{left: calc(100% - 2.4rem);}
           }
         }
 

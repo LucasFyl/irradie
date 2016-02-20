@@ -17,9 +17,9 @@
         <div class="share">
           <ul>
             <li>Share</li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">P</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Pinterest</a></li>
           </ul>
         </div>
       </div>
