@@ -1267,7 +1267,7 @@ footer > div a:hover {
   }
 }
 footer > ul {
-  margin: 0;
+  margin: 0 0 8rem 0;
   padding: 6rem 0 0 0;
   list-style: none;
   width: 100%;
@@ -1281,9 +1281,6 @@ footer > ul {
     padding-top: 0rem;
   }
 }
-footer > ul li {
-  padding-bottom: 4rem;
-}
 @media screen and (max-width: 480px) {
   footer > ul li {
     padding-bottom: 1rem;
@@ -1292,6 +1289,7 @@ footer > ul li {
   }
 }
 footer > ul li a, footer > ul li p {
+  padding-right: 1rem;
   margin: 0;
   display: block;
   height: 100%;
@@ -1304,11 +1302,16 @@ footer > ul li a, footer > ul li p {
   color: #4d4d4d;
   line-height: 1;
   text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 @media screen and (max-width: 480px) {
   footer > ul li a, footer > ul li p {
     text-align: left;
   }
+}
+footer > ul li a:hover, footer > ul li p:hover {
+  transform: translateY(-0.5rem);
+  color: #4d4d4d;
 }
 
 #menu {

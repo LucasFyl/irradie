@@ -139,7 +139,7 @@ footer {
     }
   }
   > ul {
-    margin: 0;
+    margin: 0 0 8rem 0;
     padding: 6rem 0 0 0;
     list-style: none;
     width: 100%;
@@ -154,7 +154,6 @@ footer {
     }
 
     li {
-      padding-bottom: 4rem;
 
       @include media($mobile) {
         padding-bottom: 1rem;
@@ -162,6 +161,7 @@ footer {
         padding-left: 4rem;
       }
       a, p {
+        padding: 1rem;
         margin: 0;
         display: block;
         @include size(100%);
@@ -176,6 +176,12 @@ footer {
         text-decoration: none;
         @include media($mobile) {
           text-align: left;
+        }
+
+        @include transition(all 0.25s $ease-in-out-sine);
+        &:hover {
+          @include transform(translateY(-0.5rem));
+          color: #4d4d4d;
         }
       }
     }
