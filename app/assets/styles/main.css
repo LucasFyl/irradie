@@ -1289,7 +1289,7 @@ footer > ul {
   }
 }
 footer > ul li a, footer > ul li p {
-  padding-right: 1rem;
+  padding: 1rem;
   margin: 0;
   display: block;
   height: 100%;
@@ -1302,7 +1302,7 @@ footer > ul li a, footer > ul li p {
   color: #4d4d4d;
   line-height: 1;
   text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 @media screen and (max-width: 480px) {
   footer > ul li a, footer > ul li p {
@@ -2125,4 +2125,12 @@ footer > ul li a:hover, footer > ul li p:hover {
     font-size: 2rem;
     line-height: 2.8rem;
   }
+}
+#main.project section > div:last-child p a {
+  text-decoration: none;
+  color: #d0d0d0;
+  transition: color 0.25s cubic-bezier(1, 0, 0, 1);
+}
+#main.project section > div:last-child p a:hover {
+  color: black;
 }

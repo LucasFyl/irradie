@@ -7,10 +7,10 @@ password: >
 language: en
 role: admin
 history:
+  - work/incendiaire
   - about
   - work/dark-sand
   - work/liberation
-  - work/incendiaire
   - home
 firstname: Lucas
 lastname: Fayolle

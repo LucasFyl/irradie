@@ -175,6 +175,14 @@
             font-size: 2rem;
             line-height: 2.8rem;
           }
+          a {
+            text-decoration: none;
+            color:#d0d0d0; 
+            @include transition(color 0.25s $ease-in-out-expo);
+            &:hover {
+              color: black;
+            } 
+          }
         }
       }
     }

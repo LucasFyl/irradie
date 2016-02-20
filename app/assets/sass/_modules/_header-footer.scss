@@ -178,7 +178,7 @@ footer {
           text-align: left;
         }
 
-        @include transition(all 0.25s $ease-in-out-sine);
+        @include transition(all 0.25s $ease-in-out-cubic);
         &:hover {
           @include transform(translateY(-0.5rem));
           color: #4d4d4d;
