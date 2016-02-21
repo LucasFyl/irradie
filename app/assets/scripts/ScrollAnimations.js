@@ -8,7 +8,7 @@
 			if ( $('#main.home').length ) {
 				this.home(controller);
 			} else if ( $('#main.about').length ) {
-        // this.about(controller);
+        this.about(controller);
       } else if ( $('#main.project').length ) {
         this.project(controller);
       }
@@ -18,50 +18,6 @@
       }
 		},
 		about: function(controller){
-      var el = $('.gallery');
-      var duration = $(window).height() / 2.3;
-      var limit1, limit2;
-      var galleryTween;
-
-      setTimeout(function(){
-        el.each(function(index,value) {
-          // namespace
-          var element = $(value),
-              wrap = element.find('.wrap');
-          // define sizes for calc
-          var foo = wrap.width(),
-              bar = element.find('figure.infos').width();
-
-          if ( element.is('.gallery-1') ) {
-            // define limit scroll-x : - (container width - .infos width)
-            limit1 = foo - bar; limit1 = -limit1;
-            // define tween per gallery
-            galleryTween = new TweenMax.to(wrap, 0.25, {left:limit1,ease:Linear.easeNone});
-          } else if ( element.is('.gallery-2') ) {
-            limit2 = foo - bar; limit2 = -limit2;
-            galleryTween = new TweenMax.to(wrap, 0.25, {left:limit2,ease:Linear.easeNone});
-          }
-
-          // Scroll animation scene :
-          var galleryScene = new ScrollMagic.Scene({
-            triggerElement: this,
-            triggerHook: 0.3,
-            duration: duration,
-            offset: 0
-          }).addTo(controller)
-          .setTween(galleryTween);
-        });
-      },1000);
-
-      // var winH =  $(window).height(),
-      //     halfWinH = winH / 2;
-      // var slowBody = new TweenMax.to('html, body', 1, {scrollTo:'-='+halfWinH,ease:Linear.easeNone});
-      // var slowScroll = new ScrollMagic.Scene({
-      //   triggerElement: '.gallery',
-      //   triggerHook: 0.5,
-      //   duration: halfWinH
-      // }).addTo(controller)
-      // .setTween(slowBody);
 		},
     home: function(controller){
       //  Scene for 4 small texts : graphic design art direction
@@ -103,25 +59,8 @@
 		},
 		projects: function(controller){
 
-        // See  ../scripts/ProjectsParallax.js
+      // See  ../scripts/ProjectsParallax.js
 
-        // // Projects 'parallax' style anim:
-        // var el = $('.projects figure'),
-        //     length = el.length;
-        // var duration = $(window).height() * 1.5;
-        // TweenMax.set(el, {y:50});
-
-        // // Pour chaque figure dans .projects, when reaches 0.25 viewport anim y :
-        // for (var i = 0; i < length; i++) {
-        //   var element = el[i];
-        //   var tween = TweenMax.to(element, 0.75, {y:0,ease:Power2.easeOut});
-        //   var projectsTween = new ScrollMagic.Scene({
-        //     triggerElement: element,
-        //     triggerHook: 0.25,
-        //     duration: duration
-        //   }).addTo(controller)
-        //   .setTween(tween);
-        // }
 		},
     project: function(controller) {
       // Project image anim

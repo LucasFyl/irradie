@@ -4,94 +4,79 @@
 
     <?php snippet('header') ?>
 
-    <div class="intro">
-      <h2><?php echo $page->introText()->kirbytext() ?></h2>
-
-      <div class="image"></div>
-      <div class="text">
-        <?php echo $page->firstText()->kirbytext() ?>
-      </div>
-    </div>
-
     <section>
-        <div>
-          <h2>Services</h2>
+      <div class="big-text-block">
+        <h2><?php echo $page->introText()->kirbytext() ?></h2>
+      </div>
+      <div class="content-wrap">
+        <div class="row">
+          <h3>Services</h3>
           <?php echo $page->services()->kirbytext() ?>
         </div>
-        <div>
-          <h2>Clients</h2>
+        <div class="row">
+          <h3>Clients</h3>
           <?php echo $page->clients()->kirbytext() ?>
         </div>
-        <div>
-          <h2>Selected Online Press</h2>
+        <div class="row">
+          <h3>Selected Online Press</h3>
           <?php echo $page->press()->kirbytext() ?>
         </div>
-        <div>
-          <h2>Award</h2>
+        <div class="row">
+          <h3>Award</h3>
           <?php echo $page->award()->kirbytext() ?>
         </div>
+      </div>
     </section>
 
-    <div class="gallery gallery-1">
-      <div class="wrap">
-        <?php foreach ($pages->find('about/gallery-1')->images() as $image): ?>
-  				<figure>
-            <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
-  				  <figcaption>
-  				    <p>Still TODO <span>dynamic Image Caption</span></p>
-  				  </figcaption>
-  				</figure>
-  			<?php endforeach; ?>
-          <figure class="infos">
-            <div class="title-wrap">
-              <h3><span>Publications</span></h3>
-            </div>
-            <div class="row">
-              <?php echo $page->rowPublications1()->kirbytext() ?>
-            </div>
-            <div class="row">
-              <?php echo $page->rowPublications2()->kirbytext() ?>
-            </div>
-            <div class="row">
-              <?php echo $page->rowPublications3()->kirbytext() ?>
-            </div>
-          </figure>
+    <section>
+      <div class="content-wrap">
+        <div class="image">
+          <img src="<?php echo $page->image('illu-1.png')->url(); ?>" alt="" draggable="false" />
+        </div>
+        <section>
+          <div class="title">
+            <h3>Publications</h3>
+          </div>
+          <div class="row">
+            <?php echo $page->rowPublications1()->kirbytext() ?>
+          </div>
+          <div class="row">
+            <?php echo $page->rowPublications2()->kirbytext() ?>
+          </div>
+          <div class="row">
+            <?php echo $page->rowPublications3()->kirbytext() ?>
+          </div>
+        </section>
       </div>
-    </div>
-
-    <div class="separation">
-      <div class="image"></div>
-      <div class="text">
+      <div class="big-text-block">
+        <?php echo $page->firstText()->kirbytext() ?>
+      </div>
+    </section>
+    
+    <section>
+      <div class="big-text-block">
         <?php echo $page->secondText()->kirbytext() ?>
       </div>
-    </div>
-
-    <div class="gallery gallery-2">
-      <div class="wrap">
-        <?php foreach ($pages->find('about/gallery-2')->images() as $image): ?>
-  				<figure>
-            <img src="<?php echo $image->url() ?>" alt="<?php echo $image->title() ?>" />
-  				  <figcaption>
-  				    <p>Still TODO <span>Image Caption</span></p>
-  				  </figcaption>
-  				</figure>
-  			<?php endforeach; ?>
-          <figure class="infos">
-            <div class="title-wrap">
-              <h3><span>Exhibitions</span></h3>
-            </div>
-            <div class="row">
-              <?php echo $page->rowExhibitions1()->kirbytext() ?>
-            </div>
-            <div class="row">
-              <?php echo $page->rowExhibitions2()->kirbytext() ?>
-            </div>
-            <div class="row">
-              <?php echo $page->rowExhibitions3()->kirbytext() ?>
-            </div>
-          </figure>
+      <div class="content-wrap">
+        <div class="image">
+          <img src="<?php echo $page->image('illu-2.png')->url(); ?>" alt="" draggable="false" />
+        </div>
+        <section>
+          <div class="title-wrap">
+            <h3><span>Exhibitions</span></h3>
+          </div>
+          <div class="row">
+            <?php echo $page->rowExhibitions1()->kirbytext() ?>
+          </div>
+          <div class="row">
+            <?php echo $page->rowExhibitions2()->kirbytext() ?>
+          </div>
+          <div class="row">
+            <?php echo $page->rowExhibitions3()->kirbytext() ?>
+          </div>
+        </section>
       </div>
-    </div>
+    </section>
 
     <section class="footer">
       <div class="contact">

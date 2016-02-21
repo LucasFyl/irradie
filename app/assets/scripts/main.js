@@ -18,8 +18,7 @@ function initPage(){
 		landingHomeTl();
 	} else if ( $('#main.about').length ) {
 		TweenMax.fromTo('#main.about', 1, {backgroundColor: 'white'}, {backgroundColor: 'black', ease: Power2.easeOut, delay: 0.75});
-		TweenMax.fromTo('.intro .image', 1, {y:50,opacity:0}, {y:0,opacity:1,ease: Power2.easeOut, delay: 0.75});
-		setTimeout(initGallery, 200);
+		// TweenMax.fromTo('.intro .image', 1, {y:50,opacity:0}, {y:0,opacity:1,ease: Power2.easeOut, delay: 0.75});
 	} else if ( $('#main.project').length ) {
 		TweenMax.set(window, {scrollTo:0});
 		landingProjectTl();
@@ -51,7 +50,6 @@ function resize() {
 	// Manage resize exception
 	setTimeout(function(){
 		setFooter();
-		initGallery();
 	}, 250);
 }
 function initScroll() {
@@ -122,99 +120,6 @@ function setFooter() {
 		TweenMax.set('body', {marginBottom:footerH});
 	}
 	TweenMax.set('footer', {position:'fixed', height:footerH});
-}
-function initGallery() {
-	'use strict';
-	var g1 = $('.gallery-1');
-	var g2 = $('.gallery-2');
-
-	var g1h = g1.find('figure:first').height();
-	var g2h = g2.find('figure:first').height();
-	var g1w = 10;
-	var g2w = 10;
-
-	TweenMax.set(g1, {height:g1h});
-	TweenMax.set(g2, {height:g2h});
-
-	g1.find('figure').each( function(index, element){
-		var style = element.currentStyle || window.getComputedStyle(element),
-			width = element.offsetWidth,
-			margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-		g1w = g1w + (width + margin); 
-		// console.log(width, margin);
-	});
-
-	g2.find('figure').each( function(index, element){
-		var style = element.currentStyle || window.getComputedStyle(element),
-			width = element.offsetWidth,
-			margin = parseFloat(style.marginLeft) + parseFloat(style.marginRight);
-		g2w = g2w + width + margin; 
-	});
-	
-	var wrap1 = g1.find('.wrap');
-	var wrap2 = g2.find('.wrap');
-
-	TweenMax.set(wrap1, {width:g1w,height:g1h});
-	TweenMax.set(wrap2, {width:g2w,height:g2h});
-	
-	// initScrollToGallery();
-	
-	var lockTween = new TweenMax.to('body', 0.1, {position:'relative',onComplete:function(){
-		ManageGalleryScroll();
-	}});
-	var galleryOffset = $('.gallery').height() / 2;
-	var lockScrollScene = new ScrollMagic.Scene({
-		triggerElement: '.gallery',
-		triggerHook: 0.5,
-		offset: - galleryOffset
-	}).addTo(controller).setTween(ManageGalleryScroll);
-}
-// function initScrollToGallery() {
-
-// 	$('.gallery').each(function(index, value){
-// 		var _this         = $(this),
-// 			winH = $(window).height(),
-// 			winHalf = winH / 2,
-// 			galH = _this.height(),
-// 			galHalf = galH / 2,
-// 			galleryOffset = _this.position().top,
-// 			tweenOffset = galleryOffset + (winHalf - galHalf);
-// 		console.log(tweenOffset);
-// 		var T_scrollToGallery = new TweenMax.to(window, 1, {scrollTo:{y:tweenOffset}});
-// 		var S_scrollToGallery = new ScrollMagic.Scene({
-// 				triggerElement: this,
-// 				triggerHook: 'onEnter',
-// 			}).addTo(controller).setTween(T_scrollToGallery);
-
-// 	});
-// }
-function ManageGalleryScroll() {
-	$('.gallery').each(function(index, value){
-		var _this        = $(this);
-    	var galleryH     = $('.gallery').height();
-    	var galleryLimit = _this.find('.wrap').width() - _this.width() - 1;
-
-		$(this).mousewheel(function(event, delta) {
-	    	event.preventDefault();
-	    	this.scrollLeft -= (delta * 2);
-
-	    	var ratio        = event.deltaY * event.deltaFactor;
-	    	var galleryPos   = _this.find('.wrap').position().left;
-	    	// console.log(galleryPos, galleryLimit);
-
-	    	// user is scrolling up && gallery scroll position is 0 :
-	    	if (ratio > 0 && galleryPos === 0) {
-	    		TweenMax.to(window, 1, {scrollTo:{y:'-='+galleryH}});
-	    		_this.mouseleave();
-	    	}
-	    	// user is scrolling down and gallery scroll position is 100%
-	    	galleryLimit = ((galleryLimit+1) * -1);
-	    	if (ratio < 0 && galleryPos === galleryLimit) {
-	    		TweenMax.to(window, 1, {scrollTo:{y:'+='+(galleryH / 2)}});
-	    		_this.mouseleave();
-	    	}
-	    });
-	});
 }
 function initNextPrev() {
 	'use strict';
