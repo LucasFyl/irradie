@@ -1267,16 +1267,16 @@ footer > div a:hover {
   }
 }
 footer > ul {
-  margin: 0 0 5rem 0;
+  margin: 0 0 3rem 0;
   padding: 6rem 0 0 0;
   list-style: none;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 body.home footer > ul {
-  margin: 0 0 8rem 0;
+  margin: 0 0 6rem 0;
 }
 @media screen and (max-width: 480px) {
   footer > ul {
@@ -1290,6 +1290,12 @@ body.home footer > ul {
     text-align: left;
     padding-left: 4rem;
   }
+}
+footer > ul li:first-child {
+  padding-left: 1rem;
+}
+footer > ul li:last-child {
+  padding-right: 1rem;
 }
 footer > ul li a, footer > ul li p {
   padding: 1rem;
