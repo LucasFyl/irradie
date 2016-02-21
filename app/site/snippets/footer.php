@@ -4,7 +4,15 @@
           <a href="mailto:info@irradie.com">info(at)irradie.com</a>
         </div>
         <ul>
-          <li><a href="#" target="_blank">Newsletter</a></li>
+          <li>
+            <div class="newsletter">
+              <a href="#">Newsletter</a>
+              <form action="#">
+                <input type="text" />
+                <button type="submit">OK</button>
+              </form>
+            </div>
+          </li>
           <li><a href="https://www.facebook.com/atelier.irradie/" target="_blank">Facebook</a></li>
           <li><a href="http://atelierirradie.tumblr.com/" target="_blank">Tumblr</a></li>
           <li><a href="https://www.instagram.com/irradieatelier/" target="_blank">Instagram</a></li>

@@ -92,7 +92,10 @@
           <?php echo $page->newsletter()->kirbytext() ?>
           <div class="newsletter">
             <a href="#">Newsletter</a>
-            <input type="text" />
+            <form action="#">
+              <input type="text" />
+              <button type="submit">OK</button>
+            </form>
           </div>
         </div>
         <div class="credit row">

@@ -1120,6 +1120,40 @@ body.locked {
   padding-left: 0;
 }
 
+.newsletter form {
+  height: 2.2rem;
+  width: 18.5rem;
+  line-height: 2.2rem;
+  display: flex;
+  border-bottom: 1px solid #777777;
+  display: none;
+}
+.newsletter form input, .newsletter form button {
+  line-height: 2.2rem;
+  font-size: 1.3rem;
+  color: #4d4d4d;
+}
+.newsletter form button {
+  height: 2.1rem;
+  width: 3.6rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-left: 1px solid #777;
+  padding: 0;
+  text-align: center;
+  margin-left: auto;
+}
+.newsletter form input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
 header {
   height: 6rem;
   width: 100%;

@@ -29,6 +29,11 @@ function initPage(){
 		setTimeout(ProjectsParallax.init, 200);
 	}
 
+
+	if( $('.newsletter').length ) {
+		setTimeout(initNewsletter, 100);
+	}
+
 	setTimeout(hideLoader, 250);
 	setTimeout(setFooter, 300);
 	setTimeout(initMenu, 300);
@@ -197,6 +202,19 @@ function landingHomeTl() {
 		.to('.landing .logo-wrap', 0.5, {y:'-50%',opacity:1,ease:Power3.easeOut})
 		.to('.fixed-wrap', 1.5, {opacity:1,ease:Power1.easeOut})
 		.play();
+}
+function initNewsletter() {
+	$('.newsletter').each(function(index, value) {
+		var _this = $(value),
+			form = _this.find('form'),
+			link = _this.find('a');
+		link.on('click', function(e){
+			e.preventDefault();
+			link.hide();
+			form.show();
+		});
+
+	});
 }
 $(document).ready(function(){
 	'use strict';
