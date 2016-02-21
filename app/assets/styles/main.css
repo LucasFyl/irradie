@@ -1577,37 +1577,152 @@ footer > ul li a:hover, footer > ul li p:hover {
 #main.about header a, #main.about header h1 {
   color: white;
 }
-#main.about section.footer > div h3 {
+#main.about .big-text-block {
+  max-width: 50rem;
+}
+#main.about .big-text-block h2, #main.about .big-text-block p {
+  margin-top: 0;
+  font-family: "AtlasGrotesk-Medium-Web", helvetica, sans-serif;
+  font-size: 2.625rem;
+  line-height: 3.75rem;
+  letter-spacing: .2rem;
+  color: white;
+}
+#main.about .content-wrap {
+  overflow: auto;
+}
+#main.about .content-wrap .image img {
+  height: 40.6rem;
+  width: 40.7rem;
+  display: block;
+  margin: 0 auto;
+}
+#main.about .content-wrap .title h3 {
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  color: #999999;
+  font-size: 1.35rem;
+  margin-bottom: 2.3rem;
+  letter-spacing: 1px;
+}
+#main.about .content-wrap .row {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 6.1721527019%;
+  min-width: 12rem;
+  margin-right: 12rem;
+}
+#main.about .content-wrap .row:last-child {
+  margin-right: 0;
+}
+#main.about .content-wrap .row h2, #main.about .content-wrap .row h3, #main.about .content-wrap .row p {
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  color: #999999;
+  margin: 0;
+  white-space: nowrap;
+}
+#main.about .content-wrap .row h2, #main.about .content-wrap .row h3 {
+  font-size: 1.35rem;
+  margin-bottom: 2.3rem;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 480px) {
+  #main.about .content-wrap .row h2, #main.about .content-wrap .row h3 {
+    margin-bottom: 2rem;
+    overflow: auto;
+    white-space: normal;
+    line-height: 1.3;
+  }
+}
+#main.about .content-wrap .row p {
+  font-size: 0.975rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 1.8rem;
   margin-bottom: 2.3rem;
 }
-#main.about section.footer > div a {
+#main.about .content-wrap .row p:last-child {
+  margin-bottom: 0;
+}
+#main.about .content-wrap .row:nth-child(2) {
+  margin-right: 9rem;
+}
+@media screen and (max-width: 480px) {
+  #main.about .content-wrap .row {
+    margin-right: 0;
+    margin-bottom: 5rem;
+  }
+}
+#main.about section:not(.footer) {
+  margin: 10rem 0;
+  overflow: auto;
+}
+#main.about section.first .big-text-block {
+  margin-right: 3rem;
+  float: left;
+}
+#main.about section.first .content-wrap .row {
+  padding-top: .5rem;
+}
+#main.about section.second .content-wrap {
+  width: calc(100% - 4rem - 50rem);
+  float: left;
+}
+#main.about section.second .big-text-block {
+  float: right;
+}
+#main.about section.third .content-wrap {
+  width: calc(100% - 14rem - 50rem);
+  float: left;
+}
+#main.about section.third .content-wrap > section {
+  padding-left: 13.5rem;
+}
+#main.about section.third .big-text-block {
+  float: left;
+  margin-right: 10rem;
+}
+#main.about section.footer {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 8rem;
+}
+#main.about section.footer::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+#main.about section.footer h3 {
+  margin-bottom: 2.3rem;
+}
+#main.about section.footer a {
   color: #999999;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 1px;
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  transition: color 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
-#main.about section.footer > div p, #main.about section.footer > div h3 {
-  white-space: normal;
+#main.about section.footer p, #main.about section.footer h3 {
+  white-space: initial !important;
 }
-#main.about section.footer > div a:hover {
+#main.about section.footer a:hover {
   color: white;
 }
-#main.about section.footer > div.contact {
+#main.about section.footer .contact {
   min-width: 17rem;
 }
-#main.about section.footer > div.contact p:nth-child(3) {
+#main.about section.footer .contact p:nth-child(3) {
   text-transform: none !important;
   letter-spacing: 0.06rem;
 }
-#main.about section.footer > div.follow p:last-child {
-  padding-bottom: 4rem;
-  border-bottom: 1px solid #999999;
+#main.about section.footer .follow p:last-of-type {
   font-size: 1.4rem;
   text-transform: none !important;
+  white-space: nowrap !important;
 }
-#main.about section.footer > div.credit h3:not(:first-child) {
+#main.about section.footer .credit h3:not(:first-child) {
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1.5rem;

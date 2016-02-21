@@ -10,16 +10,20 @@ fields:
   title:
     label: Title
     type:  text
-  introText:
-    label: Intro text
+  BigWhiteText:
+    label: Big White Texts
+    type: headline
+  firstBigText:
+    label: First Big text
     type:  textarea
-    help:  (bigger typo, top of the page)
-  firstText:
-    label: First text
+  secondBigText:
+    label: Second Big text
     type:  textarea
-    help: first paragraph, above the first gallery
+  thirdBigText:
+    label: Third Big Text
+    type: textarea
   SCSOP:
-    label: Services, Clients & Selected Online Press
+    label: Services, Clients, Selected Online Press & Awards
     type: headline
   services:
     label: Services
@@ -91,10 +95,6 @@ fields:
     buttons: 
       - link
     width: 1/3
-  secondText:
-    label: Second text
-    type:  textarea
-    help: second paragraph, above the second gallery
   contact:
     label: Contact / Social informations
     type: headline

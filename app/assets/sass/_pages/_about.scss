@@ -8,299 +8,164 @@ $grey: #999999;
   header {
     a, h1 {color: white;}
   }
-  // .image {
-  //   background: url('../images/asset-about-illu1.png') no-repeat left center;
 
-  //   @include media($small-only) {
-  //     display: none;
-  //   }
-  // }
-  // .text {
-  //   @include span-columns(5);
-  //   float: right;
+  .big-text-block {
+    max-width: 50rem;
+    h2, p {
+      margin-top: 0;
+      font-family: $atlasMed;
+      font-size: 2.625rem;
+      line-height: 3.75rem;
+      letter-spacing: .2rem;
+      color: white;    
+    }
+  }
+  .content-wrap {
+    overflow: auto;
+    .image {
+      img{
+          @include size(40.7rem 40.6rem);
+          display: block;
+          margin: 0 auto;
+      }
+    }
+    .title {
+      h3 {
+        font-family: $atlasReg;
+        color: $grey;
+        font-size: 1.35rem;
+        margin-bottom: 2.3rem;
+        letter-spacing: 1px;
+      }
+    }
+    .row {
+      @include span-columns(1);
+      min-width: 12rem;
+      margin-right: 12rem;
 
-  //   p {
-  //     margin-top: 0;
-  //     font-family: $atlasReg;
-  //     font-size: 2.5rem;
-  //     line-height: 3.5rem;
-  //     letter-spacing: .2rem;
-  //   }
-  // }
-  // .intro {
-  //   @include clearfix;
+      h2, h3, p {
+        font-family: $atlasReg;
+        color: $grey;
+        margin: 0;
+        white-space: nowrap;
+      }
+      h2, h3 {
+        font-size: 1.35rem;
+        margin-bottom: 2.3rem;
+        letter-spacing: 1px;
+        @include media($mobile) {
+          margin-bottom: 2rem;
+          overflow: auto;
+          white-space: normal;
+          line-height: 1.3;
+        }
+      }
+      p {
+        font-size: 0.975rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        line-height: 1.8rem;
+        margin-bottom: 2.3rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
 
-  //   h2 {
-  //     @include media($desktop) {
-  //       @include span-columns(8);
-  //       @include shift(2);
-  //       margin-top: 10rem;
-  //       margin-bottom: 14rem;
-  //     }
-  //     @include media($mobile) {
-  //       @include span-columns(12);
-  //       margin: 0;
-  //     }
-
-  //     display: block;
-  //     float: none !important;
-
-  //     p {
-  //       font-family: $atlasReg;
-  //       font-size: 3.8rem;
-  //       line-height: 5.3rem;
-  //       letter-spacing: .2rem;
-
-  //       color: white;
-  //       margin: 0;
-  //       width: 105%;
-
-  //       @include media($mobile) {
-  //         font-size: 2.1rem;
-  //         line-height: 1.3;
-  //         margin-top: 2rem;
-  //       }
-  //     }
-  //   }
-  //   .image {
-  //     min-height: 45rem;
-  //     min-width: 41rem;
-  //     @include span-columns(4);
-  //     @include shift(2);
-  //     background-position: left 4rem;
-  //     background-size: contain;
-  //     padding-bottom: 4rem;
-  //     box-sizing: content-box;
-
-  //     @include media($mobile) {
-  //       margin: 3rem auto;
-  //       max-width: 100%;
-  //       min-width: 100%;
-  //       min-height: 20rem;
-  //       padding-bottom: 0;
-  //       background-position: center center;
-  //     }
-  //   }
-  //   .text {
-  //     @include span-columns(5);
-  //     max-width: 57rem;
-  //     float: right;
-
-  //     @include media($small-only) {
-  //       @include span-columns(8);
-  //       @include shift(3);
-  //     }
-  //     @include media($mobile) {
-  //       @include span-columns(12);
-  //       margin: 0;
-  //       p {
-  //         font-size: 2.1rem;
-  //         line-height: 1.3;
-  //       }
-  //     }
-  //   }
-  // }
-  // section {
-  //   @include shift(2);
-  //   @include clearfix;
-  //   margin-top: 15rem;
-  //   margin-bottom: 10rem;
-  //   @include media($mobile) {
-  //     margin: 0;
-  //   }
-
-  //   > div {
-  //     @include span-columns(1);
-  //     min-width: 12rem;
-  //     margin-right: 12rem;
-  //     &:nth-child(2) {
-  //       margin-right: 9rem;
-  //     }
-  //     @include media($mobile) {
-  //       margin-right: 0;
-  //       margin-bottom: 5rem;
-  //     }
-  //   }
-  //   h2, h3, p {
-  //     font-family: $atlasReg;
-  //     color: $grey;
-  //     margin: 0;
-  //     white-space: nowrap;
-  //   }
-  //   h2, h3 {
-  //     font-size: 1.4rem;
-  //     margin-bottom: 4.5rem;
-  //     letter-spacing: 1px;
-  //     @include media($mobile) {
-  //       margin-bottom: 2rem;
-  //       overflow: auto;
-  //       white-space: normal;
-  //       line-height: 1.3;
-  //     }
-  //   }
-  //   p {
-  //     font-size: 1rem;
-  //     letter-spacing: 1px;
-  //     text-transform: uppercase;
-  //     line-height: 1.8rem;
-  //     margin-bottom: 2.5rem;
-  //     &:last-child {
-  //       margin-bottom: 0;
-  //     }
-  //   }
-  // }
-
-  // .gallery {
-  //   @include shift(2);
-  //   position: relative;
-  //   margin-right: -4rem;
-  //   max-width: 100vw;
-  //   overflow: hidden;
-
-  //   //temp:
-  //   @include media($mobile) {
-  //     display: none;
-  //   }
-
-  //   .wrap {
-  //     position: absolute;
-  //     left: 0;
-
-  //     overflow-y: hidden;
-  //     overflow-x: scroll;
-  //     // width: 200%;
-  //   }
-  //   figure {
-  //     margin: 0;
-  //     display: block;
-  //     float: left;
-
-  //     margin-left: 8.5rem;
-  //     &:first-child {
-  //       margin-left: 0;
-  //     }
-
-  //     figcaption {
-  //       margin-top: 3.8rem;
-  //       margin-bottom: 0;
-
-  //       p {
-  //         margin-top: 0;
-  //         font-size:1.4rem;
-  //         text-transform: uppercase;
-  //         text-align: center;
-  //         font-family: $atlasReg;
-  //       }
-
-
-  //       span {
-  //         text-transform: capitalize;;
-  //         color: $grey;
-  //       }
-  //     }
-  //     &.infos {
-  //       width: 118rem;
-  //       height: 555px;
-  //       overflow: auto;
-  //       margin: 0;
-
-  //       > div {
-  //         display: inline-block;
-  //         float: left;
-  //       }
-  //       .title-wrap {
-  //         width: 27.5rem;
-  //         height: 555px;
-  //         h3 {
-  //           font-size: 2.1rem;
-  //           line-height: 2.1rem;
-  //           font-family: $arn;
-  //           color: white; 
-  //           text-align: center;
-            
-  //           position: relative;
-  //           top: 50%; @include transform(translateY(-50%));
-            
-  //           span {
-  //             display: block;
-  //             @include transform(rotate(-90deg));
-  //           }
-  //         }
-  //       }
-  //     }
-  //     .row {
-  //       margin-left: 7.7rem;
-  //       padding-top: 9rem;
-  //       p {
-  //         font-size: 1.1rem;
-  //         color: $grey;
-  //         text-transform: uppercase;
-  //         line-height: 1.5;
-  //       }
-  //     }
-  //   }
-  // }
-  // .separation {
-  //   width: 100%;
-  //   @include clearfix;
-  //   margin-top: 7.5rem;
-  //   margin-bottom: 11rem;
-
-  //   .image {
-  //     min-height: 25.6rem;
-  //     min-width: 25.6rem;
-  //     @include span-columns(3);
-  //     background: url('../images/asset-about-illu1.png') no-repeat left center;
-  //     background-size:25.6rem;
-  //   }
-  //   .text {
-  //     min-width: 57rem;
-  //     @include media($mobile) {
-  //       min-width: 100%;
-  //       margin-top: 5rem;
-  //     }
-  //   }
-  // }
+      &:nth-child(2) {
+        margin-right: 9rem;
+      }
+      @include media($mobile) {
+        margin-right: 0;
+        margin-bottom: 5rem;
+      }
+    }
+  }
+  section:not(.footer) {
+    margin: 10rem 0;
+    overflow: auto;
+    section {
+      // margin-bottom: 0;
+    }
+  }
+  section.first  {
+    .big-text-block {
+      margin-right: 3rem;
+      float: left;
+    }
+    .content-wrap {
+      .row{padding-top: .5rem;}
+    }
+  }
+  section.second {
+    .content-wrap {
+      width: calc(100% - 4rem - 50rem);
+      float: left;
+      img {
+      }
+    }
+    .big-text-block {
+      float: right;
+    }
+  }
+  section.third {
+    .content-wrap {
+      width: calc(100% - 14rem - 50rem);
+      float: left;
+      > section {
+        padding-left: 13.5rem;
+      }
+    }
+    .big-text-block {
+      float: left; 
+      margin-right: 10rem;
+    }
+  }
 
   section.footer {
-    > div {
-      h3 {
-        margin-bottom: 2.3rem;
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 8rem;
+    @include clearfix;
+
+
+    h3 {
+      margin-bottom: 2.3rem;
+    }
+    a {
+      color: $grey;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      font-family: $atlasReg;
+      @include transition(color 0.25s $ease-in-out-sine);
+    }
+    p, h3 {
+      white-space: initial !important;
+    }
+    a:hover {
+      color: white;
+    }
+
+    .contact {
+      min-width: 17rem;
+      p:nth-child(3) {
+        text-transform: none !important;
+        letter-spacing: 0.06rem;
       }
-      a {
-        color: $grey;
-        text-decoration: none;
+    }
+    .follow {
+      p:last-of-type {
+        font-size: 1.4rem;
+        text-transform: none !important;
+        white-space: nowrap !important;
+      }
+    }
+    .credit {
+      h3:not(:first-child) {
         text-transform: uppercase;
         font-size: 1rem;
-        letter-spacing: 1px;
-        font-family: $atlasReg;
-      }
-      p, h3 {white-space: normal;}
-      a:hover {
-        color: white;
-      }
-
-      &.contact {
-        min-width: 17rem;
-        p:nth-child(3) {
-          text-transform: none !important;
-          letter-spacing: 0.06rem;
-        }
-      }
-      &.follow {
-        p:last-child {
-          padding-bottom: 4rem;
-          border-bottom: 1px solid $grey;
-          font-size: 1.4rem;
-          text-transform: none !important;
-        }
-      }
-      &.credit {
-        h3:not(:first-child) {
-          text-transform: uppercase;
-          font-size: 1rem;
-          line-height: 1.5rem;
-        }
+        line-height: 1.5rem;
       }
     }
   }
