@@ -2,17 +2,25 @@ $grey: #999999;
 #main.about {
   @include size(100%);
   background: black;
-  padding: 2rem ;
+  padding: 2rem 0 0 0 ;
   color: white;
 
+  max-width: 100vw;
+  overflow: hidden;
+
   header {
+    margin: 0 2rem;
     a, h1 {color: white;}
   }
-
+  > section {
+    padding: 0 2rem;
+  }
   .big-text-block {
     max-width: 50rem;
     h2, p {
+      max-width: 50rem;
       margin-top: 0;
+      
       font-family: $atlasMed;
       font-size: 2.625rem;
       line-height: 3.75rem;
@@ -87,10 +95,17 @@ $grey: #999999;
       // margin-bottom: 0;
     }
   }
+  section.fixable {
+    position: relative;
+  }
   section.first  {
     .big-text-block {
       margin-right: 3rem;
       float: left;
+      h3 {
+        left: 2rem;
+        top: 2rem;
+      }
     }
     .content-wrap {
       .row{padding-top: .5rem;}
@@ -100,17 +115,19 @@ $grey: #999999;
     .content-wrap {
       width: calc(100% - 4rem - 50rem);
       float: left;
-      img {
-      }
     }
     .big-text-block {
       float: right;
+      p {
+        top: 2rem;
+        right: 2rem;
+      }
     }
   }
   section.third {
     .content-wrap {
       width: calc(100% - 14rem - 50rem);
-      float: left;
+      float: right;
       > section {
         padding-left: 13.5rem;
       }
@@ -118,6 +135,10 @@ $grey: #999999;
     .big-text-block {
       float: left; 
       margin-right: 10rem;
+      p {
+        top: 2rem;
+        left: 2rem;
+      }
     }
   }
 

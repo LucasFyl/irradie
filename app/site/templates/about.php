@@ -28,7 +28,7 @@
       </div>
     </section>
 
-    <section class="second">
+    <section class="second fixable">
       <div class="content-wrap">
         <div class="image">
           <img src="<?php echo $page->image('illu-1.png')->url(); ?>" alt="" draggable="false" />
@@ -53,7 +53,7 @@
       </div>
     </section>
     
-    <section class="third">
+    <section class="third fixable">
       <div class="big-text-block">
         <?php echo $page->thirdBigText()->kirbytext() ?>
       </div>

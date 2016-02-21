@@ -18,6 +18,34 @@
       }
 		},
 		about: function(controller){
+      if(isMobile === false) {
+        $('section.fixable').each(function(index, value) {
+          var thisText     = $(value).find('.big-text-block p, .big-text-block h3'),
+              unFixtrigger = $(value).find('.content-wrap .title'),
+              unFixOffset  = $(value).find('.content-wrap').height() - thisText.height();
+              console.log(unFixOffset);
+            // console.log($(value).siblings('.content-wrap').find('.title'));
+
+          var fixIt   = new TweenMax.to(thisText, 0.01, {position: 'fixed'});
+          var unFixIt = new TweenMax.to(thisText, 0.01, {position: 'absolute', bottom:0, left:'auto', top:'auto'});
+
+          var fixScene = new ScrollMagic.Scene({
+            triggerElement: value,
+            triggerHook: 'onLeave',
+            offset: -20,
+            duration: 0
+          }).setTween(fixIt)
+          .addTo(controller);
+          
+          var unFixScene = new ScrollMagic.Scene({
+            triggerElement: value,
+            triggerHook: 'onLeave',
+            offset:  unFixOffset,
+            duration: 0
+          }).setTween(unFixIt)
+          .addTo(controller);
+        });
+      }
 		},
     home: function(controller){
       //  Scene for 4 small texts : graphic design art direction

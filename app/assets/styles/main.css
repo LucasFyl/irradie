@@ -1611,16 +1611,25 @@ footer > ul li a:hover, footer > ul li p:hover {
   height: 100%;
   width: 100%;
   background: black;
-  padding: 2rem;
+  padding: 2rem 0 0 0;
   color: white;
+  max-width: 100vw;
+  overflow: hidden;
+}
+#main.about header {
+  margin: 0 2rem;
 }
 #main.about header a, #main.about header h1 {
   color: white;
+}
+#main.about > section {
+  padding: 0 2rem;
 }
 #main.about .big-text-block {
   max-width: 50rem;
 }
 #main.about .big-text-block h2, #main.about .big-text-block p {
+  max-width: 50rem;
   margin-top: 0;
   font-family: "AtlasGrotesk-Medium-Web", helvetica, sans-serif;
   font-size: 2.625rem;
@@ -1697,9 +1706,16 @@ footer > ul li a:hover, footer > ul li p:hover {
   margin: 10rem 0;
   overflow: auto;
 }
+#main.about section.fixable {
+  position: relative;
+}
 #main.about section.first .big-text-block {
   margin-right: 3rem;
   float: left;
+}
+#main.about section.first .big-text-block h3 {
+  left: 2rem;
+  top: 2rem;
 }
 #main.about section.first .content-wrap .row {
   padding-top: .5rem;
@@ -1711,9 +1727,13 @@ footer > ul li a:hover, footer > ul li p:hover {
 #main.about section.second .big-text-block {
   float: right;
 }
+#main.about section.second .big-text-block p {
+  top: 2rem;
+  right: 2rem;
+}
 #main.about section.third .content-wrap {
   width: calc(100% - 14rem - 50rem);
-  float: left;
+  float: right;
 }
 #main.about section.third .content-wrap > section {
   padding-left: 13.5rem;
@@ -1721,6 +1741,10 @@ footer > ul li a:hover, footer > ul li p:hover {
 #main.about section.third .big-text-block {
   float: left;
   margin-right: 10rem;
+}
+#main.about section.third .big-text-block p {
+  top: 2rem;
+  left: 2rem;
 }
 #main.about section.footer {
   width: 100%;
