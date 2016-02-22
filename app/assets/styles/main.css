@@ -1307,16 +1307,17 @@ footer > ul {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-}
-body.home footer > ul {
-  margin: 0 0 6rem 0;
+  justify-content: space-around;
 }
 @media screen and (max-width: 480px) {
   footer > ul {
     flex-flow: column nowrap;
     padding-top: 0rem;
   }
+}
+body.home footer > ul {
+  margin: 0 0 6rem 0;
+  justify-content: space-between;
 }
 @media screen and (max-width: 480px) {
   footer > ul li {

@@ -140,20 +140,21 @@ footer {
   }
   > ul {
     margin: 0 0 3rem 0;
-    body.home & {
-      margin: 0 0 6rem 0;
-    }
     padding: 6rem 0 0 0;
     list-style: none;
     width: 100%;
 
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 
     @include media($mobile) {
       flex-flow: column nowrap;
       padding-top: 0rem;
+    }
+    body.home & {
+      margin: 0 0 6rem 0;
+      justify-content: space-between;
     }
 
     li {
