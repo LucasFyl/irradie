@@ -19,28 +19,27 @@
 		},
 		about: function(controller){
       if(isMobile === false) {
-        $('section.fixable').each(function(index, value) {
-          var thisText     = $(value).find('.big-text-block p, .big-text-block h3'),
-              unFixtrigger = $(value).find('.content-wrap .title'),
-              unFixOffset  = $(value).find('.content-wrap').height() - thisText.height();
-              console.log(unFixOffset);
-            // console.log($(value).siblings('.content-wrap').find('.title'));
+        $('#main section.fixable').each(function(index, value) {
 
-          var fixIt   = new TweenMax.to(thisText, 0.01, {position: 'fixed'});
-          var unFixIt = new TweenMax.to(thisText, 0.01, {position: 'absolute', bottom:0, left:'auto', top:'auto'});
+          var thisText      = $(value).find('.big-text-block p, .big-text-block h3'),
+              thisContent   = $(value).find('.content-wrap'),
+              fixTrigger    = 1 - (0.5 + ((thisText.height()/2)/winH)),
+              unFixOffset   = thisContent.find('.image').height() - 100;
+
+          var fixIt   = new TweenMax.to(thisText, 0.0001, {className: '+=fixed'});
+          var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'100px', top: 'auto', y:0});
 
           var fixScene = new ScrollMagic.Scene({
             triggerElement: value,
-            triggerHook: 'onLeave',
-            offset: -20,
+            triggerHook: fixTrigger,
             duration: 0
           }).setTween(fixIt)
           .addTo(controller);
           
           var unFixScene = new ScrollMagic.Scene({
-            triggerElement: value,
+            triggerElement: thisContent[0],
             triggerHook: 'onLeave',
-            offset:  unFixOffset,
+            offset: unFixOffset,
             duration: 0
           }).setTween(unFixIt)
           .addTo(controller);
@@ -93,8 +92,8 @@
     project: function(controller) {
       // Project image anim
       var el = $('#main .wrap > img'),
-          duration = ($(window).height() / 3) * 2;
-      if (isMobile === true) {duration = $(window).height() / 2}
+          duration = (winH / 3) * 2;
+      if (isMobile === true) {duration = winH / 2}
       TweenMax.set(el, {y:50});
       el.each(function(index, value){
         var projectTween = TweenMax.to(value, 0.75, {y:0,ease:Power2.easeOut});

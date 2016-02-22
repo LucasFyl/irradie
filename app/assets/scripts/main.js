@@ -5,6 +5,8 @@ var Spash;
 var isMobile = false;
 var controller = new ScrollMagic.Controller();
 var landingTl = new TimelineMax();
+var winH = $(window).height();
+var winW = $(window).width();
 
 // Page load function
 function initPage(){
@@ -53,6 +55,8 @@ function hideLoader(){
 function resize() {
 	'use strict';
 	// Manage resize exception
+	winH = $(window).height();
+	winW = $(window).width();
 	setTimeout(function(){
 		setFooter();
 	}, 250);
@@ -76,8 +80,8 @@ function initMenu() {
 		e.preventDefault();
 		//  Temp fix for overlaping landing on home page
 		if($('#main.home').length && isMobile === false) {
-			if ( $(window).scrollTop() < $(window).height() ) {
-				TweenMax.to(window, 0.25, {scrollTo: $(window).height(),ease:Power2.easeOut});
+			if ( $(window).scrollTop() < winH ) {
+				TweenMax.to(window, 0.25, {scrollTo: winH,ease:Power2.easeOut});
 			}
 		}
 		$('body').addClass('locked');
@@ -119,7 +123,7 @@ function setFooter() {
 	'use strict';
 	var footerH = $('footer').height() + 80;
 	if ($('#main.home').length && isMobile === false) {
-		var mb = $(window).height() + footerH
+		var mb = winH + footerH
 		TweenMax.set('body', {marginBottom:mb});
 	} else {
 		TweenMax.set('body', {marginBottom:footerH});

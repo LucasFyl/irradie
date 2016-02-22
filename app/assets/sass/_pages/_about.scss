@@ -19,13 +19,18 @@ $grey: #999999;
     max-width: 50rem;
     h2, p {
       max-width: 50rem;
-      margin-top: 0;
+      margin: 0;
       
-      font-family: $atlasMed;
+      font-family: $atlasReg;
       font-size: 2.625rem;
       line-height: 3.75rem;
-      letter-spacing: .2rem;
-      color: white;    
+      letter-spacing: .1rem;
+      color: white; 
+
+      &.fixed {
+        position: fixed; top: 50%;
+        @include transform(translateY(-50%));
+      }   
     }
   }
   .content-wrap {
@@ -104,7 +109,7 @@ $grey: #999999;
       float: left;
       h3 {
         left: 2rem;
-        top: 2rem;
+        // top: 2rem;
       }
     }
     .content-wrap {
@@ -119,7 +124,7 @@ $grey: #999999;
     .big-text-block {
       float: right;
       p {
-        top: 2rem;
+        // top: 2rem;
         right: 2rem;
       }
     }
@@ -129,14 +134,14 @@ $grey: #999999;
       width: calc(100% - 14rem - 50rem);
       float: right;
       > section {
-        padding-left: 13.5rem;
+        padding-left: 7rem;
       }
     }
     .big-text-block {
       float: left; 
       margin-right: 10rem;
       p {
-        top: 2rem;
+        // top: 2rem;
         left: 2rem;
       }
     }
