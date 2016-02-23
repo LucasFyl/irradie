@@ -43,7 +43,7 @@ $grey: #999999;
     @include media($mobile) {width: 100% !important;@include span-columns(12)}
     .image {
       img{
-          @include size(40.7rem 40.6rem);
+          @include size(40.7rem 40.7rem);
           display: block;
           margin: 0 auto;
           @include media($mobile) {
