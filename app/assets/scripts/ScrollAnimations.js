@@ -18,7 +18,7 @@
       }
 		},
 		about: function(controller){
-      if(isMobile === false) {
+      if(isMobile === false && winW >= 1024) {
         $('#main section.fixable').each(function(index, value) {
 
           var thisText      = $(value).find('.big-text-block p, .big-text-block h3'),

@@ -35,14 +35,21 @@ $grey: #999999;
         @include transform(translateY(-50%));
       }   
     }
+
+    @include media($mobile) {@include span-columns(12)}
   }
   .content-wrap {
     overflow: auto;
+    @include media($mobile) {width: 100% !important;@include span-columns(12)}
     .image {
       img{
           @include size(40.7rem 40.6rem);
           display: block;
           margin: 0 auto;
+          @include media($mobile) {
+            width: 33.5rem !important;
+            height:33.5rem !important;
+          }
       }
     }
     .title {
@@ -56,6 +63,7 @@ $grey: #999999;
     }
     .row {
       @include span-columns(1);
+      @include media($mobile) {@include span-columns(6)}
       min-width: 12rem;
       margin-right: 12rem;
 
@@ -63,7 +71,7 @@ $grey: #999999;
         font-family: $atlasReg;
         color: white;
         margin: 0;
-        white-space: nowrap;
+        @include media($desktop){white-space: nowrap;}
       }
       h2, h3 {
         font-size: 1.3rem;
@@ -89,6 +97,14 @@ $grey: #999999;
 
       &:nth-child(2) {
         margin-right: 9rem;
+        @include media($mobile) {
+          margin-right: 1rem;
+        }
+      }
+      &:first-child {
+        @include media($mobile) {
+          padding-right: 0.5rem;
+        }
       }
       @include media($mobile) {
         margin-right: 0;
@@ -112,11 +128,18 @@ $grey: #999999;
       float: left;
       h3 {
         left: 2rem;
-        // top: 2rem;
+      }
+      @include media($mobile) {
+        margin-bottom: 5rem;
       }
     }
     .content-wrap {
       .row{padding-top: .5rem;}
+      .row:last-child {
+        @include media($mobile){
+          padding-left: 2rem;
+        }
+      }
     }
   }
   section.second {
@@ -127,7 +150,6 @@ $grey: #999999;
     .big-text-block {
       float: right;
       p {
-        // top: 2rem;
         right: 2rem;
       }
     }
@@ -138,13 +160,23 @@ $grey: #999999;
       float: right;
       > section {
         padding-left: 7rem;
+        @include media($mobile) {
+          padding-left: 0;
+        }
+      }
+      .image {
+        @include media($mobile) {
+          margin-top: 5rem;
+        }
       }
     }
     .big-text-block {
       float: left; 
       margin-right: 10rem;
+      @include media($mobile) {
+        margin-right: 0; 
+      }
       p {
-        // top: 2rem;
         left: 2rem;
       }
     }
@@ -173,7 +205,7 @@ $grey: #999999;
       white-space: initial !important;
     }
     a:hover {
-      color: white;
+      color: $grey;
     }
 
     .contact {
