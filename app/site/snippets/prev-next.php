@@ -5,7 +5,7 @@
 			<span>
 				<p>
 	           		<?php echo $prev->title() ?>
-	            	<span><?php echo $prev->projectType2() ?></span>
+	            	<!-- <span><?php echo $prev->projectType2() ?></span> -->
 	        	</p>
 			</span>
 		</div>
@@ -26,7 +26,7 @@
 			<span>
 				<p>
 	            	<?php echo $next->title() ?>
-	            	<span><?php echo $next->projectType1() ?></span>
+	            	<!-- <span><?php echo $next->projectType1() ?></span> -->
 	        	</p>
 			</span>
 		</div>
