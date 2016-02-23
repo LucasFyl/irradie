@@ -2011,10 +2011,15 @@ footer > ul li a:hover {
   #main.project .infos .share ul li:not(:first-child) a {
     position: absolute;
     left: calc(100% - 1rem);
-    transition: left 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    visibility: hidden;
+  }
+  #main.project .infos .share ul li:not(:first-child) a:first-letter {
+    visibility: visible;
   }
 }
 #main.project .infos .share ul li:not(:first-child):hover a {
+  visibility: visible;
   left: 0;
 }
 #main.project .infos .share ul li:nth-child(3) a {

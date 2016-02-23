@@ -104,8 +104,6 @@
             color: #4d4d4d;
           }
 
-
-
           &:not(:first-child) {
             overflow: hidden;
             position: relative;
@@ -118,12 +116,20 @@
                 position: absolute;
                 left: calc(100% - 1rem);
 
-                @include transition(left 0.25s $ease-in-out-sine);  
+                @include transition(all 0.25s $ease-in-out-sine);  
+
+
+                // Show first letter trick:
+                visibility: hidden;
+                &:first-letter {
+                  visibility: visible;
+                }
               }
             }
 
             &:hover {
               a {
+                visibility: visible;
                 left: 0;
               }
             }
