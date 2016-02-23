@@ -131,10 +131,10 @@ Contactextras: We are not looking for interns at the moment but you can send us 
 
 Socialmedia: 
 
-(link: http://facebook.com text: Facebook)
-(link: http://instagram.com text: Instagram)
+(link: https://www.facebook.com/atelier.irradie/ text: Facebook)
+(link: https://www.instagram.com/irradieatelier/ text: Instagram)
 (link: http://twitter.com text: Twitter)
-(link: http://tumblr.com text: Tumblr)
+(link: http://atelierirradie.tumblr.com/ text: Tumblr)
 (link: http://pinterest.com text: Pinterest)
 (link: http://behance.com text: Behance)
 

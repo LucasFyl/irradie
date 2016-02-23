@@ -31,7 +31,7 @@
     <section class="second fixable">
       <div class="content-wrap">
         <div class="image">
-          <img src="<?php echo $page->image('illu-1.png')->url(); ?>" alt="" draggable="false" />
+          <img src="<?php echo $page->image('illu-1.gif')->url(); ?>" alt="" draggable="false" />
         </div>
         <section>
           <div class="title">
@@ -59,7 +59,7 @@
       </div>
       <div class="content-wrap">
         <div class="image">
-          <img src="<?php echo $page->image('illu-2.png')->url(); ?>" alt="" draggable="false" />
+          <img src="<?php echo $page->image('illu-2.gif')->url(); ?>" alt="" draggable="false" />
         </div>
         <section>
           <div class="title">
