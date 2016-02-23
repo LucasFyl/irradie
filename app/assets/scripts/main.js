@@ -20,7 +20,6 @@ function initPage(){
 		landingHomeTl();
 	} else if ( $('#main.about').length ) {
 		TweenMax.fromTo('#main.about', 1, {backgroundColor: 'white'}, {backgroundColor: 'black', ease: Power2.easeOut, delay: 0.75});
-		// TweenMax.fromTo('.intro .image', 1, {y:50,opacity:0}, {y:0,opacity:1,ease: Power2.easeOut, delay: 0.75});
 	} else if ( $('#main.project').length ) {
 		TweenMax.set(window, {scrollTo:0});
 		landingProjectTl();
@@ -216,6 +215,11 @@ function initNewsletter() {
 			e.preventDefault();
 			link.hide();
 			form.show();
+		});
+		form.on('submit',function(){
+			form.css('height', 'auto');
+			form.find('input').remove();
+			form.find('button').remove();
 		});
 
 	});

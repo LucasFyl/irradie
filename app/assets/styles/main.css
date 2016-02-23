@@ -1156,6 +1156,9 @@ body.locked {
   outline: none;
   background-color: transparent;
 }
+.newsletter #mce-responses {
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+}
 
 header {
   height: 6rem;

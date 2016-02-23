@@ -91,10 +91,18 @@
           <?php echo $page->socialMedia()->kirbytext() ?>
           <?php echo $page->newsletter()->kirbytext() ?>
           <div class="newsletter">
-            <a href="#">Newsletter</a>
-            <form action="#">
-              <input type="text" />
-              <button type="submit">OK</button>
+            <label for="mce-EMAIL">
+              <a href="#">Newsletter</a>
+            </label>
+            <form action="//irradie.us12.list-manage.com/subscribe/post?u=69842c5a95fe71b6a720b730c&amp;id=cdeb0be94e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"/>
+              <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" >OK</button>
+
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_69842c5a95fe71b6a720b730c_cdeb0be94e" tabindex="-1" value=""></div>
             </form>
           </div>
         </div>
