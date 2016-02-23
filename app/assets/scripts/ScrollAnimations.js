@@ -24,10 +24,16 @@
           var thisText      = $(value).find('.big-text-block p, .big-text-block h3'),
               thisContent   = $(value).find('.content-wrap'),
               fixTrigger    = 1 - (0.5 + ((thisText.height()/2)/winH)),
+              unFixTrigger  = thisContent.find('.title'),
               unFixOffset   = thisContent.find('.image').height() - 60;
 
           var fixIt   = new TweenMax.to(thisText, 0.0001, {className: '+=fixed'});
-          var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'80px', top: 'auto', y:0});
+
+          if ( $(value).hasClass('second') ) {
+            var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'15rem', top: 'auto', y:0});
+          } else if ( $(value).hasClass('third') ) {
+            var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'7.5rem', top: 'auto', y:0});
+          }
 
           var fixScene = new ScrollMagic.Scene({
             triggerElement: value,
@@ -37,9 +43,8 @@
           .addTo(controller);
           
           var unFixScene = new ScrollMagic.Scene({
-            triggerElement: thisContent[0],
-            triggerHook: 'onLeave',
-            offset: unFixOffset,
+            triggerElement: unFixTrigger[0],
+            triggerHook: fixTrigger,
             duration: 0
           }).setTween(unFixIt)
           .addTo(controller);
