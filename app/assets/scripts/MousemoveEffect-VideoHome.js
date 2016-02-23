@@ -47,7 +47,7 @@
             } else {
                 if ($(window).width() >= 1024) {
                     $(img).css('width', '200%');
-                    $(img).css('height', 'auto');
+                    $(img).css('height', '150%');
                     effect = true;
                     SplashHome.initImg();
                 }
