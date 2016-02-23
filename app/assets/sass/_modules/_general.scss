@@ -10,7 +10,11 @@ body {
 	position: fixed;
 	z-index: 9;
   @include transform(translateZ(0));
-  p {margin: 0}
+  p {
+    margin: 0;
+    font-family: $atlasLight;
+    font-size: 1.5rem;
+  }
 }
 .top     {top:    3rem;}
 .bottom  {bottom: 3rem}
