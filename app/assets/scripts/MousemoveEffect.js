@@ -46,8 +46,8 @@
                 effect = false;
             } else {
                 if ($(window).width() >= 1024) {
-                    $(img).css('height', '160%');
-                    $(img).css('width', 'auto');
+                    $(img).css('height', '150%');
+                    $(img).css('min-width', '200%');
                     effect = true;
                     Splash.initImg();
                 }
