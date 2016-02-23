@@ -48,7 +48,7 @@ $grey: #999999;
     .title {
       h3 {
         font-family: $atlasReg;
-        color: $grey;
+        color: white;
         font-size: 1.3rem;
         margin-bottom: 2.3rem;
         letter-spacing: 1px;
@@ -61,7 +61,7 @@ $grey: #999999;
 
       h2, h3, p {
         font-family: $atlasReg;
-        color: $grey;
+        color: white;
         margin: 0;
         white-space: nowrap;
       }
@@ -161,7 +161,7 @@ $grey: #999999;
       margin-bottom: 2.3rem;
     }
     a {
-      color: $grey;
+      color: white;
       text-decoration: none;
       text-transform: uppercase;
       font-size: 1rem;

@@ -20,6 +20,7 @@ function initPage(){
 		landingHomeTl();
 	} else if ( $('#main.about').length ) {
 		TweenMax.fromTo('#main.about', 1, {backgroundColor: 'white'}, {backgroundColor: 'black', ease: Power2.easeOut, delay: 0.75});
+		TweenMax.fromTo('section.second .content-wrap img', 1, {y: 50, opacity: 0}, {y: 0, opacity:1, ease: Power2.easeOut, delay: 0.75});
 	} else if ( $('#main.project').length ) {
 		TweenMax.set(window, {scrollTo:0});
 		landingProjectTl();

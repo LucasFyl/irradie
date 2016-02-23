@@ -1666,7 +1666,7 @@ footer > ul li a:hover {
 }
 #main.about .content-wrap .title h3 {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
-  color: #999999;
+  color: white;
   font-size: 1.3rem;
   margin-bottom: 2.3rem;
   letter-spacing: 1px;
@@ -1684,7 +1684,7 @@ footer > ul li a:hover {
 }
 #main.about .content-wrap .row h2, #main.about .content-wrap .row h3, #main.about .content-wrap .row p {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
-  color: #999999;
+  color: white;
   margin: 0;
   white-space: nowrap;
 }
@@ -1775,7 +1775,7 @@ footer > ul li a:hover {
   margin-bottom: 2.3rem;
 }
 #main.about section.footer a {
-  color: #999999;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1rem;
