@@ -1346,14 +1346,16 @@ footer > ul li a, footer > ul li p {
   color: #4d4d4d;
   line-height: 1;
   text-decoration: none;
-  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 @media screen and (max-width: 480px) {
   footer > ul li a, footer > ul li p {
     text-align: left;
   }
 }
-footer > ul li a:hover, footer > ul li p:hover {
+footer > ul li a {
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+footer > ul li a:hover {
   transform: translateY(-0.5rem);
   color: #4d4d4d;
 }

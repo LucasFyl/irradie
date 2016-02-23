@@ -188,7 +188,8 @@ footer {
         @include media($mobile) {
           text-align: left;
         }
-
+      }
+      a {
         @include transition(all 0.25s $ease-in-out-cubic);
         &:hover {
           @include transform(translateY(-0.5rem));
