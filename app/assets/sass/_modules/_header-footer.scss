@@ -132,7 +132,7 @@ footer {
       }
       @include media($mobile) {
         text-align: left;
-        padding-left: 4rem;
+        padding-left: 5rem;
         font-size: 2rem;
         margin: 6rem 0;
       }
@@ -165,11 +165,13 @@ footer {
         text-align: left;
         padding-left: 4rem;
       }
-      &:first-child {
-        padding-left: 1rem;
-      }
-      &:last-child {
-        padding-right: 1rem;
+      @include media($desktop) {
+        &:first-child {
+          padding-left: 1rem;
+        }
+        &:last-child {
+          padding-right: 1rem;
+        }
       }
       a, p {
         padding: 1rem;
