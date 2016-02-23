@@ -120,12 +120,16 @@ body {
 }
 .newsletter {
   form {
-    @include size(18.5rem 2.2rem);
+    @include size(auto 2.2rem);
     line-height: 2.2rem;
     display: flex;
     border-bottom: 1px solid #777777;
     
     display: none;
+
+    #main.about & {
+      width: 17rem;  
+    }
     
     input, button {
       line-height: 2.2rem;

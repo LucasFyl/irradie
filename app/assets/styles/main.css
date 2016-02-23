@@ -1122,11 +1122,14 @@ body.locked {
 
 .newsletter form {
   height: 2.2rem;
-  width: 18.5rem;
+  width: auto;
   line-height: 2.2rem;
   display: flex;
   border-bottom: 1px solid #777777;
   display: none;
+}
+#main.about .newsletter form {
+  width: 17rem;
 }
 .newsletter form input, .newsletter form button {
   line-height: 2.2rem;
