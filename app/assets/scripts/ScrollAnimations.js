@@ -24,10 +24,10 @@
           var thisText      = $(value).find('.big-text-block p, .big-text-block h3'),
               thisContent   = $(value).find('.content-wrap'),
               fixTrigger    = 1 - (0.5 + ((thisText.height()/2)/winH)),
-              unFixOffset   = thisContent.find('.image').height() - 100;
+              unFixOffset   = thisContent.find('.image').height() - 60;
 
           var fixIt   = new TweenMax.to(thisText, 0.0001, {className: '+=fixed'});
-          var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'100px', top: 'auto', y:0});
+          var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'80px', top: 'auto', y:0});
 
           var fixScene = new ScrollMagic.Scene({
             triggerElement: value,
