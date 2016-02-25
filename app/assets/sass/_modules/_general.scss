@@ -170,3 +170,12 @@ body {
     font-family: $atlasReg;
   }   
 }
+#main.error {
+  margin: 0 !important;
+  h1 p {
+    font-size: inherit;
+  }
+}
+#main.error + footer {
+  display: none !important;
+}

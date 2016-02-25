@@ -1172,6 +1172,17 @@ body.locked {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
 }
 
+#main.error {
+  margin: 0 !important;
+}
+#main.error h1 p {
+  font-size: inherit;
+}
+
+#main.error + footer {
+  display: none !important;
+}
+
 header {
   height: 6rem;
   width: 100%;
