@@ -19,6 +19,7 @@
 		},
 		about: function(controller){
       if(isMobile === false && winW >= 1024) {
+        var fixIt; var unFixIt;
         $('#main section.fixable').each(function(index, value) {
 
           var thisText      = $(value).find('.big-text-block p, .big-text-block h3'),
@@ -27,12 +28,12 @@
               unFixTrigger  = thisContent.find('.title'),
               unFixOffset   = thisContent.find('.image').height() - 60;
 
-          var fixIt   = new TweenMax.to(thisText, 0.0001, {className: '+=fixed'});
+          fixIt   = new TweenMax.to(thisText, 0.0001, {className: '+=fixed'});
 
           if ( $(value).hasClass('second') ) {
-            var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'15rem', top: 'auto', y:0});
+            unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'15rem', top: 'auto', y:0});
           } else if ( $(value).hasClass('third') ) {
-            var unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'7.5rem', top: 'auto', y:0});
+            unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'7.5rem', top: 'auto', y:0});
           }
 
           var fixScene = new ScrollMagic.Scene({
@@ -98,7 +99,7 @@
       // Project image anim
       var el = $('#main .wrap > img'),
           duration = (winH / 3) * 2;
-      if (isMobile === true) {duration = winH / 2}
+      if (isMobile === true) {duration = winH / 2;}
       TweenMax.set(el, {y:50});
       el.each(function(index, value){
         var projectTween = TweenMax.to(value, 0.75, {y:0,ease:Power2.easeOut});

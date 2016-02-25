@@ -1,3 +1,6 @@
+/* jshint undef:false */
+/* jshint unused:false */
+/* jshint latedef:false */
 
 // This Function will always return the initial font-size of the html element 
    var rem = function rem() {
@@ -6,7 +9,7 @@
 
         return function () {
             return parseInt(window.getComputedStyle(html)['fontSize']);
-        }
+        };
     }();
 
 // This function will convert pixel to rem
@@ -16,7 +19,7 @@
     }
 
 // first assign a data-parallax to each figure in .projects
-// Then tween this element with different y value according to data-parallax
+// Then tween this element with different Y value according to data-parallax
   var ProjectsParallax = {
     init: function() {
         'use strict';

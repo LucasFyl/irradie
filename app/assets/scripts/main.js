@@ -100,7 +100,7 @@ function initMenu() {
 		$('body').removeClass('locked');
 		TweenMax.to('#menu .half a', 0.35, {y:50,opacity:0,ease:Expo.easeIn});
 		TweenMax.to('#menu', 0.5, {opacity:0,visibility:'hidden',ease:Expo.easeIn});
-		if(isSplash) isSpash = false;
+		if(isSplash) {isSpash = false;}
 		$('#menu .half').off('mousemove');
 	});
 	// Menu hover effect :
@@ -108,7 +108,7 @@ function initMenu() {
     mouseenter: function () {
 		var target = $(this).next('.cover');
 		TweenMax.to(target,0.5,{opacity:1,ease:Power2.easeInOut});
-		if(!isSplash) Splash.init();
+		if(!isSplash){ Splash.init();}
     },
 
     mouseleave: function () {
@@ -123,7 +123,7 @@ function setFooter() {
 	'use strict';
 	var footerH = $('footer').height() + 80;
 	if ($('#main.home').length && isMobile === false) {
-		var mb = winH + footerH
+		var mb = winH + footerH;
 		TweenMax.set('body', {marginBottom:mb});
 	} else {
 		TweenMax.set('body', {marginBottom:footerH});
@@ -208,6 +208,8 @@ function landingHomeTl() {
 		.play();
 }
 function initNewsletter() {
+	'use strict';
+	
 	$('.newsletter').each(function(index, value) {
 		var _this = $(value),
 			form = _this.find('form'),

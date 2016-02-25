@@ -6,7 +6,7 @@
 // user-agent sniffing method but best recomendation from : 
 // http://stackoverflow.com/a/6849172
 
-if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
 
 } else {
     (function(){
@@ -63,9 +63,11 @@ if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('
     }
 
     // Bind popstate event to redirect when use hits 'previous page' button
-    $(window).bind("popstate", function() {
+    $(window).bind('popstate', function() {
       if (!everPushedSomething) {
+        /* jshint ignore:start */
         var link = location.pathname.replace(/^.*[\\/]/, ""); // get filename only
+        /* jshint ignore:end */
         loadProject(link);
       }
       everPushedSomething = true;
