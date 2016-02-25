@@ -1690,6 +1690,13 @@ footer > ul li a:hover {
   letter-spacing: .1rem;
   color: white;
 }
+@media screen and (max-width: 480px) {
+  #main.about .big-text-block h2, #main.about .big-text-block p {
+    font-size: 1.8rem;
+    max-width: 100%;
+    line-height: 2.5rem;
+  }
+}
 #main.about .big-text-block h2.fixed, #main.about .big-text-block p.fixed {
   position: fixed;
   top: 50%;
@@ -1757,6 +1764,8 @@ footer > ul li a:hover {
     display: block;
     margin-right: 2.3576515979%;
     width: 48.821174201%;
+    min-width: 45%;
+    max-width: 48%;
   }
   #main.about .content-wrap .row:last-child {
     margin-right: 0;
@@ -1815,8 +1824,17 @@ footer > ul li a:hover {
   }
 }
 #main.about section:not(.footer) {
-  margin: 10rem 0;
   overflow: auto;
+}
+@media screen and (min-width: 480px) {
+  #main.about section:not(.footer) {
+    margin: 10rem 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main.about section:not(.footer) {
+    margin: 3rem 0;
+  }
 }
 #main.about section.fixable {
   position: relative;

@@ -30,6 +30,12 @@ $grey: #999999;
       letter-spacing: .1rem;
       color: white; 
 
+      @include media($mobile) {
+        font-size: 1.8rem;
+        max-width: 100%;
+        line-height: 2.5rem;
+      }
+
       &.fixed {
         position: fixed; top: 50%;
         @include transform(translateY(-50%));
@@ -63,7 +69,11 @@ $grey: #999999;
     }
     .row {
       @include span-columns(1);
-      @include media($mobile) {@include span-columns(6)}
+      @include media($mobile) {
+        @include span-columns(6); 
+        min-width: 45%; 
+        max-width: 48%;
+      }
       min-width: 12rem;
       margin-right: 12rem;
 
@@ -113,7 +123,8 @@ $grey: #999999;
     }
   }
   section:not(.footer) {
-    margin: 10rem 0;
+    @include media($desktop){margin: 10rem 0;}
+    @include media($mobile){margin: 3rem 0;}
     overflow: auto;
     section {
       // margin-bottom: 0;
