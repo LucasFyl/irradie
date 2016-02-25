@@ -1122,6 +1122,9 @@ body.locked {
   padding-left: 0;
 }
 
+.newsletter {
+  max-width: 16rem;
+}
 .newsletter form {
   height: 2.2rem;
   width: auto;
@@ -1131,12 +1134,13 @@ body.locked {
   display: none;
 }
 #main.about .newsletter form {
-  width: 17rem;
+  width: 15.6rem;
 }
 .newsletter form input, .newsletter form button {
   line-height: 2.2rem;
   font-size: 1.3rem;
   color: #4d4d4d;
+  float: left;
 }
 .newsletter form button {
   height: 2.1rem;
@@ -1152,11 +1156,17 @@ body.locked {
   padding: 0;
   text-align: center;
   margin-left: auto;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;
+  color: #4d4d4d;
 }
 .newsletter form input {
   border: none;
   outline: none;
   background-color: transparent;
+  max-width: 12rem;
 }
 .newsletter #mce-responses {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;

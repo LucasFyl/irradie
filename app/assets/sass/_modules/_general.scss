@@ -123,6 +123,7 @@ body {
   }
 }
 .newsletter {
+  max-width: 16rem;
   form {
     @include size(auto 2.2rem);
     line-height: 2.2rem;
@@ -132,13 +133,14 @@ body {
     display: none;
 
     #main.about & {
-      width: 17rem;  
+      width: 15.6rem;  
     }
     
     input, button {
       line-height: 2.2rem;
       font-size: 1.3rem;
       color:  #4d4d4d;
+      float: left;
     }
     button {
       @include size(3.6rem 2.1rem);
@@ -150,10 +152,18 @@ body {
       padding: 0;
       text-align: center;
       margin-left: auto;
+
+      font-size: 1rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: $atlasReg;
+      color: #4d4d4d;
+
     }
     input {
       border: none; outline: none;
       background-color: transparent;
+      max-width: 12rem;
     }
   }
   #mce-responses {
