@@ -108,8 +108,8 @@
         </div>
         <div class="credit row">
           <h3>Credit</h3>
-          <h3>Design & Art Direction: Irradié</h3>
-          <h3>Developpment: <a href="#">Lucas Fayolle</a></h3>
+          <h3>Design: Irradié</h3>
+          <h3>Developpment: <a href="http://lucasfayolle.com" target="_blank">Lucas Fayolle</a></h3>
         </div>
       </div>
     </section>
