@@ -1125,6 +1125,11 @@ body.locked {
 .newsletter {
   max-width: 16rem;
 }
+@media screen and (max-width: 480px) {
+  .newsletter {
+    max-width: none;
+  }
+}
 .newsletter form {
   height: 2.2rem;
   width: auto;
@@ -1132,6 +1137,13 @@ body.locked {
   display: flex;
   border-bottom: 1px solid #777777;
   display: none;
+}
+@media screen and (max-width: 480px) {
+  .newsletter form {
+    margin-left: 1rem;
+    min-width: 20.5rem;
+    max-width: 71%;
+  }
 }
 #main.about .newsletter form {
   width: 15.6rem;
@@ -1167,6 +1179,11 @@ body.locked {
   outline: none;
   background-color: transparent;
   max-width: 12rem;
+}
+@media screen and (max-width: 480px) {
+  .newsletter form input {
+    max-width: 100%;
+  }
 }
 .newsletter #mce-responses {
   font-family: "AtlasGrotesk-Regular-Web", helvetica, sans-serif;

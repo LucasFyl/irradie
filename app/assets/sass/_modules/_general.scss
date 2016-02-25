@@ -124,6 +124,7 @@ body {
 }
 .newsletter {
   max-width: 16rem;
+  @include media($mobile) {max-width: none;}
   form {
     @include size(auto 2.2rem);
     line-height: 2.2rem;
@@ -131,6 +132,12 @@ body {
     border-bottom: 1px solid #777777;
     
     display: none;
+
+    @include media($mobile) {
+      margin-left: 1rem;
+      min-width: 20.5rem;
+      max-width: 71%;
+    }
 
     #main.about & {
       width: 15.6rem;  
@@ -164,6 +171,9 @@ body {
       border: none; outline: none;
       background-color: transparent;
       max-width: 12rem;
+      @include media($mobile) {
+        max-width: 100%;
+      }
     }
   }
   #mce-responses {

@@ -216,8 +216,14 @@ function initNewsletter() {
 			link = _this.find('a');
 		link.on('click', function(e){
 			e.preventDefault();
-			link.hide();
-			form.show();
+			if (form.is(':visible')) {
+				TweenMax.set(link, {display:'block'});
+				TweenMax.set(form, {display:'none'});
+			} else {
+				TweenMax.set(link, {display:'none'});
+				TweenMax.set(form, {display:'flex'});
+			}
+				
 		});
 		form.on('submit',function(){
 			form.css('height', 'auto');
