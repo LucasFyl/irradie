@@ -1,0 +1,272 @@
+Title: About
+
+----
+
+Text: 
+
+----
+
+Introtext: Irradié est un studio de création pluridisciplinaire français fondé en 2016 par les frères Alain et Laurent Vonck. Il apporte des solutions visuelles et conceptuelles dans les champs du design graphique, de la direction artistique, et du design numérique.
+
+----
+
+Firsttext: Le savoir faire de l’atelier s’exprime entre autre dans la conception de systèmes graphiques, d’identités visuelles, publications, et interfaces numériques pour une variété de clients qu’ils soient public ou privé, marque établie ou start-up, toujours avec la même curiosité et passion.
+
+----
+
+Services: 
+
+BRANDING
+NAMING
+LOGOTYPES & BRAND MARKS
+IDENTITY SYSTEMS
+BRAND GUIDELINES
+CREATIVE DIRECTION
+ART DIRECTION
+ILLUSTRATION
+CAMPAIGNS
+
+
+
+PRINT
+STATIONERY SYSTEMS
+COLLATERAL
+POSTERS
+EDITORIAL DESIGN
+BOOK DESIGN
+PRINTED MATERIALS
+PACKAGING 
+RETAIL
+
+
+
+DIGITAL 
+PLANNING + ARCHITECTURE
+APPS & USER INTERFACE
+WEBSITE DESIGN
+
+----
+
+Clients: 
+
+CAP DIGITAL
+CARTIER
+CODEFRISKO
+CONSULAT DE FRANCE
+FAST COMPANY
+FRANCE 5
+GEORGES HOBEIKA
+KEEWARD
+LIBÉRATION
+NOVABRAND
+PAULETTE MAGAZINE
+SEPHORA
+SFR PLAYER
+SUEZ ENVIRONEMENT
+TEXTUEL-LAMINE
+ULTRALAB APPS
+VICE UK
+
+----
+
+Press: 
+
+IT’S NICE THAT
+ETAPES MAGAZINE
+THE VERGE
+CLIK CLK
+OCCULTO
+FORMAGRAMMA
+LIBÉRATION
+TRIANGULATION
+PROTEIN
+BEAUTIFUL DECAY
+LSNGLOBAL
+CO DESIGN
+BACK CATALOGUE
+THISISMIRADOR
+RADIO NOVA
+O FLUXO
+PITCHPRESENT
+TRENDLIST
+
+----
+
+Award: 
+
+TYPE DIRECTOR’S CLUB 
+NEW YORK
+TDC61
+2015
+
+----
+
+Secondtext: 
+
+Our work is designed to function across many applications—physical, digital, and spatial. We care deeply about high quality production and flawless execution, and value working with brands that understand the importance of investing in production as well 
+as design.
+
+----
+
+Contactinfos: 
+
+(email: info@irradie.com text: info@irradie.com)
++33 9 77 19 54 19
+
+----
+
+Internship: 
+
+We are not looking for interns at the moment but you can send us an application here:
+
+(email: stage@irradie.com text: stage@irradie.com)
+
+----
+
+Contactextras: We are not looking for interns at the moment but you can send us an application here:
+
+----
+
+Socialmedia: 
+
+(link: https://www.facebook.com/atelier.irradie/ text: Facebook)
+(link: https://www.instagram.com/irradieatelier/ text: Instagram)
+(link: http://twitter.com text: Twitter)
+(link: http://atelierirradie.tumblr.com/ text: Tumblr)
+(link: http://pinterest.com text: Pinterest)
+(link: http://behance.com text: Behance)
+
+----
+
+Newsletter: Subscribe to our
+
+----
+
+Rowpublications1: 
+
+TYPE DIRECTOR'S CLUB
+TDC61
+USA NY, 2015
+
+DESKTOP MAGAZINE
+AUSTRALIA, 2015
+
+HANZI HANJA KANJI
+VICTION:ARY
+CHINA, 2015
+
+FLAIR MAGAZINE
+ITALY, 2015
+
+IDEA MAGAZINE "366
+JAPAN, 2014
+
+----
+
+Rowpublications2: 
+
+VIEWPOINT #"' AW14
+UK, 2014
+
+THREADED MAGAZINE #17
+AUSTRALIA, 2014
+
+GALLERY VOL24
+CHOIS PUBLISHING
+CHINA, 2014
+
+COLLECTIONS,
+FÊTE DU GRAPHISME
+EDITIONS TEXTUEL
+FRANCE, 2014
+
+----
+
+Rowpublications3: 
+
+AMAZING LAYOUT DESIGN
+DOPRESS
+CHINA, 2014
+
+ETAPES #209
+FRANCE, 2012
+
+SLANTED #15
+GERMANY, 2011
+
+----
+
+Rowexhibitions1: 
+
+AIR POSTER 4
+STUDIO SWISSMISS
+PARIS, 2016
+
+DIVINE PARTY
+CAFÉ DE LA PRESSE
+PARIS, 2016
+
+TYPE DIRECTOR'S CLUB
+TDC61
+TRAVELING EXHIBITION
+PARIS, TOKYO, NEW YORK, 
+BERLIN, LONDON, SEOUL, 
+SHANGHAI 2015
+
+CAPTURES
+LE HUIT 
+PARIS, 2015
+
+----
+
+Rowexhibitions2: 
+
+LE MOIS DU GRAPHISME
+À ECHIROLLES
+ECHIROLLES, 2014
+
+AIR POSTER
+GALLERY WANTED & CUBE ROUGE
+PARIS, 2014
+
+ARTMRKT
+INTERNATIONAL 
+ART FAIR
+FORT MASON CENTER
+SAN FRANCISCO, 2014
+
+FÊTE DE LA MUSIQUE; 
+JING AN KERRY CENTRE
+SHANGHAI, 2014
+
+----
+
+Rowexhibitions3: 
+
+FÊTE DU GRAPHISME
+NOUVELLE VAGUE
+CITÉ DE LA MODE ET DU DESIGN
+PARIS, 2014
+
+RUN COMPUTER RUN
+RUA RED
+DUBLIN, 2013
+
+CREATIVE GALLERY BY WINDOW 8
+PALAIS DE TOKYO
+PARIS, 2012
+
+----
+
+Firstbigtext: Irradié est un studio de création pluridisciplinaire français fondé en 2016 par les frères Alain et Laurent Vonck. Il apporte des solutions visuelles et conceptuelles dans les champs du design graphique, de la direction artistique, et du design numérique.
+
+----
+
+Secondbigtext: Le savoir faire de l’atelier s’exprime entre autre dans la conception de systèmes graphiques, d’identités visuelles, publications, et interfaces numériques pour une variété de clients qu’ils soient public ou privé, marque établie ou start-up, toujours avec la même curiosité et passion.
+
+----
+
+Thirdbigtext: 
+
+L’atelier favorise le dialogue ouvert avec chaque intervenant au projet dans le but de déterminer la solution visuelle la plus adaptée et la plus novatrice. Passionnés par la recherche et le détail, nous nous engageons pleinement dans chaque nouvelle aventure qui deviennent souvent de longues, riches et passionnantes collaborations. 
+N’hésitez pas à nous contacter.
