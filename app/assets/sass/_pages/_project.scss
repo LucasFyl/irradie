@@ -115,15 +115,16 @@
               @include media($desktop) {
                 position: absolute;
                 left: calc(100% - 1rem);
+                letter-spacing: .1rem;
 
                 @include transition(all 0.25s $ease-in-out-sine);  
 
 
                 // Show first letter trick:
-                visibility: hidden;
-                &:first-letter {
-                  visibility: visible;
-                }
+                // visibility: hidden;
+                // &:first-letter {
+                //   visibility: visible;
+                // }
               }
             }
 
@@ -134,7 +135,9 @@
               }
             }
           }
-
+          &:nth-child(3) {
+            a {letter-spacing: .08rem;}
+          }
           &:nth-child(3) {
             a{left: calc(100% - 2.4rem);}
           }
