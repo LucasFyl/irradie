@@ -129,7 +129,7 @@ body {
     @include size(auto 2.2rem);
     line-height: 2.2rem;
     display: flex;
-    border-bottom: 1px solid #777777;
+    border-bottom: 1px solid #b4b4b4;;
     
     display: none;
 
@@ -154,7 +154,7 @@ body {
       @include appearance(none);
       background: transparent; 
       border:none;
-      border-left: 1px solid #777;
+      border-left: 1px solid #b4b4b4;;
 
       padding: 0;
       text-align: center;

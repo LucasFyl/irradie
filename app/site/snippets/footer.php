@@ -39,9 +39,7 @@
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
       <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js') ?>
-      <?= js('bower_components/jquery-mousewheel/jquery.mousewheel.js') ?>
       <?= js('assets/scripts/vendors/modernizr.js') ?>
-      <?= js('assets/scripts/vendors/RetargetMouseScroll.js') ?>
     <!-- Custom Scripts -->
       <?= js('assets/scripts/MousemoveEffect.js') ?>
       <?= js('assets/scripts/MousemoveEffect-VideoHome.js') ?>
