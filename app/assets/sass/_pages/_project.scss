@@ -100,6 +100,7 @@
             width: 100%;
 
             text-decoration: none;
+            text-align: left;
             font-size: 1rem;
             color: #4d4d4d;
           }
@@ -111,10 +112,9 @@
             margin-bottom: 0;
 
             a {
-              
               @include media($desktop) {
                 position: absolute;
-                left: calc(100% - 1rem);
+                left: calc(100% - .7rem);
                 letter-spacing: .1rem;
 
                 @include transition(all 0.25s $ease-in-out-sine);  
@@ -136,10 +136,10 @@
             }
           }
           &:nth-child(3) {
-            a {letter-spacing: .08rem;}
+            // a {letter-spacing: .08rem;}
           }
           &:nth-child(3) {
-            a{left: calc(100% - 2.4rem);}
+            // a{left: calc(100% - 2.4rem);}
           }
         }
 

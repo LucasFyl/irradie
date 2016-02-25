@@ -2054,6 +2054,7 @@ footer > ul li a:hover {
   display: block;
   width: 100%;
   text-decoration: none;
+  text-align: left;
   font-size: 1rem;
   color: #4d4d4d;
 }
@@ -2066,7 +2067,7 @@ footer > ul li a:hover {
 @media screen and (min-width: 480px) {
   #main.project .infos .share ul li:not(:first-child) a {
     position: absolute;
-    left: calc(100% - 1rem);
+    left: calc(100% - .7rem);
     letter-spacing: .1rem;
     transition: all 0.25s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
@@ -2074,12 +2075,6 @@ footer > ul li a:hover {
 #main.project .infos .share ul li:not(:first-child):hover a {
   visibility: visible;
   left: 0;
-}
-#main.project .infos .share ul li:nth-child(3) a {
-  letter-spacing: .08rem;
-}
-#main.project .infos .share ul li:nth-child(3) a {
-  left: calc(100% - 2.4rem);
 }
 #main.project img {
   margin-bottom: 5.5rem;

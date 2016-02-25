@@ -15,7 +15,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- build:css(.tmp) styles/main.css -->
-        <?php echo css('assets/styles/main.css') ?>
+        <?php echo css('assets/styles/main.min.css') ?>
         <!-- endbuild -->
 
     </head>

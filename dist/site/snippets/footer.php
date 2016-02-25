@@ -30,39 +30,22 @@
     <div class="isMobile"></div>
     
     <!-- mailchimp subscribe to newsletter script: -->
-      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
     <!-- Vendor Scripts -->
-      <?= js('bower_components/jquery/dist/jquery.js') ?>
-      <?= js('bower_components/gsap/src/uncompressed/TweenMax.js') ?>
-      <?= js('bower_components/gsap/src/uncompressed/plugins/ScrollToPlugin.js') ?>
-      <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js') ?>
-      <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js') ?>
-      <?= js('bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js') ?>
-      <?= js('bower_components/jquery-mousewheel/jquery.mousewheel.js') ?>
-      <?= js('assets/scripts/vendors/modernizr.js') ?>
-      <?= js('assets/scripts/vendors/RetargetMouseScroll.js') ?>
-    <!-- Custom Scripts -->
-      <?= js('assets/scripts/MousemoveEffect.js') ?>
-      <?= js('assets/scripts/MousemoveEffect-VideoHome.js') ?>
-      <?= js('assets/scripts/ProjectsParallax.js') ?>
-      <?= js('assets/scripts/PageTransition.js') ?>
-      <?= js('assets/scripts/main.js') ?>
-      <?= js('assets/scripts/ScrollAnimations.js') ?>
+    <?= js('assets/scripts/vendors.min.js') ?>
+    <!-- User's Scripts -->
+    <?= js('assets/scripts/scripts.min.js') ?>
+      
 
-
-      <!-- build:remove -->
-      <script src="http://localhost:35729/livereload.js"></script>
-      <!-- /build -->
-
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='https://www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-          ga('create','UA-67341901-1','auto');ga('send','pageview');
-      </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='https://www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-67341901-1','auto');ga('send','pageview');
+    </script>
   </body>
 </html>
