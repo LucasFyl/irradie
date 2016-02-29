@@ -896,7 +896,6 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  margin-bottom: 100vh;
   overflow: auto;
   min-height: 100%;
 }
@@ -1315,6 +1314,7 @@ footer {
   width: 100%;
   overflow: auto;
   padding-top: 8rem;
+  height: 27rem;
   z-index: 1;
   bottom: 0;
   transform: translateZ(0);
@@ -1322,6 +1322,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   footer {
+    height: auto;
     padding-top: 0;
   }
 }

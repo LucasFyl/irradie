@@ -106,12 +106,15 @@ footer {
   overflow: auto;
   padding-top: 8rem;
 
+  height: 27rem;
+
   z-index: 1;
   bottom:0;
 
   @include transform(translateZ(0));
 
   @include media($mobile) {
+    height: auto;
     padding-top: 0;
   }
 

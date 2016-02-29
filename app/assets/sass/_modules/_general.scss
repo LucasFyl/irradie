@@ -1,7 +1,6 @@
 body {
   @include size(100%);
   position: relative;
-  margin-bottom: 100vh;
   overflow: auto;
   min-height: 100%;
   &.locked {
