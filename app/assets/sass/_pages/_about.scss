@@ -253,6 +253,9 @@ $grey: #999999;
         text-transform: none !important;
         white-space: nowrap !important;
       }
+      .newsletter button {
+        color: white; 
+      }
     }
     .credit {
       h3:not(:first-child) {

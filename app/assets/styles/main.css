@@ -1976,6 +1976,9 @@ footer .activelanguage {
   text-transform: none !important;
   white-space: nowrap !important;
 }
+#main.about section.footer .follow .newsletter button {
+  color: white;
+}
 #main.about section.footer .credit h3:not(:first-child) {
   text-transform: uppercase;
   font-size: 1rem;
