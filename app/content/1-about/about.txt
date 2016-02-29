@@ -258,15 +258,12 @@ PARIS, 2012
 
 ----
 
-Firstbigtext: Irradié est un studio de création pluridisciplinaire français fondé en 2016 par les frères Alain et Laurent Vonck. Il apporte des solutions visuelles et conceptuelles dans les champs du design graphique, de la direction artistique, et du design numérique.
+Firstbigtext: Irradié est un studio de création pluridisciplinaire français fondé en 2016 par les frères Alain et Laurent Vonck.  Il apporte des solutions visuelles et conceptuelles dans les champs du design graphique, de la direction artistique, et du numérique.
 
 ----
 
-Secondbigtext: Le savoir faire de l’atelier s’exprime entre autre dans la conception de systèmes graphiques, d’identités visuelles, publications, et interfaces numériques pour une variété de clients qu’ils soient public ou privé, marque établie ou start-up, toujours avec la même curiosité et passion.
+Secondbigtext: Le savoir faire d'Irradié s'exprime entre autre dans la conception de systèmes graphiques, d'interfaces, de publications, et d'identités pour une variété de clients, établis ou en développement, toujours avec la même curiosité et passion.
 
 ----
 
-Thirdbigtext: 
-
-L’atelier favorise le dialogue ouvert avec chaque intervenant au projet dans le but de déterminer la solution visuelle la plus adaptée et la plus novatrice. Passionnés par la recherche et le détail, nous nous engageons pleinement dans chaque nouvelle aventure qui deviennent souvent de longues, riches et passionnantes collaborations. 
-N’hésitez pas à nous contacter.
+Thirdbigtext: L'atelier favorise le dialogue ouvert avec chaque intervenant au projet dans le but de déterminer la solution visuelle la plus adaptée et la plus novatrice. Nous nous engageons pleinement dans chaque nouvelle aventure qui deviennent souvent de longues, riches et passionnantes collaborations.
