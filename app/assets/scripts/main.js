@@ -126,13 +126,33 @@ function setFooter() {
 	var mq1 = window.matchMedia( '(min-width: 768px)' );
 	var mq2 = window.matchMedia( '(min-width: 1000px)' );
 
-	if ( footerSet === false ) {
-		footerSet = true;
-		if ( mq1.matches ) {
-			TweenMax.set('footer', {position:'fixed',bottom:0});
-			TweenMax.set('#main', {marginBottom:footerH});
-		} 
+	var FF = (document.getBoxObjectFor != null || window.mozInnerScreenX != null);
+
+	if (FF) {
+	    
+		if ( footerSet === false ) {
+			footerSet = true;
+			if ( mq1.matches ) {
+				TweenMax.set('footer', {position:'fixed',bottom:0});
+				TweenMax.set('body', {marginBottom:footerH});
+
+				if ( $('#main.home').length ) {
+					var mb = winH + footerH;
+					TweenMax.set('body', {marginBottom:mb});
+				}
+			} 
+		}
+	} else {
+
+		if ( footerSet === false ) {
+			footerSet = true;
+			if ( mq1.matches ) {
+				TweenMax.set('footer', {position:'fixed',bottom:0});
+				TweenMax.set('#main', {marginBottom:footerH});
+			} 
+		}
 	}
+
 }
 function initNextPrev() {
 	'use strict';
