@@ -1,0 +1,33 @@
+Title: Incendiaire
+
+----
+
+Text: Incendiaire est une série de collages d'inspiration surréaliste, organique et digitale rassemblée sous la forme d'un fanzine.
+
+----
+
+Date: 2014
+
+----
+
+Client: Self Initiated
+
+----
+
+Text2: Chaque image représente une plante imaginaire construite à partir d'éléments photographiques et modélisations 3D.
+
+----
+
+Projecttype: Editorial
+
+----
+
+Year: 2014
+
+----
+
+Projecttype1: Editorial
+
+----
+
+Projecttype2: Illustration
