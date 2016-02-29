@@ -89,6 +89,13 @@
         }).addTo(controller)
         .setTween(splashTween);
 
+      $(window).on('scroll', function(){
+        var winST = $(window).scrollTop();
+        if( winST === 0) {
+          TweenMax.fromTo('.landing .top, .bottom, .landing .logo-wrap, .fixed-wrap', 0.1, {opacity:0},{opacity:1,ease:Power3.easeOut});
+        }
+      });
+
 		},
 		projects: function(controller){
 
