@@ -60,17 +60,19 @@
           <img src="<?php echo $page->image('illu-2.gif')->url(); ?>" alt="" draggable="false" />
         </div>
         <section>
-          <div class="title">
-            <h3>Exhibitions</h3>
-          </div>
-          <div class="row">
-            <?php echo $page->rowExhibitions1()->kirbytext() ?>
-          </div>
-          <div class="row">
-            <?php echo $page->rowExhibitions2()->kirbytext() ?>
-          </div>
-          <div class="row">
-            <?php echo $page->rowExhibitions3()->kirbytext() ?>
+          <div class="row-wrap">
+            <div class="title">
+              <h3>Exhibitions</h3>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions1()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions2()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions3()->kirbytext() ?>
+            </div>
           </div>
         </section>
       </div>

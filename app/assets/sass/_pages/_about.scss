@@ -175,12 +175,25 @@ $grey: #999999;
   }
   section.third {
     .content-wrap {
-      width: calc(100% - 14rem - 50rem);
+      width: calc(100% - 21rem - 50rem);
       float: right;
       > section {
-        padding-left: 7rem;
+        // padding-left: 7rem;
+        position: relative;
+        overflow: hidden;
         @include media($mobile) {
           padding-left: 0;
+        }
+        min-height: 40rem;
+        .title {
+          position: absolute;
+          left: 0; top: -6.6rem;
+        }
+        .row-wrap {
+          position: absolute;
+          right: 0; bottom: 0;
+          margin-top: 3rem;
+          overflow: visible;
         }
       }
       .image {
