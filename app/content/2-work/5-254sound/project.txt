@@ -2,7 +2,7 @@ Title: 254Sound
 
 ----
 
-Text: 
+Text: 254Sound est un studio de création sonore travaillant entre autre pour Raf Simons, Terence Fixmer, Another Mag...
 
 ----
 
@@ -10,7 +10,7 @@ Date:
 
 ----
 
-Client: 
+Client: 254 Sound
 
 ----
 
@@ -18,4 +18,16 @@ Projecttype: Screen
 
 ----
 
-Text2: 
+Text2: Le site est une immersion auditive où l'on passe  d'une boucle sonore à une autre  dans une interface simple et intuitive. Un projet réalisé en collaboration avec Codefrisko.
+
+----
+
+Year: 2015
+
+----
+
+Projecttype1: Art Direction
+
+----
+
+Projecttype2: Digital

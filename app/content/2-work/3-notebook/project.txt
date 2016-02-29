@@ -2,7 +2,7 @@ Title: Notebook
 
 ----
 
-Text: 
+Text: Pour le premier Notebook de la maison d’édition Tamyras, l’atelier Irradié dessine un carnet de notes haut en couleur rythmé par cinquante illustrations sur la thématique Positive Lebanon.
 
 ----
 
@@ -10,7 +10,7 @@ Date:
 
 ----
 
-Client: 
+Client: TAMYRAS
 
 ----
 
@@ -18,4 +18,16 @@ Projecttype: Editorial
 
 ----
 
-Text2: 
+Text2: Chaque page illustrée donne forme à une pensée, une anecdote sur l'art de vivre Libanais.
+
+----
+
+Year: 2014
+
+----
+
+Projecttype1: Editorial
+
+----
+
+Projecttype2: Illustration

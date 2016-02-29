@@ -2,7 +2,7 @@ Title: Fête de la Musique
 
 ----
 
-Text: 
+Text: En 2014, l’atelier participe à l’exposition «Fête de la musique à Shanghai» organisée par Novabrand et le  Consulat de France.
 
 ----
 
@@ -10,7 +10,7 @@ Date:
 
 ----
 
-Client: 
+Client: NOVABRAND & CONSULAT DE FRANCE
 
 ----
 
@@ -18,4 +18,16 @@ Projecttype: Poster
 
 ----
 
-Text2: 
+Text2: Dix designers graphiques Français ont été conviés à réaliser une affiche célébrant la nouvelle édition du festival mais également l’anniversaire des 50ans des relations Franco-Chinoises. Ce travail fut primé au Type Director’s Club de New York 2015.
+
+----
+
+Year: 2014
+
+----
+
+Projecttype1: Poster
+
+----
+
+Projecttype2: Typographie

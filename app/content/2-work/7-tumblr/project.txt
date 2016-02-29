@@ -2,7 +2,7 @@ Title: Tumblr
 
 ----
 
-Text: 
+Text: Une sélection d'images et de collages s'inscrivant dans la recherche plastique constante du studio.
 
 ----
 
@@ -10,7 +10,7 @@ Date:
 
 ----
 
-Client: 
+Client: self-initiated
 
 ----
 
@@ -19,3 +19,15 @@ Projecttype: Artwork
 ----
 
 Text2: 
+
+----
+
+Year: 2015
+
+----
+
+Projecttype1: 
+
+----
+
+Projecttype2: 

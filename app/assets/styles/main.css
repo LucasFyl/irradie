@@ -897,6 +897,8 @@ body {
   width: 100%;
   position: relative;
   margin-bottom: 100vh;
+  overflow: auto;
+  min-height: 100%;
 }
 body.locked {
   overflow: hidden;
@@ -1311,10 +1313,12 @@ footer {
   position: relative;
   height: 100%;
   width: 100%;
+  overflow: auto;
   padding-top: 8rem;
   z-index: 1;
   bottom: 0;
   transform: translateZ(0);
+  /* fix for translation links : */
 }
 @media screen and (max-width: 480px) {
   footer {
@@ -1347,7 +1351,7 @@ footer > div a:hover {
   }
 }
 footer > ul {
-  margin: 0 0 3rem 0;
+  margin: 0;
   padding: 6rem 0 0 0;
   list-style: none;
   width: 100%;
@@ -1362,7 +1366,6 @@ footer > ul {
   }
 }
 body.home footer > ul {
-  margin: 0 0 6rem 0;
   justify-content: space-between;
 }
 @media screen and (max-width: 480px) {
@@ -1407,6 +1410,9 @@ footer > ul li a:hover {
   transform: translateY(-0.5rem);
   color: #4d4d4d;
 }
+footer .activelanguage {
+  display: none;
+}
 
 #menu {
   opacity: 0;
@@ -1447,6 +1453,11 @@ footer > ul li a:hover {
   top: 50%;
   left: 50%;
   min-width: 60vw;
+}
+@media screen and (max-width: 1024px) {
+  #menu .half .cover {
+    display: none !important;
+  }
 }
 #menu .half a {
   display: block;
@@ -1851,14 +1862,26 @@ footer > ul li a:hover {
     margin-bottom: 5rem;
   }
 }
-#main.about section.first .content-wrap .row {
-  padding-top: .5rem;
+@media screen and (min-width: 480px) {
+  #main.about section.first .content-wrap {
+    display: flex;
+  }
+  #main.about section.first .content-wrap .row {
+    padding-top: .5rem;
+  }
+  #main.about section.first .content-wrap .row:first-of-type {
+    margin-left: auto;
+  }
+  #main.about section.first .content-wrap .row:last-child {
+    margin-right: 6rem;
+  }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 480px) {
   #main.about section.first .content-wrap .row:last-child {
     padding-left: 2rem;
   }
 }
+
 #main.about section.second .content-wrap {
   width: calc(100% - 4rem - 50rem);
   float: left;
@@ -2074,7 +2097,10 @@ footer > ul li a:hover {
 }
 #main.project .infos .share ul li:not(:first-child):hover a {
   visibility: visible;
-  left: 0;
+  left: 0.5rem;
+}
+#main.project .infos .share ul li:not(:first-child):hover:nth-child(3) a {
+  left: 2rem;
 }
 #main.project img {
   margin-bottom: 5.5rem;
@@ -2144,7 +2170,7 @@ footer > ul li a:hover {
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 1px;
-  color: #999999;
+  color: #fff;
 }
 #main.project section > div:first-child p.text-hide {
   opacity: 0;

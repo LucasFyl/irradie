@@ -31,9 +31,9 @@
           fixIt   = new TweenMax.to(thisText, 0.0001, {className: '+=fixed'});
 
           if ( $(value).hasClass('second') ) {
-            unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'15rem', top: 'auto', y:0});
+            unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'20rem', top: 'auto', y:0});
           } else if ( $(value).hasClass('third') ) {
-            unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'7.5rem', top: 'auto', y:0});
+            unFixIt = new TweenMax.to(thisText, 0.0001, {position: 'absolute', bottom:'15rem', top: 'auto', y:0});
           }
 
           var fixScene = new ScrollMagic.Scene({

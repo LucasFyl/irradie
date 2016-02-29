@@ -118,28 +118,20 @@
                 letter-spacing: .1rem;
 
                 @include transition(all 0.25s $ease-in-out-sine);  
-
-
-                // Show first letter trick:
-                // visibility: hidden;
-                // &:first-letter {
-                //   visibility: visible;
-                // }
               }
             }
 
             &:hover {
               a {
                 visibility: visible;
-                left: 0;
+                left: 0.5rem;
+              }
+              &:nth-child(3) {
+                a {
+                  left: 2rem;
+                }
               }
             }
-          }
-          &:nth-child(3) {
-            // a {letter-spacing: .08rem;}
-          }
-          &:nth-child(3) {
-            // a{left: calc(100% - 2.4rem);}
           }
         }
 
@@ -194,12 +186,12 @@
         position: relative;
         p {
           margin: 0;
-
           font-family: $atlasLight;
           text-transform: uppercase;
           font-size: 1rem;
           letter-spacing: 1px;
-          color: #999999;
+          color: #fff;
+
           &.text-hide {
             opacity: 0;
           }

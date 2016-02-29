@@ -18,12 +18,10 @@
           <?php echo $page->clients()->kirbytext() ?>
         </div>
         <div class="row">
-          <h3>Selected Online Press</h3>
-          <?php echo $page->press()->kirbytext() ?>
-        </div>
-        <div class="row">
           <h3>Award</h3>
           <?php echo $page->award()->kirbytext() ?>
+          <h3>Selected Online Press</h3>
+          <?php echo $page->press()->kirbytext() ?>
         </div>
       </div>
     </section>

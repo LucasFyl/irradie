@@ -7,7 +7,7 @@ var controller = new ScrollMagic.Controller();
 var landingTl = new TimelineMax();
 var winH = $(window).height();
 var winW = $(window).width();
-
+var footerSet = false;
 // Page load function
 function initPage(){
 	'use strict';
@@ -121,14 +121,41 @@ function initMenu() {
 }
 function setFooter() {
 	'use strict';
-	var footerH = $('footer').height() + 80;
-	if ($('#main.home').length && isMobile === false) {
-		var mb = winH + footerH;
-		TweenMax.set('body', {marginBottom:mb});
-	} else {
-		TweenMax.set('body', {marginBottom:footerH});
-	}
-	TweenMax.set('footer', {position:'fixed', height:footerH});
+		if ( footerSet === false ) {
+			footerSet = true;
+			var footerH = $('footer').outerHeight() / 10 + 'rem';
+			var mq1 = window.matchMedia( '(min-width: 780px)' );
+			var mq2 = window.matchMedia( '(max-width: 1200px)' );
+			if ( mq1.matches && mq2.matches) {
+				console.log('min780 && max1200');
+
+				if ($('#main.home').length) {
+					footerH = 5 + $('footer').outerHeight() / 10 + 'rem';
+					var mb = 15 + ($('footer').height() / 10) + 'rem';
+					TweenMax.set('body', {marginBottom:'calc(100vh + '+mb+')'});
+					TweenMax.set('footer', {position:'fixed', bottom:'5rem', height:footerH});	  
+				} else {
+					footerH = 10 + $('footer').outerHeight() / 10 + 'rem';
+					TweenMax.set('body', {marginBottom:footerH});
+					TweenMax.set('footer', {position:'fixed', bottom:0, height:footerH});	  
+				}
+			} else if ( mq1.matches && !mq2.matches ) {
+				console.log('min780 && ! max1200');
+				
+				if ($('#main.home').length) {
+					var mb = 10 + ((winH/10) + ($('footer').height() / 10)) + 'rem';
+					TweenMax.set('body', {marginBottom:mb});
+					TweenMax.set('footer', {position:'fixed', bottom:'5rem', height:footerH});	  
+				} else {
+					TweenMax.set('body', {marginBottom:footerH});
+					TweenMax.set('footer', {position:'fixed', bottom:'3rem', height:footerH});	  
+				}
+			} else {
+				console.log('! min780 && ! max1200');
+				TweenMax.set('body', {marginBottom:0});
+				TweenMax.set('footer', {position:'static'});
+			}
+		}
 }
 function initNextPrev() {
 	'use strict';

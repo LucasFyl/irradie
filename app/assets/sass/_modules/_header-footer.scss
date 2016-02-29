@@ -103,6 +103,7 @@ footer {
   background: white;
   position: relative;
   @include size(100%);
+  overflow: auto;
   padding-top: 8rem;
 
   z-index: 1;
@@ -139,7 +140,8 @@ footer {
     }
   }
   > ul {
-    margin: 0 0 3rem 0;
+    margin: 0;
+    // margin: 0 0 5rem 0;
     padding: 6rem 0 0 0;
     list-style: none;
     width: 100%;
@@ -153,7 +155,7 @@ footer {
       padding-top: 0rem;
     }
     body.home & {
-      margin: 0 0 6rem 0;
+      // margin: 0 0 6rem 0;
       justify-content: space-between;
     }
 
@@ -200,4 +202,9 @@ footer {
       }
     }
   }
+  /* fix for translation links : */  
+  .activelanguage {
+      display:none;
+  }
+
 }

@@ -1,8 +1,8 @@
-Title: Airposter
+Title: Air Poster
 
 ----
 
-Text: 
+Text: Air Poster rassemble chaque année plusieurs studios  de design Français pour le plaisir de l'exploration graphique et plastique.
 
 ----
 
@@ -10,7 +10,7 @@ Date:
 
 ----
 
-Client: 
+Client: Air Poster
 
 ----
 
@@ -18,4 +18,16 @@ Projecttype: Poster
 
 ----
 
-Text2: 
+Text2: Pour sa deuxième participation, l'atelier rend hommage à l'art et au design des 60-70 dans des compositions graphiques qui empruntent aux codes de l'art optique, et aux formes caractéristiques du design d'objet de l'époque. Impression sérigraphique en trois couleurs dont un chrome. En vente ici
+
+----
+
+Year: 2016
+
+----
+
+Projecttype1: Poster
+
+----
+
+Projecttype2: Screenprint

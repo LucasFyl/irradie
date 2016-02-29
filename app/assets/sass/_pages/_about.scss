@@ -145,12 +145,20 @@ $grey: #999999;
       }
     }
     .content-wrap {
-      .row{padding-top: .5rem;}
-      .row:last-child {
-        @include media($mobile){
-          padding-left: 2rem;
+      @include media($desktop) {
+        display: flex;
+        .row{padding-top: .5rem;}
+        .row:first-of-type {
+          margin-left: auto;
+        }
+        .row:last-child {
+          margin-right: 6rem;
+          @include media($mobile){
+            padding-left: 2rem;
+          }
         }
       }
+  
     }
   }
   section.second {
