@@ -18,12 +18,10 @@
           <?php echo $page->clients()->kirbytext() ?>
         </div>
         <div class="row">
-          <h3>Selected Online Press</h3>
-          <?php echo $page->press()->kirbytext() ?>
-        </div>
-        <div class="row">
           <h3>Award</h3>
           <?php echo $page->award()->kirbytext() ?>
+          <h3>Selected Online Press</h3>
+          <?php echo $page->press()->kirbytext() ?>
         </div>
       </div>
     </section>
@@ -62,17 +60,19 @@
           <img src="<?php echo $page->image('illu-2.gif')->url(); ?>" alt="" draggable="false" />
         </div>
         <section>
-          <div class="title">
-            <h3>Exhibitions</h3>
-          </div>
-          <div class="row">
-            <?php echo $page->rowExhibitions1()->kirbytext() ?>
-          </div>
-          <div class="row">
-            <?php echo $page->rowExhibitions2()->kirbytext() ?>
-          </div>
-          <div class="row">
-            <?php echo $page->rowExhibitions3()->kirbytext() ?>
+          <div class="row-wrap">
+            <div class="title">
+              <h3>Exhibitions</h3>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions1()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions2()->kirbytext() ?>
+            </div>
+            <div class="row">
+              <?php echo $page->rowExhibitions3()->kirbytext() ?>
+            </div>
           </div>
         </section>
       </div>

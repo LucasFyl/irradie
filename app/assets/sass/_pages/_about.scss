@@ -45,7 +45,7 @@ $grey: #999999;
     @include media($mobile) {@include span-columns(12)}
   }
   .content-wrap {
-    overflow: auto;
+    overflow: hidden;
     @include media($mobile) {width: 100% !important;@include span-columns(12)}
     .image {
       img{
@@ -68,6 +68,7 @@ $grey: #999999;
       }
     }
     .row {
+      overflow: visible;
       @include span-columns(1);
       @include media($mobile) {
         @include span-columns(6); 
@@ -176,11 +177,13 @@ $grey: #999999;
   section.third {
     .content-wrap {
       width: calc(100% - 21rem - 50rem);
+      overflow-x: hidden;
       float: right;
       > section {
         // padding-left: 7rem;
         position: relative;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: visible;
         @include media($mobile) {
           padding-left: 0;
         }

@@ -7,8 +7,8 @@ password: >
 language: en
 role: admin
 history:
-  - error
   - about
+  - error
   - work/incendiaire
   - work/dark-sand
   - work/liberation

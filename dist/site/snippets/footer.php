@@ -33,10 +33,10 @@
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
     <!-- Vendor Scripts -->
-    <?= js('assets/scripts/vendors.min.js') ?>
-    <!-- User's Scripts -->
-    <?= js('assets/scripts/scripts.min.js') ?>
-      
+      <?= js('assets/scripts/vendors.min.js') ?>
+    <!-- Custom Scripts -->
+      <?= js('assets/scripts/scripts.min.js') ?>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
