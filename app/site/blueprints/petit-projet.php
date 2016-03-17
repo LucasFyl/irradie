@@ -8,6 +8,15 @@ fields:
   title:
     label: Titre
     type:  text
+  dataParallax:
+    label: Vitesse du parallax
+    type: select
+    required: true
+    default: medium
+    options:
+      slow: slow
+      medium: medium
+      fast: fast
   year:
     label: Année
     type: text

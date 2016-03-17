@@ -19,3 +19,7 @@ Projecttype2:
 ----
 
 Text: Refonte visuelle et globale de la marque Lébélik: logotype, papeterie, packagings, site internet et campagne web développé par Keeward. La direction artistique emprunte ponctuellement aux codes graphiques orientaux dans une approche sobre et contemporaine.
+
+----
+
+Dataparallax: fast

@@ -31,3 +31,7 @@ Projecttype1: Écran
 ----
 
 Projecttype2: 
+
+----
+
+Dataparallax: fast

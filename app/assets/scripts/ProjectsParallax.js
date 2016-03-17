@@ -33,7 +33,8 @@
             if ($(window).width() < 480) {
                 return;
             } else {
-                ProjectsParallax.assignValues();
+                // ProjectsParallax.assignValues();
+                setTimeout(ProjectsParallax.run, 250);
             }
         });
 
@@ -49,7 +50,7 @@
             var w = $(this).width(),
                 wrem = toRem(w);
             if (wrem < 33) {
-                $(this).attr('data-parallax', 'quick');
+                $(this).attr('data-parallax', 'fast');
             } else if ( wrem > 33 && wrem < 55 ) {
                 $(this).attr('data-parallax', 'medium');
             } else if ( wrem > 55 ) {
@@ -63,7 +64,7 @@
     run: function() {
         'use strict';
         
-        $('[data-parallax="quick"]').each(function(index, value){
+        $('[data-parallax="fast"]').each(function(index, value){
             var element = $(value);
             TweenMax.set(element, {y:150});
             ProjectsParallax.bindAnimation(element, value);

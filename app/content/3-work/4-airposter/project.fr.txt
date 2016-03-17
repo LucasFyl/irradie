@@ -31,3 +31,7 @@ Projecttype1: Affiche
 ----
 
 Projecttype2: 
+
+----
+
+Dataparallax: medium
