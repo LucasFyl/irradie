@@ -33,32 +33,12 @@
             if ($(window).width() < 480) {
                 return;
             } else {
-                // ProjectsParallax.assignValues();
                 setTimeout(ProjectsParallax.run, 250);
             }
         });
 
         $(window).trigger('resize');
 
-    },
-
-    assignValues: function() {
-        'use strict';
-        var img = ProjectsParallax.config.el;
-
-        img.each(function(index, value) {
-            var w = $(this).width(),
-                wrem = toRem(w);
-            if (wrem < 33) {
-                $(this).attr('data-parallax', 'fast');
-            } else if ( wrem > 33 && wrem < 55 ) {
-                $(this).attr('data-parallax', 'medium');
-            } else if ( wrem > 55 ) {
-                $(this).attr('data-parallax', 'slow');
-            }
-        });
-
-        setTimeout(ProjectsParallax.run, 250);
     },
 
     run: function() {
@@ -80,6 +60,7 @@
             ProjectsParallax.bindAnimation(element, value);
         });
     },
+    
     bindAnimation: function(element, value) {
         'use strict';
         var randomTrigger = (0.7+(Math.random()*(1-0.7))).toFixed(2);
