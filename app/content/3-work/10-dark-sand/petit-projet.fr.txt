@@ -27,3 +27,23 @@ Text2:
 ----
 
 Dataparallax: fast
+
+----
+
+Elwidth: 30
+
+----
+
+Elheight: 23
+
+----
+
+Topposition: 167rem
+
+----
+
+Leftposition: 
+
+----
+
+Rightposition: 0

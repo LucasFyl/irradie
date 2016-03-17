@@ -23,3 +23,23 @@ Text: Refonte visuelle et globale de la marque Lébélik: logotype, papeterie, p
 ----
 
 Dataparallax: fast
+
+----
+
+Elwidth: 30
+
+----
+
+Elheight: 23
+
+----
+
+Topposition: 205rem
+
+----
+
+Leftposition: 
+
+----
+
+Rightposition: 0

@@ -35,3 +35,23 @@ Projecttype2:
 ----
 
 Dataparallax: slow
+
+----
+
+Elwidth: 92
+
+----
+
+Elheight: 54
+
+----
+
+Topposition: 324.7rem
+
+----
+
+Leftposition: 
+
+----
+
+Rightposition: 0

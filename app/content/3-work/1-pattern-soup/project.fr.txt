@@ -38,7 +38,7 @@ Dataparallax: fast
 
 ----
 
-Topposition: 8
+Topposition: 8rem
 
 ----
 
@@ -51,3 +51,7 @@ Elwidth: 30
 ----
 
 Elheight: 23
+
+----
+
+Rightposition: 
