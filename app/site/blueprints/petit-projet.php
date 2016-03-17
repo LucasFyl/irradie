@@ -25,12 +25,12 @@ fields:
     width: 1/3
   elWidth:
     label: largeur de l'element (en rem)
-    type: input
+    type: number
     required: true
     width: 1/3
   elHeight:
     label: hauteur de l'element (en rem)
-    type: input
+    type: number
     required: true
     width: 1/3
   topPosition:

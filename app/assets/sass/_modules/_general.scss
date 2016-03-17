@@ -47,7 +47,6 @@ body {
   @include size(100%);
   position: relative;
   padding-top: 8rem;
-  height: 470rem;
   overflow: hidden;
 
   @include media($mobile) {

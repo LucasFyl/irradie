@@ -1,4 +1,5 @@
-<div class="projects">
+
+<div class="projects" style="height:<?php echo $site->find('work')->elHeight() ?>rem;">
   <?php foreach(page('work')->children()->visible() as $project): ?>
 
     <figure 

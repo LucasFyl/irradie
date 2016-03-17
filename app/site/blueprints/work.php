@@ -10,6 +10,10 @@ fields:
   title:
     label: Title
     type:  text
+  elHeight:
+    label: Hauteur du container (en rem)
+    type:  input
+    help: minimum 470rem (4700px) pour les 18 projets de la v1 du site
   info:
     label: Info
     type: info
