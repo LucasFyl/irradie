@@ -1976,7 +1976,9 @@ footer .activelanguage {
 }
 #main.about section.footer .contact p:nth-child(3) {
   text-transform: none !important;
-  letter-spacing: 0.06rem;
+  font-size: 1.3rem;
+  margin-bottom: 2.3rem;
+  letter-spacing: 1px;
 }
 #main.about section.footer .follow p:last-of-type {
   font-size: 1.4rem;
@@ -2130,6 +2132,7 @@ footer .activelanguage {
 #main.project img {
   margin-bottom: 5.5rem;
   width: 100%;
+  opacity: 0;
 }
 @media screen and (max-width: 480px) {
   #main.project img {

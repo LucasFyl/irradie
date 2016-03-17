@@ -22,15 +22,27 @@
             </div>
           </li>
           <li><a href="https://www.facebook.com/atelier.irradie/" target="_blank">Facebook</a></li>
-          <li><a href="http://atelierirradie.tumblr.com/" target="_blank">Tumblr</a></li>
-          <li><a href="https://www.instagram.com/irradieatelier/" target="_blank">Instagram</a></li>
-          <li><p>© Irradié 2016</p></li>
+          <li><a href="http://img-irradie.tumblr.com/" target="_blank">Tumblr</a></li>
+          <li><a href="https://www.instagram.com/atelier.irradie/" target="_blank">Instagram</a></li>
+            <?php foreach($site->languages() as $language): ?>
+            <li<?php e($site->language() == $language, ' class="activelanguage"') ?>>
+              <a href="<?php echo $page->url($language->code()) ?>">
+                <?php echo html($language->name()) ?>
+              </a>
+            </li>
+            <?php endforeach ?>
         </ul>
       </footer>
     <div class="isMobile"></div>
     
     <!-- mailchimp subscribe to newsletter script: -->
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
+    <!-- Vendor Scripts -->
+    <?= js('assets/scripts/vendors.min.js') ?>
+    <!-- User's Scripts -->
+    <?= js('assets/scripts/scripts.min.js') ?>
+
     
     <!-- Vendor Scripts -->
       <?= js('bower_components/jquery/dist/jquery.js') ?>
@@ -47,8 +59,7 @@
       <?= js('assets/scripts/PageTransition.js') ?>
       <?= js('assets/scripts/main.js') ?>
       <?= js('assets/scripts/ScrollAnimations.js') ?>
-
-
+      
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>

@@ -83,12 +83,6 @@
         <div class="contact row">
           <h3>Contact us</h3>
           <?php echo $page->contactInfos()->kirbytext() ?>
-          <?php echo $page->contactExtras()->kirbytext() ?>
-          <a href="mailto:stage@irradie.fr">stage@irradie.fr</a>
-        </div>
-        <div class="follow row">
-          <h3>Follow us on:</h3>
-          <?php echo $page->socialMedia()->kirbytext() ?>
           <?php echo $page->newsletter()->kirbytext() ?>
           <div class="newsletter">
             <label for="mce-EMAIL">
@@ -106,10 +100,16 @@
             </form>
           </div>
         </div>
+        <div class="follow row">
+          <h3>Follow us on:</h3>
+          <?php echo $page->socialMedia()->kirbytext() ?>
+
+        </div>
         <div class="credit row">
           <h3>Credit</h3>
           <h3>Design: Irradié</h3>
           <h3>Developpment: <a href="http://lucasfayolle.com" target="_blank">Lucas Fayolle</a></h3>
+          <?php echo $page->contactExtras()->kirbytext() ?>
         </div>
       </div>
     </section>

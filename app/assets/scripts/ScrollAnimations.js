@@ -89,10 +89,11 @@
         }).addTo(controller)
         .setTween(splashTween);
 
+      // prevent video and small titles from not showing when page has been reloaded and scrollTop != 0
       $(window).on('scroll', function(){
         var winST = $(window).scrollTop();
         if( winST === 0) {
-          TweenMax.fromTo('.landing .top, .bottom, .landing .logo-wrap, .fixed-wrap', 0.1, {opacity:0},{opacity:1,ease:Power3.easeOut});
+          TweenMax.set('.landing .top, .bottom, .landing .logo-wrap, .fixed-wrap', {opacity:1});
         }
       });
 

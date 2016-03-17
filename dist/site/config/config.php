@@ -15,7 +15,7 @@ for more information: http://getkirby.com/license
 
 */
 
-c::set('license', 'put your license key here');
+c::set('license', '');
 
 /*
 
@@ -28,3 +28,24 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+c::set('languages', array(
+  array(
+    'code'    => 'fr',
+    'name'    => 'Français',
+    'default' => true,
+    'locale'  => 'fr_FR',
+    'url'     => '/',
+  ),
+  array(
+    'code'    => 'en',
+    'name'    => 'English',
+    'locale'  => 'en_EN',
+    'url'     => '/en',
+  ),
+));
+
+c::set('language.detect', true);
+
+c::set('sitemap.exclude', array('error'));
+c::set('sitemap.important', array('home'));

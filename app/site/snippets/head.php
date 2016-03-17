@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="author" content="Lucas Fayolle">
+        <meta name="author" content="Atelier Irradié">
         <meta name="description" content="<?php echo $site->description()->html() ?>">
         <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">

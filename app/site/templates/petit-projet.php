@@ -18,8 +18,8 @@
           <ul>
             <li>Share</li>
             <li><a  href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $page->url() ?>" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Facebook</a></li> 
-            <li><a href="https://twitter.com/share?text=<?php echo $page->title() ?>&amp;url=<?php echo $page->url() ?>" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Tumblr</a></li>
-            <li><a href="http://pinterest.com/pin/create/link/?url<?php echo $page->url() ?>&description=<?php echo $page->title() ?>" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Pinterest</a></li>
+            <li><a href="http://www.tumblr.com/share?v=3&u=<?php echo $page->url() ?>" onclick="window.open(this.href, 'tumblr-share', 'width=550,height=235');return false;">Tumblr</a></li>
+            <li><a href="javascript:void((function()%7Bvar%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','http://assets.pinterest.com/js/pinmarklet.js?r='+Math.random()*99999999);document.body.appendChild(e)%7D)());">Pinterest</a></li>
           </ul>
         </div>
       </div>

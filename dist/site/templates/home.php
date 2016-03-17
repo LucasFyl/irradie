@@ -21,6 +21,8 @@
         <div id="video-wrap">
           <video poster="/assets/images/placeholder-background.jpg" width="470" height="450" autoplay loop>
             <source src="<?php echo $pages->find('home')->file('landing-video.mp4')->url() ?>" type="video/mp4" />
+            <!-- <source src="linktovideo.webm" type="video/webm" />
+            <source src="linktovideo.ogv" type="video/ogg" /> -->
           </video>
         </div>
       </div>

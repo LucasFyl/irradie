@@ -11,7 +11,7 @@
         <a href="<?php echo $project->url() ?>" class="ajaxy">
           <p>
             <?php echo $project->title() ?>
-            <span><?php echo $project->projectType() ?></span>
+            <span><?php echo $project->projectType1() ?></span>
           </p>
         </a>
       </figcaption>

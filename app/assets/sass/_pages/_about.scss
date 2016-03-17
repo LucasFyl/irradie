@@ -247,7 +247,9 @@ $grey: #999999;
       min-width: 17rem;
       p:nth-child(3) {
         text-transform: none !important;
-        letter-spacing: 0.06rem;
+        font-size: 1.3rem;
+        margin-bottom: 2.3rem;
+        letter-spacing: 1px;
       }
     }
     .follow {

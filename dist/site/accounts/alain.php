@@ -8,3 +8,9 @@ password: >
   $2a$10$t5Rc2U999CLyJG3qHhWB.OQCEZSSU8a./Szx6eEmDsQhl4WI9BwPu
 language: fr
 role: admin
+history:
+  - about
+  - work
+  - work/airposter
+  - work/notebook
+  - work/lebelik

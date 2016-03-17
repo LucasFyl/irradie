@@ -8,3 +8,9 @@ password: >
   $2a$10$1nczRooJQkRwLNICPZz74eqKJsmaNRhnGHwxvsBLg7a1WGbPpVR7u
 language: fr
 role: admin
+history:
+  - about
+  - work/254sound
+  - work/garageluxe
+  - work/r-mag
+  - work/airposter
