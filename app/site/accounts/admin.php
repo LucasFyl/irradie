@@ -7,10 +7,10 @@ password: >
 language: en
 role: admin
 history:
+  - work/airposter
+  - work/irradie-id
+  - work/notebook
+  - work/pattern-soup
   - work/le-couture
-  - work/l-inconnu
-  - work/garageluxe
-  - work/georges-hobeika
-  - work/ruins
 firstname: Lucas
 lastname: Fayolle

@@ -35,3 +35,23 @@ Projecttype2:
 ----
 
 Dataparallax: fast
+
+----
+
+Elwidth: 30
+
+----
+
+Elheight: 23
+
+----
+
+Topposition: 43
+
+----
+
+Leftposition: 0
+
+----
+
+Rightposition: 

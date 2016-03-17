@@ -35,3 +35,23 @@ Projecttype2:
 ----
 
 Dataparallax: medium
+
+----
+
+Elwidth: 48
+
+----
+
+Elheight: 67.5
+
+----
+
+Topposition: 81
+
+----
+
+Leftposition: 0
+
+----
+
+Rightposition: 
