@@ -7,10 +7,10 @@ password: >
 language: en
 role: admin
 history:
+  - work/irradie-id
+  - work/pattern-soup
+  - work/notebook
   - work
   - work/chemsex
-  - work/airposter
-  - work/fete-de-la-musique
-  - work/l-inconnu
 firstname: Lucas
 lastname: Fayolle

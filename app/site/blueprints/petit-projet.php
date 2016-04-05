@@ -24,15 +24,26 @@ fields:
       fast: fast
     width: 1/3
   elWidth:
-    label: largeur de l'element (en rem)
-    type: number
+    label: Taille de l'élément (largeur)
     required: true
     width: 1/3
+    type: select
+    options:
+      30: S
+      47.5: M
+      92: L
   elHeight:
-    label: hauteur de l'element (en rem)
+    label: Format (hauteur)
     type: number
     required: true
     width: 1/3
+    type: select
+    options:
+      43.3: S - portrait
+      23.3: S - paysage
+      67.5: M - portrait
+      32.5: M - paysage
+      54: L - paysage
   topPosition:
     label: Position "top" (en rem)
     type: input
