@@ -8,9 +8,9 @@ language: en
 role: admin
 history:
   - work
-  - work/le-couture
+  - work/chemsex
+  - work/airposter
+  - work/fete-de-la-musique
   - work/l-inconnu
-  - work/garageluxe
-  - work/georges-hobeika
 firstname: Lucas
 lastname: Fayolle

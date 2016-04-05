@@ -7,7 +7,9 @@
       style="top:<?php echo $project->topPosition() ?>;left:<?php echo $project->leftPosition() ?>;right:<?php echo $project->rightPosition() ?>;width:<?php echo $project->elWidth() ?>rem;height:<?php echo $project->elHeight() ?>rem;">
       <?php if ($project->hasImages()): ?>
         <a href="<?php echo $project->url() ?>" class="ajaxy">
-          <img src="<?php echo $project->image('01-cover.jpg')->url() ?>" alt="<?php echo $project->title(); ?>" />
+          <?php  $w = $project->elWidth(); $h = $project->elHeight(); ?>
+          <img class="lazy" data-original="<?php echo $project->image('01-cover.jpg')->url() ?>" alt="<?php echo $project->title(); ?>" 
+          width="<?php echo $w ?>0" height="<?php echo $h ?>0" />
         </a>
       <?php endif; ?>
       <figcaption>

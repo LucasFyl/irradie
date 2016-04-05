@@ -30,6 +30,9 @@
         };
 
         $(window).resize(function(){
+            $('img.lazy').lazyload({
+                threshold : 200
+            });
             if ($(window).width() < 480) {
                 return;
             } else {

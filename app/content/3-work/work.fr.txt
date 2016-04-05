@@ -6,4 +6,4 @@ Text:
 
 ----
 
-Elheight: 550
+Elheight: 470
